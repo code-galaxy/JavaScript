@@ -1,0 +1,47 @@
+.container {
+    text-align: center;
+}
+
+.weather_block {
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+    border: 3px solid rgb(52, 201, 52);
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: sans-serif;
+    background-image: linear-gradient(to left, rgb(255, 255, 81) 0px, rgb(0, 163, 207) 100%);
+}
+
+.out_description {
+    font-size: 20px;
+    color: rgb(0, 100, 255);
+}
+
+.weather_city {
+    font-size: 40px;
+}
+
+.weather_description {
+    font-size: 20px;
+}
+
+.weather_temp {
+    font-size: 60px;
+}
+
+h2 {
+    color: white;
+    margin: 15px 0 10px 0;
+}
+
+select {
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background: rgb(0, 180, 255);
+    color: white;
+}
