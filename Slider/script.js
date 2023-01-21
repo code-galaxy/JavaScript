@@ -8,7 +8,7 @@ function sliderFunction() {
         "Success doesn’t just find you. You have to go out and get it.",
         "The harder you work for something, the greater you’ll feel when you achieve it.",
         "Set big goals. Dream bigger. Do bigger.",
-        "Little things make big days.",
+        "Little things make big days",
         "Push yourself, because no one else is going to do it for you"
     ];
 
@@ -18,7 +18,6 @@ function sliderFunction() {
     let slideCollection;
 
     function startFunction(event) {
-        event.stopPropagation();
         this.classList.add('hide');
         start();
     }
@@ -57,15 +56,12 @@ function sliderFunction() {
 
     function hideSingleSlide(n) {
         slideCollection[n].classList.add('hide');
-
     }
 
     function randomInteger(min, max) {
         let rand = min + Math.random() * (max + 1 - min);
         return Math.floor(rand);
     }
-
     document.querySelector('.btn-start').onclick = startFunction;
 }
-
 document.addEventListener("DOMContentLoaded", sliderFunction);
