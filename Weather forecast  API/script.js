@@ -64,7 +64,7 @@ function getWeather() {
 getWeather();
 
 function showWeather(data) {
-   console.log(data);
+//    console.log(data);
    document.querySelector('.weather_city').textContent = data.name;
    document.querySelector('.weather_temp').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
    document.querySelector('.weather_description').textContent = data.weather[0]['description'];
