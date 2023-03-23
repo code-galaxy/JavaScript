@@ -125,24 +125,3 @@ console.log(out19);
 let out20 = document.querySelector('.out-20');
 out20.textContent = '<h2>Hi</h2>';
 
-
-
-let twoSum = function (nums, target) {
-
-  const hashmap = {};
-
-  for (let i = 0; i < nums.length; i++){
-    hashmap[nums[i]] = i;
-  }
-console.log(hashmap); 
-
-for (let i = 0; i < nums.length; i++){
-  const diff = target - nums[i]; 
-
-if (hashmap[diff] & hashmap[diff] !== i)
-return [i, hashmap[diff]]
-}
-return [];
-};
-
-console.log(twoSum([1, 3, 3, 4, 4], 6));
