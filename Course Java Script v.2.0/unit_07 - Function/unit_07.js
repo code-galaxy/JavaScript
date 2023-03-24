@@ -7,7 +7,6 @@ let out = document.querySelector('.out-1');
 function t1() {
     out.innerHTML = a1;
 }
-
 document.querySelector('.b-1').onclick = t1;
 
 
@@ -61,7 +60,6 @@ document.querySelector('.b-4').onclick = function () {
 
 function t5(yourName) {
     return yourName.length;
-
 }
 
 document.querySelector('.b-5').onclick = function () {
@@ -148,7 +146,6 @@ function t10(x, y) {
     else {
         return y;
     }
-
 }
 
 document.querySelector('.b-10').onclick = function () {
