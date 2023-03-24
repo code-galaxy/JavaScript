@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://cabinet.itgid.info/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://itgid.info/css/skeleton.css">
+    <link rel="stylesheet" href="https://itgid.info/css/style_js20.css">
+    <!-- Ночной режим CSS удалите комментарий -->
+    <!-- <link rel="stylesheet" href="https://itgid.info/css/night.css"> -->
+    <title>JS 2.0. Unit 03</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit 03. Оператор If, else, switch case - выбор в JavaScript</h1>
+
+        <section>
+            <h4>Task 1.</h4>
+            <p>При нажатии кнопки .b-1 срабатывает функция f1. Функция должна прочитать содержимое .i-1 и сравнить его с
+                числом 4 (сравнение ==). Результат сравнения - true или false выведите в .out-1.</p>
+            <input type="number" class="i-1" value="7">
+            <button class="button-primary b-1">Task-1</button>
+            <div class="out-1"></div>
+        </section>
+
+        <section>
+            <h4>Task 2.</h4>
+            <p>Даны две переменные a21 и a22. При нажатии кнопки .b-2, запускается функция f2. Функция должна сравнить
+                переменные с помощью if else и вывести в .out-2 число, которое больше. Вариант равенства переменных не
+                рассматриваем.
+            </p>
+            <button class="button-primary b-2">Task-2</button>
+            <div class="out-2"></div>
+        </section>
+
+        <section>
+            <h4>Task 3.</h4>
+            <p>Даны 2 input - .i-31 и .i-32, оба - input[type=number]. При нажатии кнопки .b-3 срабатывает функция f3.
+                Функция должна сравнить числа из input, вывести в .out-3 большее число.</p>
+            <p>Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.</p>
+            <div><input type="number" class="i-31" value="33"></div>
+            <div><input type="number" class="i-32" value="9"></div>
+            <button class="button-primary b-3">Task-3</button>
+            <div class="out-3"></div>
+        </section>
+
+        <section>
+            <h4>Task 4.</h4>
+            <p>Пользователь вводит в .i-4 год своего рождения. Есть кнопка .b-4 которая запускает функцию f4. Функция
+                должна вывести в .out-4 число 1 если пользователю больше или равно 18 лет, и 0 если меньше.</p>
+            <input type="number" class="i-4">
+            <button class="button-primary b-4">Task-4</button>
+            <div class="out-4"></div>
+        </section>
+
+        <section>
+            <h4>Task 5.</h4>
+            <p>На странице есть input c классом i-5, куда пользователь может ввести число. Есть кнопка b-5 которая
+                запускает функцию f5. Функция должна вывести в .out-5 символ 'm' если число меньше нуля, 0 если число
+                равно нулю и число 1 если больше.</p>
+            <input type="number" class="i-5">
+            <button class="button-primary b-5">Task-5</button>
+            <div class="out-5"></div>
+        </section>
+
+        <section>
+            <h4>Task 6.</h4>
+            <p>На странице есть input с классом i-6, куда пользователь может ввести число. Есть кнопка .b-6 которая
+                запускает функцию f6. Функция должна вывести в .out-6 слово even если число четное и odd если нечетное.
+                Для проверки четности используется целочисленный остаток от деления на 2 (оператор %). Если остаток
+                равен нулю - четное, нет - нечетное.</p>
+            <input type="number" class="i-6" value="7">
+            <button class="button-primary b-6">Task-6</button>
+            <div class="out-6"></div>
+        </section>
+
+        <section>
+            <h4>Task 7.</h4>
+            <p>Даны 2 input - .i-71 и .i-72, оба - input[type=number]. При нажатии кнопки .b-7 срабатывает функция f7.
+                Функция должна число из .i-71 возвести в степень .i-72, вывести результат в .out-7. Для возведения в
+                степень можно
+                использовать **, или Math.pow.</p>
+            <div><input type="number" class="i-71" value="3"></div>
+            <div><input type="number" class="i-72" value="2"></div>
+            <button class="button-primary b-7">Task-7</button>
+            <div class="out-7"></div>
+        </section>
+
+        <section>
+            <h4>Task 8.</h4>
+            <p>Дан select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При ее нажатии срабатывает функция
+                f8. Функция должна получить выбранное в select число, потом с помощью switch case сравнить его
+                поочередно с 1, 2, 3. И если число выбрано - 1, то вывести в .out-8 строку one, если 2 - two, если 3 -
+                three. Напоминаю - это программирование. Как указано в задании - так и выводим. Т.е. Three с большой
+                буквы - ошибка!!!</p>
+            <div>
+                <select class="s-8">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="button-primary b-8">Task-8</button>
+            <div class="out-8"></div>
+        </section>
+
+        <section>
+            <h4>Task 9.</h4>
+            <p> Есть input с классом .i-9, куда пользователь может ввести номер квартиры. Есть кнопка .b-9 которая
+                запускает функцию f9. Функция должна вывести в .out-9 номер подъезда, в котором находится квартира.</p>
+            <ul>
+                <li>если от 1 включительно до 32 включительно - то вывести цифру 1</li>
+                <li>если от 33 (включительно) до 43(включительно) - то вывести 2</li>
+                <li>если от 44(включительно) до 64 (всключительно) - то 3</li>
+                <li>В противном случае, вывести 0.</li>
+            </ul>
+            <input type="number" class="i-9">
+            <button class="button-primary b-9">Task-9</button>
+            <div class="out-9"></div>
+        </section>
+
+        <section>
+            <h4>Task 10.</h4>
+            <p>Дан select .s-100. По нажатию кнопки, выведите value выбранного option в .out-10.</p>
+            <div>
+                <select class="s-100">
+                    <option value="6">six</option>
+                    <option value="7">seven</option>
+                    <option value="11">eleven</option>
+                    <option value="9">nine</option>
+                </select>
+            </div>
+            <button class="button-primary b-10">Task-10</button>
+            <div class="out-10"></div>
+        </section>
+
+        <section>
+            <h4>Task 11.</h4>
+            <p>Дан select .s-110. По изменению состояния select (событие onchange) выведите value выбранного option в
+                .out-11.</p>
+            <div>
+                <select class="s-110">
+                    <option value="6">six</option>
+                    <option value="7">seven</option>
+                    <option value="11">eleven</option>
+                    <option value="9">nine</option>
+                </select>
+            </div>
+            <div class="out-11"></div>
+        </section>
+
+        <section>
+            <h4>Task 12.</h4>
+            <p>Дан input .i-120. По нажатию кнопки получите значение из input в переменную, а затем выведите в .out-12
+                typeof полученной переменной. Typeof позволяет определить тип данных. Обратите внимание, данная задача
+                уже
+                решена, нужно убрать комментарии и изучить работу. </p>
+            <input type="text" class="i-120">
+            <button class="button-primary b-12">Task-12</button>
+            <div class="out-12"></div>
+        </section>
+
+        <section>
+            <h4>Task 13.</h4>
+            <p>Дан input i-130. В отличие от предыдущего задания - input type number. По нажатию кнопки получите
+                значение из input в переменную, а затем выведите в out-13 typeof полученной переменной. Typeof позволяет
+                определить тип данных. Если вы правильно все сделали - то удивительно, но тип данных будет string!
+                Подумайте почему так? </p>
+            <input type="number" class="i-130">
+            <button class="button-primary b-13">Task-13</button>
+            <div class="out-13"></div>
+        </section>
+
+        <section>
+            <h4>Task 14.</h4>
+            <p>Дан input .i-141 и .i-142, type=number. Дан select .s-143, который содержит две операции - +, -, *, / .
+                Дана кнопка b-14, при нажатии на которую срабатывает функция f14. Функция выводит в .out-14 результат
+                операций
+                выбранной в 3-м select к числам введенным в первом и втором input. Например выбрано 1 13 +, нужно
+                вывести результат операции 1+13 т.е. 14.</p>
+            <div><input type="number" class="i-141" value="8"></div>
+            <div><input type="number" class="i-142" value="7"></div>
+            <div>
+                <select class="s-143">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+            <button class="button-primary b-14">Task-14</button>
+            <div class="out-14"></div>
+        </section>
+
+        <section>
+            <h4>Task 15.</h4>
+            <p>Дан select .s-151 и .s-152, каждый из которых содержит 1 и 0. Дан select .s-153, который содержит две
+                операции - && и ||
+                . Дана кнопка .b-15, при нажатии на которую срабатывает функция f15. Функция выводит в .out-15 результат
+                логических
+                операций выбранных в 3 select к числам выбранным в первом и втором select. Например выбрано 1 1 &&,
+                нужно вывести
+                результат операции 1&&1 т.е. 1 или 0.</p>
+            <div>
+                <select class="s-151">
+                    <option value="1">1</option>
+                    <option value="0">0</option>
+                </select>
+            </div>
+            <div>
+                <select class="s-152">
+                    <option value="1">1</option>
+                    <option value="0">0</option>
+                </select>
+            </div>
+            <div>
+                <select class="s-153">
+                    <option value="&&">&&</option>
+                    <option value="||">||</option>
+                </select>
+            </div>
+            <button class="button-primary b-15">Task-15</button>
+            <div class="out-15"></div>
+        </section>
+        <p><a href="https://itgid.info" title="Материалы с сайта ItGid.info">ItGid.info - курс JavaScript 2.0</a></p>
+    </div>
+
+    <script src="unit_03.js"></script>
+</body>
+
+</html>
