@@ -5,9 +5,7 @@
 
 
 function t1() {
-
    localStorage.setItem('5', 11);
-
 }
 document.querySelector('.b-1').onclick = t1;
 // ваше событие здесь!!!
@@ -18,9 +16,7 @@ document.querySelector('.b-1').onclick = t1;
 let a2 = [7, 6, 5];
 
 function t2() {
-
    localStorage.setItem('a2', JSON.stringify(a2));
-
 }
 document.querySelector('.b-2').onclick = t2;
 // ваше событие здесь!!!
@@ -71,7 +67,6 @@ function t5() {
    }
 
    document.querySelector('.out-5').innerHTML = out;
-
 }
 document.querySelector('.b-5').onclick = t5;
 // ваше событие здесь!!!
