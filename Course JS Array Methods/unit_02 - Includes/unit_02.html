@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit 02. Методы массивов ItGid.info</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="site-title">Unit 02. Метод includes в массивах JS</h1>
+        <h2 class="site-title"><a href="https://itgid.info/course/arraymethod" target="_blank">Методы массивов - курс
+                Лущенко
+                Александра</a></h2>
+        <section>
+            <h3>Task 01</h3>
+            <p>По нажатию b-1 выполняется функция f1. Функция считывает значение из i-1 и с помощью includes ищет данный
+                элемент в массиве a1. Выводит в out-1 результат работы метода.</p>
+            <input type="text" class="i-1">
+            <button class="b-1">Task 01</button>
+            <pre><code><div class="out-1 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 02</h3>
+            <p>По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 и с помощью includes проверяет
+                наличие подобного элемента в массиве a2. Выводит в out-2 false, если такого элемента нет в массиве, и
+                ИНДЕКС элемента если есть.
+                Констатация наличия выполняется через includes. Нахождение индекса либо через indexOf или через цикл.
+                Сравните данную задачу с задачей 2 из юнита 1. Подумайте какой из методов: includes, indexOf более
+                удобен для данной задачи.</p>
+            <input type="text" class="i-2">
+            <button class="b-2">Task 02</button>
+            <pre><code><div class="out-2 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 03</h3>
+            <p>По нажатию b-3 выполняется функция f3. Функция считывает значение из i-3 и с помощью includes ищет данный
+                элемент во вложенных массивах массива a3. Выводит в out-3 false, если такого элемента нет и true если
+                есть. Обратите внимание! Только числа!</p>
+            <input type="text" class="i-3">
+            <button class="b-3">Task 03</button>
+            <pre><code><div class="out-3 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 04</h3>
+            <p>По нажатию b-4 выполняется функция f4. Функция считывает значение из i-4 и с помощью includes ищет данный
+                элемент во вложенных массивах массива a4. Выводит в out-4 false, если такого элемента нет и ключ
+                вложенного массива в котором такой элемент есть(если есть). Обратите внимание! Только числа! Если ключей
+                несколько, то выводятся через пробел.</p>
+            <input type="text" class="i-4">
+            <button class="b-4">Task 04</button>
+            <pre><code><div class="out-4 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 05</h3>
+            <p>По нажатию b-5 выполняется функция f5. Функция считывает значение из i-5-1 и индекс с которого начинается
+                поиск в массиве с i-5-2 и с помощью includes ищет данный элемент в массиве a5 c позиции указанной в
+                i-5-2. Выводит в out-5 false если такого элемента при поиске с указанной позиции нет и true если есть.
+            </p>
+            <input type="text" class="i-5-1">
+            <input type="text" class="i-5-2">
+            <button class="b-5">Task 05</button>
+            <pre><code><div class="out-5 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 06</h3>
+            <p>По нажатию b-6 выполняется функция f6. Функция считывает строку из i-6 и с помощью includes и ищет данный
+                элемент в СТРОКЕ a6. Выводит в out-6 false если искомой строки нет в a6 и true если есть.</p>
+            <input type="text" class="i-6">
+            <button class="b-6">Task 06</button>
+            <pre><code><div class="out-6 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 07</h3>
+            <p>По нажатию b-7 выполняется функция f7. Функция принимает 2 параметра, первый массив, второй - искомое
+                число. Функция должна эмулировать работу метода includes с помощью цикла. Что понимается под эмуляцией?
+                Мы не используем метод includes ( и indexOf тоже), а циклом перебираем массив и с помощью if решаем
+                задачу. Функция должна только либо выводить в out-7
+                false, если искомого числа нет в массиве, или true если есть.</p>
+            <button class="b-7">Task 07</button>
+            <pre><code><div class="out-7 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 08</h3>
+            <p>По нажатию b-8 выполняется функция f8. Функция должна получить символ из i-8 и с помощью includes
+                проверить есть ли подобный символ в строке a8 или нет. Если есть - вывести true, если нет false</p>
+            <input type="text" class="i-8">
+            <button class="b-8">Task 08</button>
+            <pre><code><div class="out-8 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 09</h3>
+            <p>По нажатию b-9 выполняется функция f9. Функция должна получить из i-9 символ и с помощью includes искать
+                его в массиве a9. Обратите внимание на сложность. Если пользователь ввел символ в нижнем регистре то
+                функция должна c помощью includes искать и в нижнем и в верхнем регистре символ в массиве. Если
+                пользователь ввел число - то искать число. Считаем, что пользователь может ввести либо символы
+                латинского алфавита, либо числа. Вывод true, false в out-9.</p>
+            <input type="text" class="i-9">
+            <button class="b-9">Task 09</button>
+            <pre><code><div class="out-9 out">out</div></code></pre>
+        </section>
+        <section>
+            <h3>Task 10</h3>
+            <p>Ну и на прокачку ваших скиллов. Часто попадется вопрос, в чем отличие includes от indexOf? Ответ - в
+                поведении с NaN. Изучите и запомните пример ниже.</p>
+            <button class="b-10">Task 10</button>
+        </section>
+        <section>
+            <h3>Task 11</h3>
+            <p>Ну и на прокачку ваших скиллов. Выполните код ниже. Изучите консоль. По очереди расскоментируйте строки и
+                смотрите на результат. Проанализируйте.</p>
+            <button class="b-11">Task 11</button>
+        </section>
+        <div class="courses">
+            <ul>
+                <li><a href="https://itgid.info/course/javascript-2">JavaScript 2.0</a></li>
+                <li><a href="https://itgid.info/course/html">HTML для JS разработчиков</a></li>
+                <li><a href="https://itgid.info/course/object-js">Объектно Ориентированный JavaScript</a></li>
+                <li><a href="https://itgid.info/course/reactjs">ReactJS</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="unit_02.js"></script>
+</body>
+
+</html>
