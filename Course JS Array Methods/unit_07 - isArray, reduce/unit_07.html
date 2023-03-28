@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit 07. Методы массивов ItGid.info</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="site-title">Unit 07. isArray, Reduce</h1>
+        <h2 class="site-title"><a href="https://itgid.info/course/arraymethod" target="_blank">Методы массивов - курс
+                Лущенко
+                Александра</a></h2>
+        <section>
+            <h3>Task 01</h3>
+            <p>По нажатию b-1 выполняется функция f1. Функция с помощью isArray проверяет a1. Результат проверки -
+                вывести в out-1.
+                Проверьте на строке и set.</p>
+            <button class="b-1">Task 01</button>
+            <div class="out-1">out-1</div>
+        </section>
+        <section>
+            <h3>Task 02</h3>
+            <p>Выполним эмуляцию метода isArray. В качестве критерия будем проверять следующее - содержимое переменной
+                можно перебрать
+                с помощью цикла for let i = . Т.е. все индексы должны быть числами. Функция должна выводить в out-2 true
+                или false, в
+                зависимости от того, что лежит в a2. Проверьте функцию на переменных указанных в комментариях.</p>
+            <button class="b-2">Task 02</button>
+            <div class="out-2">out-2</div>
+        </section>
+        <section>
+            <h3>Task 03</h3>
+            <p>По нажатию b-3 выполняется функция f3. Функция применяет к массиву a3 метод reduce и выводит переменные
+                accum, item в
+                консоль. Обратите внимание на начальное значение accum и значения, учитывая что мы не делаем return.
+                Обратите внимание,
+                сколько раз сработал цикл - на один меньше чем элементов в массиве.</p>
+            <button class="b-3">Task 03</button>
+        </section>
+        <section>
+            <h3>Task 04</h3>
+            <p>По нажатию b-4 выполняется функция f4. Функция будет похожа на предыдущую, за единственным исключением,
+                мы делаем
+                return.</p>
+            <button class="b-4">Task 04</button>
+        </section>
+        <section>
+            <h3>Task 05</h3>
+            <p>По нажатию b-5 выполняется функция f5. Функция перебирает с помощью reduce массив и суммирует все его
+                элементы. Обратите
+                внимание на область применения reduce - везде где нужно в результате получить одно число на основе
+                массива - reduce
+                подойдет. Итак, в callback функции нам нужно сделать return accum + item. Результат - сумма элементов
+                массива выводится
+                в out-5.</p>
+            <button class="b-5">Task 05</button>
+            <div class="out-5">out-5</div>
+        </section>
+        <section>
+            <h3>Task 06</h3>
+            <p>По нажатию b-6 выполняется функция f6. Функция перебирает с помощью reduce массив и перемножает все его
+                элементы.
+                Обратите внимание на область применения reduce - везде где нужно в результате получить одно число на
+                основе массива -
+                reduce подойдет. Результат - произведение элементов массива выводится в out-6.</p>
+            <button class="b-6">Task 06</button>
+            <div class="out-6">out-6</div>
+        </section>
+        <section>
+            <h3>Task 07</h3>
+            <p>По нажатию b-7 выполняется функция f7. Функция перебирает с помощью reduce массив и суммирует все числа
+                больше нуля.
+                Результат - сумму положительных элементов массива выводится в out-7.</p>
+            <button class="b-7">Task 07</button>
+            <div class="out-7">out-7</div>
+        </section>
+        <section>
+            <h3>Task 08</h3>
+            <p>По нажатию b-8 выполняется функция f8. Функция перебирает с помощью reduce массив и суммирует все числа
+                больше нуля.
+                Результат - сумму положительных элементов массива выводится в out-8. Обратите внимание, что если вы
+                будете решать
+                предыдущим методом, что получите странный результат. Почему так? Разберитесь, а потом, после функции
+                callback reduce
+                добавьте 0.
+            </p>
+            <button class="b-8">Task 08</button>
+            <div class="out-8">out-8</div>
+        </section>
+        <section>
+            <h3>Task 09</h3>
+            <p>По нажатию b-9 выполняется функция f9. Функция перебирает с помощью reduce массив и перемножает все числа
+                больше нуля.
+                Результат - произведение положительных элементов массива выводится в out-9.</p>
+            <button class="b-9">Task 09</button>
+            <div class="out-9">out-9</div>
+        </section>
+        <section>
+            <h3>Task 10</h3>
+            <p>По нажатию b-10 выполняется функция f10. Функция должна вывести результирующий массив в out-10. В нулевом
+                элементе
+                массива лежит сумма положительных элементов массива a10, в первом - отрицательных. Решите задачу с
+                помощью одного
+                reduce.</p>
+            <button class="b-10">Task 10</button>
+            <div class="out-10">out-10</div>
+        </section>
+        <section>
+            <h3>Task 11</h3>
+            <p>По нажатию b-11 выполняется функция f11. Функция должна перебрать массив a11 и вывести в out-11 самое
+                большее число в
+                массиве.</p>
+            <button class="b-11">Task 11</button>
+            <div class="out-11">out-11</div>
+        </section>
+        <section>
+            <h3>Task 12</h3>
+            <p>По нажатию b-12 выполняется функция f12. Функция должна перебрать массив a12 и вывести в out-12 индекс
+                самого большого
+                числа в массиве. Применяем reduce.</p>
+            <button class="b-12">Task 12</button>
+            <div class="out-12">out-12</div>
+        </section>
+        <section>
+            <h3>Task 13</h3>
+            <p>По нажатию b-13 выполняется функция f13. Функция должна перебрать массив a13 и вывести в out-13 длину
+                самого большого
+                вложенного в a13 массива. Применяем reduce.</p>
+            <button class="b-13">Task 13</button>
+            <div class="out-13">out-13</div>
+        </section>
+        <section>
+            <h3>Task 14</h3>
+            <p>По нажатию b-14 выполняется функция f14. Функция должна перебрать массив a14 и вывести в out-14 самый
+                большой вложенный
+                в a14 массив. Применяем reduce.</p>
+            <button class="b-14">Task 14</button>
+            <div class="out-14">out-14</div>
+        </section>
+        <section>
+            <h3>Task 15</h3>
+            <p>По нажатию b-15 выполняется функция f15. Функция должна перебрать массив a15 измерений температуры за
+                сутки и вывести в
+                out-15 среднюю арифметическую температуру. Применяем reduce.</p>
+            <button class="b-15">Task 15</button>
+            <div class="out-15">out-15</div>
+        </section>
+        <section>
+            <h3>Task 16</h3>
+            <p>По нажатию b-16 выполняется функция f16. Функция должна выполнить переиндексацию массива a16 и получить
+                объект который
+                состоит из ключей - id и значений name. Применяем reduce. Результирующий объект вывести на страницу в
+                out-16 в формаете
+                ключ пробел значение перенос строки.</p>
+            <button class="b-16">Task 16</button>
+            <div class="out-16">out-16</div>
+        </section>
+        <section>
+            <h3>Task 17</h3>
+            <p>По нажатию b-17 выполняется функция f17. Функция должна преобразовать объект в массив, который содержит
+                только название
+                стран. Результирующий массив должен находится в a17_res. Также выведите a17_res в out-17 через пробел.
+            </p>
+            <button class="b-17">Task 17</button>
+            <div class="out-17">out-17</div>
+        </section>
+        <section>
+            <h3>Task 18</h3>
+            <p>По нажатию b-18 выполняется функция f18. Функция должна вывести в out-18 массив a18 в формате ключ пробел
+                значение
+                перенос строки. Для формирования строки для вывода используйте reduce.</p>
+            <button class="b-18">Task 18</button>
+            <div class="out-18">out-18</div>
+        </section>
+        <section>
+            <h3>Task 19</h3>
+            <p>По нажатию b-19 выполняется функция f19. Функция должна вывести в out-19 массив a19 в формате ключ пробел
+                значение
+                перенос строки. Для формирования строки для вывода используйте reduce. Чтобы из строки сделать массив -
+                split. Результата
+                вывести в out-19.
+            </p>
+            <button class="b-19">Task 19</button>
+            <div class="out-19">out-19</div>
+        </section>
+        <section>
+            <h3>Task 120</h3>
+            <p>По нажатию b-20 выполняется функция f20. Функция должна вывести в out-20 массив a20 в обратном порядке,
+                через пробел.
+                Т.е. res должен быть массивом с обратным порядком по отношению к a20.
+            </p>
+            <button class="b-20">Task 20</button>
+            <div class="out-20">out-20</div>
+        </section>
+        <div class="courses">
+            <ul>
+                <li><a href="https://itgid.info/course/javascript-2">JavaScript 2.0</a></li>
+                <li><a href="https://itgid.info/course/html">HTML для JS разработчиков</a></li>
+                <li><a href="https://itgid.info/course/object-js">Объектно Ориентированный JavaScript</a></li>
+                <li><a href="https://itgid.info/course/reactjs">ReactJS</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="unit_07.js"></script>
+</body>
+
+</html>
