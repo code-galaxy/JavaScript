@@ -1,0 +1,53 @@
+body{
+    background-color: #333333;
+    color: #6a9955;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    color: #e8e7e7;
+}
+
+a, a:hover, a:visited {
+    color: #a2c9ff;
+}
+
+section {
+    border-bottom: 1px solid #466638;
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+
+    color: #6a9955;
+    border: 1px solid #6a9955;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+    color: #5ca83a;
+    border-color: #5ca83a;
+    outline: 0;
+}
+
+div.out-1,
+div.out-2,
+div.out-3,
+div.out-4,
+div.out-5,
+div.out-6,
+div.out-7,
+div.out-8,
+div.out-9,
+div.out-10,
+div.out-11,
+div.out-12,
+div.out-13,
+div.out-14,
+div.out-15,
+div.out-16,
+div.out-17,
+div.out-18,
+div.out-19,
+div.out-20,
+div.out-21 {
+    color: #9cdcfe;
+    font-family: monospace;
+}
