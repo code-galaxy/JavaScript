@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+
+.slide div {
+    padding : 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    user-select:none;
+}
