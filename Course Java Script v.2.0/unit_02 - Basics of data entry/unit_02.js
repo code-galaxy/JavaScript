@@ -50,7 +50,6 @@ let e4 = 3;
 let f4 = 'Hello';
 document.querySelector('.out-7').innerHTML = e4 * f4;
 
-
 // document.querySelector('.out-7').textContent = e4 * f4;
 
 // Task 8.
@@ -73,7 +72,6 @@ function t9() {
     document.querySelector('.out-9').innerHTML = data; // тут выводим
     document.querySelector('.i-9').value = ''; // очищаємо вміст строки input
 }
-
 document.querySelector('.b-9').onclick = t9;
 
 // Task 10.
@@ -83,7 +81,6 @@ function t10() {
     let data = document.querySelector('.i-10').value;
     document.querySelector('.out-10').innerHTML = data * 20;
 }
-
 document.querySelector('.b-10').onclick = t10;
 
 // Task 11.
@@ -93,7 +90,6 @@ function t11() {
     let data = document.querySelector('.i-11').value;
     document.querySelector('.out-11').innerHTML = data + 55;
 }
-
 document.querySelector('.b-11').onclick = t11;
 
 // Task 12.
@@ -104,7 +100,6 @@ function t12() {
     let dataLastName = document.querySelector('.i-12-2').value;
     document.querySelector('.out-12').innerHTML = 'Hello ' + dataName + ' ' + dataLastName;
 }
-
 document.querySelector('.b-12').onclick = t12;
 
 // Task 13.
@@ -114,9 +109,7 @@ function t13() {
     let a = +document.querySelector('.i-13-1').value; // + перевід у число;
     let b = +document.querySelector('.i-13-2').value; // + перевід у число;
     document.querySelector('.out-13').innerHTML = a + b; // (+a) + (+b) - 2-й варіант;
-
 }
-
 document.querySelector('.b-13').onclick = t13;
 
 // Task 14.
@@ -126,7 +119,6 @@ function t14() {
     document.querySelector('.i-14').value = ''; // Чи потрібно з початку робити очищення строки ???;
     document.querySelector('.i-14').value = 'Go';
 }
-
 document.querySelector('.b-14').onclick = t14;
 
 // Task 15.
@@ -135,7 +127,6 @@ document.querySelector('.b-14').onclick = t14;
 function t15() {
     document.querySelector('.i-15').style.border = "4px solid red";
 }
-
 document.querySelector('.b-15').onclick = t15;
 
 // Task 16.
@@ -146,7 +137,6 @@ function t16() {
     let b = document.querySelector('.i-16-2').value;
     document.querySelector('.out-16').innerHTML = a + b;
 }
-
 document.querySelector('.b-16').onclick = t16;
 
 // Task 17.
@@ -158,7 +148,6 @@ function t17() {
     document.querySelector('.out-17-2').innerHTML = parseInt(a, 10);
     document.querySelector('.out-17-3').innerHTML = Number(a);
 }
-
 document.querySelector('.b-17').onclick = t17;
 
 // Task 18.
@@ -168,7 +157,6 @@ function t18() {
     let a = document.querySelector('.i-18').value;
     document.querySelector('.out-18').innerHTML = parseFloat(a);
 }
-
 document.querySelector('.b-18').onclick = t18;
 
 // Task 19.
@@ -179,7 +167,6 @@ function t19() {
     let b = document.querySelector('.i-19-2').value;
     document.querySelector('.out-19').innerHTML = Number(a) + Number(b);
 }
-
 document.querySelector('.b-19').onclick = t19;
 
 // Task 20
@@ -191,5 +178,4 @@ function t20() {
     count = count + 1; // можно сократить count++
     document.querySelector('.out-20').innerHTML = count; // тут допишите вывод в out-20
 }
-
 document.querySelector('.b-20').onclick = t20;
