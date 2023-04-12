@@ -182,6 +182,7 @@ document.querySelector('.b-9').onclick = f9;
 
 // Task 10
 // Дан select .s-100. По нажатию кнопки, выведите value выбранного option в .out-10.
+
 let s10 = document.querySelector('.s-100');
 
 function f10() {
@@ -191,6 +192,7 @@ document.querySelector('.b-10').onclick = f10;
 
 // Task 11
 // Дан select .s-110. По изменению состояния select (событие onchange) выведите value выбранного option в .out-11.
+
 let s110 = document.querySelector('.s-110');
 
 function f11() {
@@ -212,6 +214,7 @@ document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 // Дан input i-130. В отличие от предыдущего задания - input type number. По нажатию кнопки получите значение из input  в переменную, а затем выведите в out-13 typeof полученной переменной. Typeof позволяет определить тип данных. Если вы правильно все сделали - то удивительно, но тип данных будет string! Подумайте почему так?
+
 let i130 = document.querySelector('.i-130');
 
 function f13() {
@@ -254,6 +257,7 @@ document.querySelector('.b-14').onclick = f14;
 
 // Task     15
 // Дан select .s-151 и .s-152, каждый из которых содержит 1 и 0.  Дан select .s-153, который содержит две операции - && и || . Дана кнопка .b-15, при нажатии на которую срабатывает функция f15. Функция выводит в .out-15 результат логических операций выбранных в 3 select к числам выбранным в первом и втором select. Например выбрано 1 1 &&, нужно вывести результат операции 1&&1 т.е. 1 или 0.
+
 let s151 = document.querySelector('.s-151');
 let s152 = document.querySelector('.s-152');
 let s153 = document.querySelector('.s-153');
