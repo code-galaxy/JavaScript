@@ -158,6 +158,7 @@ document.querySelector('.b-8').onclick = f8;
 //  если от 33 (включительно) до 43(включительно) - то вывести 2
 //  если от 44(включительно) до 64 (всключительно) - то 3.
 //  В противном случае, вывести 0.
+
 let i9 = document.querySelector('.i-9');
 
 function f9() {
@@ -216,7 +217,6 @@ let i130 = document.querySelector('.i-130');
 function f13() {
    let a = i130.value;
    document.querySelector('.out-13').innerHTML = (typeof a);
-
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -224,6 +224,7 @@ document.querySelector('.b-13').onclick = f13;
 
 // Task 14
 // Дан input .i-141 и .i-142, type=number.  Дан select .s-143, который содержит две операции - +, -, *, / . Дана кнопка b-14, при нажатии на которую срабатывает функция f14. Функция выводит в .out-14 результат операций выбранной в 3-м select к числам введенным в первом и втором input. Например выбрано 1 13 +, нужно вывести результат операции 1+13 т.е.  14.
+
 let i141 = document.querySelector('.i-141');
 let i142 = document.querySelector('.i-142');
 let s143 = document.querySelector('.s-143');
