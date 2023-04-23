@@ -105,7 +105,6 @@ document.querySelector('.b-5').onclick = t5;
 // 10x01x
 // 10x01x
 
-
 function t6() {
    let out = '';
    for (let i = 0; i < 3; i++) {
@@ -116,7 +115,6 @@ function t6() {
    }
    document.querySelector('.out-6').innerHTML = out;
 }
-
 document.querySelector('.b-6').onclick = t6;
 
 
