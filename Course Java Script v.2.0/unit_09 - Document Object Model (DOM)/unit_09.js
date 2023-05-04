@@ -48,19 +48,17 @@ function f5() {
         out5.innerHTML = false;
     }
 }
-
 document.querySelector('.b-5').onclick = f5;
-
 
 //  Task 6
 // По нажатию .b-6 запускайте функцию f6, которая выводит в .out-6 количество параграфов с классом .p-6.
 let out6 = document.querySelector('.out-6');
 let p = document.querySelectorAll('.p-6');
+
 function f6() {
     out6.innerHTML = p.length;
 }
 document.querySelector('.b-6').onclick = f6;
-
 
 //  Task 7
 // По нажатию кнопки .b-7 запускайте функцию f7, которая присваивает блокам .out-7 класс .bg-orange. Обратите внимание, что данных блоков больше одного, следовательно нужен цикл.
