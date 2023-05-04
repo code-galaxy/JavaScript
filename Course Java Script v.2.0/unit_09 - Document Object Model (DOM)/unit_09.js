@@ -6,42 +6,40 @@ function f1() {
     out1.style.width = '200px';
     out1.style.height = '90px';
 }
-
 document.querySelector('.b-1').onclick = f1;
 
 //  Task 2
 // По нажатию на кнопку .b-2 функция f2, которая присваивает блоку .out-2 класс .bg-orange.
 let out2 = document.querySelector('.out-2');
+
 function f2() {
     out2.classList.add('bg-orange');
 }
-
 document.querySelector('.b-2').onclick = f2;
 
 
 //  Task 3
 // По нажатию кнопки .b-3 запускайте функцию f3, которая удаляет у блока .out-3 класс .bg-orange.
 let out3 = document.querySelector('.out-3');
+
 function f3() {
     out3.classList.remove('bg-orange');
 }
-
 document.querySelector('.b-3').onclick = f3;
 
 //  Task 4
 // По нажатию кнопки .b-4 запускайте функцию f4, которая делает toggle класса .bg-orange для блока out-4.
-
 let out4 = document.querySelector('.out-4');
+
 function f4() {
     out4.classList.toggle('bg-orange');
 }
-
 document.querySelector('.b-4').onclick = f4;
-
 
 //  Task 5
 // По нажатию .b-5 запускайте функцию f5, которая проверяет наличие класса .bg-orange у блока .out-4 (да, именно у out-4 ). Результат - true или false, выводите в .out-5.
 let out5 = document.querySelector('.out-5');
+
 function f5() {
     let a = out4.classList.contains('bg-orange');
     if (a == true) {
