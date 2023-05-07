@@ -253,9 +253,9 @@ document.querySelector('.b-13').onclick = f13;
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-14
 // Вывод в out-14
+
 let out14 = document.querySelector('.out-14');
 let ar14 = [1, 2, 3, 'hello', 66];
-
 function f14() {
     let out = '';
     for (let i = ar14.length - 1; i >= 0; i--) {
@@ -263,17 +263,17 @@ function f14() {
     }
     out14.innerHTML = out;
 }
-
 document.querySelector('.b-14').onclick = f14;
+
 
 // Task 15
 // Используя цикл выведите на страницу элементы массива ar15, которые больше нуля. Разделитель - пробел.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-15
 // Вывод в out-15
+
 let out15 = document.querySelector('.out-15');
 let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-
 function f15() {
     let out = '';
     for (let i = 0; i < ar15.length; i++) {
@@ -282,16 +282,17 @@ function f15() {
         }
     }
     out15.innerHTML = out;
-
 }
-
 document.querySelector('.b-15').onclick = f15;
 
+
 // Task 16
-// Выполните перебор массива arr16. Четные элементы добавьте в массив ar16_even, нечетные в ar16_odd. Добавление в массив - по индексу, а не +=!!!!!. Протестируйте задачу на повторный запуск! Выведите ar16_odd в div.out-16-odd, а ar16_even в div.out-16-even. Разделитель - пробел.
+// Выполните перебор массива arr16. Четные элементы добавьте в массив ar16_even, нечетные в ar16_odd. Добавление в массив - по индексу, а не +=!!!!!. 
+Протестируйте задачу на повторный запуск! Выведите ar16_odd в div.out-16-odd, а ar16_even в div.out-16-even. Разделитель - пробел.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-16
 // Вывод в out-16
+
 let out16Odd = document.querySelector('.out-16-odd');
 let out16Even = document.querySelector('.out-16-even');
 
@@ -319,17 +320,17 @@ function f16() {
     out16Odd.innerHTML = outOdd;
     out16Even.innerHTML = outEven;
 }
-
 document.querySelector('.b-16').onclick = f16;
+
 
 // Task 17
 // Используя цикл выведите в .out-17 количество элементов ar17, значение которых больше 3. Для расчета используйте цикл и переменную счетчик.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-17
 // Вывод в out-17
+
 let out17 = document.querySelector('.out-17');
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
-
 function f17() {
     let out = '';
     for (let i = 0; i < ar17.length; i++) {
@@ -339,7 +340,6 @@ function f17() {
     }
     out17.innerHTML = out.length;
 }
-
 document.querySelector('.b-17').onclick = f17;
 
 
@@ -348,9 +348,9 @@ document.querySelector('.b-17').onclick = f17;
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-18
 // Вывод в out-18
+
 let out18 = document.querySelector('.out-18');
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
-
 function f18() {
     let max = ar18[0];
     for (let i = 0; i < ar18.length; i++) {
@@ -360,7 +360,6 @@ function f18() {
     }
     out18.innerHTML = max;
 }
-
 document.querySelector('.b-18').onclick = f18;
 
 
@@ -369,9 +368,9 @@ document.querySelector('.b-18').onclick = f18;
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-19
 // Вывод в out-19
+
 let out19 = document.querySelector('.out-19');
 let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
-
 function f19() {
 let min = ar19[0];
 for (let i = 0; i < ar19.length; i++){
@@ -381,8 +380,8 @@ for (let i = 0; i < ar19.length; i++){
 }
 out19.innerHTML = ar19.indexOf(min);
 }
-
 document.querySelector('.b-19').onclick = f19;
+
 
 // Task 20
 // Выведите в .out-20 сумму элементов в массиве ar20
@@ -392,7 +391,6 @@ document.querySelector('.b-19').onclick = f19;
 
 let out20 = document.querySelector('.out-20');
 let ar20 = [4, 5, 6, 7, 8, 9, 10];
-
 function f20() {
 let summ = 0;
 for (let i = 0; i < ar20.length; i++){
@@ -400,5 +398,7 @@ for (let i = 0; i < ar20.length; i++){
 }
 out20.innerHTML = summ; 
 }
-
 document.querySelector('.b-20').onclick = f20;
+
+
+//  Good job !!  It is awesome!!
