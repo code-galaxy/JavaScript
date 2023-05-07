@@ -143,24 +143,24 @@ document.querySelector('.b-7').onclick = f7;
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-8
 // Вывод в out-8
+
 let out8 = document.querySelector('.out-8');
 let out81 = document.querySelector('.out-8-1');
 let ar8 = [];
-
 function f8() {
-    let out = '';
     ar8[3] = 3.14;
     ar8[4] = 17;
     ar8[6] = 5;
-    console.log(ar8);
+
+    let out = '';
     for (let i = 0; i < ar8.length; i++) {
         out += ar8[i] + '-';
     }
     out8.innerHTML = out;
     out81.innerHTML = ar8.length;
 }
-
 document.querySelector('.b-8').onclick = f8;
+
 
 // Task 9
 // Выведите последний элемент массива ar9. Вывод последнего элемента  - реализуйте по индексу. Чтобы рассчитать индекс последнего элемента - используйте на длину массива.
