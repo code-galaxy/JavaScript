@@ -1,14 +1,11 @@
 // Task 1
 //Создайте массив ar1 содержащий строки, числа, булевы значения. Выведите его в .out-1. Вывод - по нажатию кнопки b-1
-
 // let ar1 = // переменную обьявляем здесь!!!!
+
 let out1 = document.querySelector('.out-1');
 let ar1 = ['hello', 'JavaScript', 'boolean', 5, 77, '55', true, false, '8element'];
-
 function f1() {
-    //ваш_элемент.innerHTML = ar1; // да так можно выводить!!!!
     out1.innerHTML = ar1;
-
 }
 document.querySelector('.b-1').onclick = f1;
 
@@ -33,12 +30,10 @@ document.querySelector('.b-2').onclick = f2;
 // Вывод - по нажатию кнопки b-3
 // Вывод в out-3
 // Тест допустим массив [1,2,3] вывод - 3
-
 //let ar3 =  переменную обьявляем здесь!!!!
 
 let out3 = document.querySelector('.out-3');
 let ar3 = ['hello', 'javaScript', 'boolean', 5, 77, '55', true, false, '8element'];
-
 function f3() {
     out3.innerHTML = ar3.length;
 }
