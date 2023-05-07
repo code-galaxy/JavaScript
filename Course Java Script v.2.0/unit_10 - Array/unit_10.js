@@ -203,9 +203,7 @@ function f11() {
         out += ar11[i] + ' ';
     }
     out11.innerHTML = out;
-
 }
-
 document.querySelector('.b-11').onclick = f11;
 
 
@@ -214,9 +212,9 @@ document.querySelector('.b-11').onclick = f11;
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-12
 // Вывод в out-12
+
 let out12 = document.querySelector('.out-12');
 let ar12 = ['test', 'west', 'list', 'class', 'best'];
-
 function f12() {
     let tempElementAr12 = ar12[0];
     ar12[0] = ar12[ar12.length - 1];
