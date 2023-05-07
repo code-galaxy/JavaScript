@@ -74,7 +74,7 @@ function f4() {
 // or a short version
 // 
 // function f4() {
-//     document.querySelector('.out-4').innerHTML = `${ar4[0]},${ar4[3]},${ar4[8]}`;
+//     document.querySelector('.out-4').innerHTML = `${ar4[0]} ${ar4[3]} ${ar4[8]}`;
 // }
 document.querySelector('.b-4').onclick = f4;
 
