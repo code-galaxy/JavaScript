@@ -167,15 +167,14 @@ document.querySelector('.b-8').onclick = f8;
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-9
 // Вывод в out-9
+
 let out9 = document.querySelector('.out-9');
 let ar9 = [100, 200, 300, 400, 700, 121];
-
 function f9() {
-    let out = ar9[ar9.length - 1];
-    out9.innerHTML = out;
+    out9.innerHTML = ar9[ar9.length - 1];
 }
-
 document.querySelector('.b-9').onclick = f9;
+
 
 // Task 10
 // Выведите сумму первого (индекс 1) и последнего массива ar10 в блок out-10. Индекс последнего элемента массива не указывайте напрямую, а вычисляйте через длину массива.
