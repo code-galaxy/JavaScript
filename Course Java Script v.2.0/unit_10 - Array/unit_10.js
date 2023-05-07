@@ -45,8 +45,8 @@ let ar3 = ['hello', 'javaScript', 'boolean', 5, 77, '55', true, false, '8element
 function f3() {
     out3.innerHTML = ar3.length;
 }
-
 document.querySelector('.b-3').onclick = f3;
+
 
 // Task 4
 //Создайте массив ar4. Выведите нулевой, третий, восьмой элемент массива в out-4 через пробел.
@@ -54,8 +54,6 @@ document.querySelector('.b-3').onclick = f3;
 // Вывод - по нажатию кнопки b-4
 // Вывод в out-4
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 1 4 9
-
-// let ar4 =  // переменную обьявляем эту здесь!!!!
 
 let out4 = document.querySelector('.out-4');
 let ar4 = ['hello', 'JavaScript', 'boolean', 5, 77, '55', true, false, '8element'];
@@ -76,7 +74,13 @@ function f4() {
     out4.innerHTML = out;
 }
 
+// or a short version
+// 
+// function f4() {
+//     document.querySelector('.out-4').innerHTML = `${ar4[0]},${ar4[3]},${ar4[8]}`;
+// }
 document.querySelector('.b-4').onclick = f4;
+
 
 // Task 5
 //Создайте массив ar5 длина которого больше 5. Выведите сумму нулевого, второго и третьего элементов массива (нуль, второй - и третий это индексы 0, 2, 3)
