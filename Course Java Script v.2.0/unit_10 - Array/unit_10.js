@@ -226,7 +226,6 @@ function f12() {
     }
     out12.innerHTML = out;
 }
-
 document.querySelector('.b-12').onclick = f12;
 
 // Task 13
@@ -239,7 +238,6 @@ document.querySelector('.b-12').onclick = f12;
 
 let out13 = document.querySelector('.out-13');
 let ar13 = ['test', 'west', 'list', 'class', 'best'];
-
 function f13() {
     let out = '';
     for (let i = 0; i < ar13.length; i++) {
@@ -247,7 +245,6 @@ function f13() {
     }
     out13.innerHTML = out;
 }
-
 document.querySelector('.b-13').onclick = f13;
 
 
