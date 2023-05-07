@@ -110,17 +110,17 @@ function f6() {
     }
     out6.innerHTML = out;
 }
-
 document.querySelector('.b-6').onclick = f6;
+
 
 // Task 7
 // Добавьте в массив ar7  значения 'vietnam' с индексом 7 , 'turkey' с индексом 6, 'italy' с индексом 5. Добавление элементов сделайте в f7. Выведите массив на страницу в .out-7. Разделитель - пробел. Обращаю ваше внимание! Это программирование. Поэтому - никаких больших букв и тому подобного!!!!
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-7
 // Вывод в out-7
+
 let out7 = document.querySelector('.out-7');
 let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
-
 function f7() {
     let ar7NewLength = '';
     let addArray = ['italy', 'turkey', 'vietnam'];
@@ -134,8 +134,8 @@ function f7() {
     }
     out7.innerHTML = ar7NewLength;
 }
-
 document.querySelector('.b-7').onclick = f7;
+
 
 // Task 8
 // Добавьте в массив ar8 третий (индекс 3) элемент равный 3.14, 4 (индекс 4) элемент равный 17, 6 элемент (индекс 6) равный 5. Выведите массив в .out-8. Разделитель - дефис. В .out-8-1 выведите длину массива ar8.
