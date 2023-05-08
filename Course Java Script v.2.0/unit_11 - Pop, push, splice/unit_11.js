@@ -14,7 +14,8 @@ function showArr(domElem, arr) {
 let d1 = [33, 'best', 66, 'best'];
 let i1 = document.querySelector('.i-1');
 function f1() {
-    d1.push(i1.value);
+    d1[d1.length] = i1.value
+    //d1.push(i1.value);
     showArr('.out-1', d1);
 }
 document.querySelector('.b-1').onclick = f1;
