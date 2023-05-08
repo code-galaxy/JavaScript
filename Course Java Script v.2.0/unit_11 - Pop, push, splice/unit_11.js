@@ -260,7 +260,6 @@ document.querySelector('.b-14').onclick = f14;
 
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 let i15 = document.querySelector('.i-15');
-
 function f15() {
     let a = +i15.value;
     let out = d15.indexOf(a);
@@ -288,8 +287,8 @@ function f16() {
 
     showArr('.out-16', d16);
 }
-
 document.querySelector('.b-16').onclick = f16;
+
 
 // Task 17
 // Напишите функцию f17, которая эмулирует работу метода concat. Функция должна объедиять массивы d171 и d172 и записывать результат в d17. Для эмуляции используйт цикл.
@@ -300,7 +299,6 @@ document.querySelector('.b-16').onclick = f16;
 let d17 = [];
 let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
-
 function f17() {
     for (let i = 0; i < d172.length; i++) {
         d171.push(d172[i]);
@@ -308,7 +306,6 @@ function f17() {
     d17 = d171;
     showArr('.out-17', d17);
 }
-
 document.querySelector('.b-17').onclick = f17;
 
 
@@ -326,9 +323,7 @@ let out18 = document.querySelector('.out-18');
 function f18() {
     let a = i18.value;
     out18.innerHTML = d18.includes(a);
-
 }
-
 document.querySelector('.b-18').onclick = f18;
 
 
@@ -364,5 +359,4 @@ let out20 = document.querySelector('.out-20');
 function f20() {
     out20.innerHTML = d20.join('');
 }
-
 document.querySelector('.b-20').onclick = f20;
