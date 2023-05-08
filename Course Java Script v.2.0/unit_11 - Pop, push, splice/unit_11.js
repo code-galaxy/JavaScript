@@ -300,10 +300,10 @@ let d17 = [];
 let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 function f17() {
+    d17 = d171;
     for (let i = 0; i < d172.length; i++) {
         d171.push(d172[i]);
     }
-    d17 = d171;
     showArr('.out-17', d17);
 }
 document.querySelector('.b-17').onclick = f17;
