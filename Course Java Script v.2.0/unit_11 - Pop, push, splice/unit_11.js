@@ -53,8 +53,8 @@ function f4() {
     d1.push(a);
     showArr('.out-4', d1);
 }
-
 document.querySelector('.b-4').onclick = f4;
+
 
 // Task 5
 // Напишите функцию f5, которая применяет метод unshift к массиву d1, данные для массива берите из i-5, а затем выводит его (showArr) в .out-5
@@ -66,7 +66,6 @@ function f5() {
     d1.unshift(a);
     showArr('.out-5', d1);
 }
-
 document.querySelector('.b-5').onclick = f5;
 
 // Task 6
@@ -77,13 +76,11 @@ document.querySelector('.b-5').onclick = f5;
 
 let d6 = ['test', 5, 12];
 let i6 = document.querySelector('.i-6');
-
 function f6() {
     let a = i6.value;
     d6[(d6.length - 1) + 1] = a;
     showArr('.out-6', d6);
 }
-
 document.querySelector('.b-6').onclick = f6;
 
 // Task 7
@@ -93,13 +90,12 @@ document.querySelector('.b-6').onclick = f6;
 // Вывод в out-7
 
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
-
 function f7() {
     d7.splice([d7.length - 1], 1);
     showArr('.out-7', d7);
 }
-
 document.querySelector('.b-7').onclick = f7;
+
 
 // Task 8
 // Напишите функцию f8, которая эмулирует работу метода unshift - добавляем значение из i-8 в начало массива d8.
