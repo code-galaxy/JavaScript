@@ -141,7 +141,8 @@ function f9() {
     }
     d9 = out;
     
-    //d9.splice(0, 1);  other approach 
+    // other approach 
+    //d9.splice(0, 1); 
     showArr('.out-9', d9);
 }
 document.querySelector('.b-9').onclick = f9;
@@ -214,11 +215,19 @@ document.querySelector('.b-12').onclick = f12;
 
 let d13 = [6, 0, 22, 1, 4, 76];
 function f13() {
-    let out13 = [];
+    let out = [];
     for (let i = 0; i < d13.length; i++) {
-        out13.unshift(d13[i]);
+        out.unshift(d13[i]);
     }
-    showArr('.out-13', out13);
+    d13=out;
+    
+// other approach
+// for (let i = d13.length - 1; i >= 0; i--) {
+//     out.push(d13[i]);
+// }
+// d13 = out;
+   
+    showArr('.out-13', d13);
 }
 document.querySelector('.b-13').onclick = f13;
 
@@ -231,7 +240,6 @@ document.querySelector('.b-13').onclick = f13;
 
 let d14 = [];
 let i14 = document.querySelector('.i-14');
-
 function f14() {
     let a = i14.value;
     d14.length = a;
@@ -239,10 +247,8 @@ function f14() {
     for (let i = 0; i < d14.length; i++) {
         d14[i] = 1;
     }
-
     showArr('.out-14', d14);
 }
-
 document.querySelector('.b-14').onclick = f14;
 
 // Task 15
