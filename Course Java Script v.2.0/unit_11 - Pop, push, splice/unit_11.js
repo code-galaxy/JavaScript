@@ -128,7 +128,13 @@ document.querySelector('.b-8').onclick = f8;
 
 let d9 = [100, 200, 300, 400, 700, 121];
 function f9() {
-    d9.splice(0, 1);
+    let out = [];
+    for (let i = 1; i < d9.length; i++) {  // WARNING i=1;
+        out[out.length] = d9[i];
+    }
+    d9 = out;
+    
+    //d9.splice(0, 1);  other approach 
     showArr('.out-9', d9);
 }
 document.querySelector('.b-9').onclick = f9;
