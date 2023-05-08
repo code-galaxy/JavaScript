@@ -147,12 +147,10 @@ document.querySelector('.b-9').onclick = f9;
 // Вывод в out-10
 
 let d10 = [3, 14, 15, 92, 6];
-
 function f10() {
     d10.reverse();
     showArr('.out-10', d10);
 }
-
 document.querySelector('.b-10').onclick = f10;
 
 
@@ -165,12 +163,10 @@ document.querySelector('.b-10').onclick = f10;
 let d11 = [2, 3, 4, 5, 6, 7];
 const i11 = document.querySelector('.i-11');
 const out11 = document.querySelector('.out-11');
-
 function f11() {
     let a = +i11.value;
     out11.innerHTML = d11.indexOf(a);
 }
-
 document.querySelector('.b-11').onclick = f11;
 
 
