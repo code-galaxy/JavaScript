@@ -92,6 +92,7 @@ document.querySelector('.b-6').onclick = f6;
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 function f7() {
     d7.splice([d7.length - 1], 1);
+// d7.length = d7.length-1;
     showArr('.out-7', d7);
 }
 document.querySelector('.b-7').onclick = f7;
@@ -114,11 +115,10 @@ function f8() {
         out[out.length] = d8[i];
     }
     d8 = out;
-
     showArr('.out-8', d8);
 }
-
 document.querySelector('.b-8').onclick = f8;
+
 
 // Task 9
 // Напишите функцию f8, которая эмулирует работу метода shift - на примере массива d9.
@@ -127,13 +127,12 @@ document.querySelector('.b-8').onclick = f8;
 // Вывод в out-9
 
 let d9 = [100, 200, 300, 400, 700, 121];
-
 function f9() {
     d9.splice(0, 1);
     showArr('.out-9', d9);
 }
-
 document.querySelector('.b-9').onclick = f9;
+
 
 // Task 10
 // Напишите функцию f10, которая применяет к массиву d10 метод reverse и выводит полученный массив в out-10.
