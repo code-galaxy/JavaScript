@@ -275,10 +275,19 @@ function f14() {
         out += a14[i].length + ' ';
     }
     out14.innerHTML = out;
-
 }
 
+// otherwise solution
+// function f14() {
+//     let temp = [];
+//     for (let i = 0; i < a14.length; i++) {
+//         temp.push(a14[i].length)
+//     }
+//     document.querySelector('.out-14').innerHTML = temp.join(' ');
+// }
+
 document.querySelector('.b-14').onclick = f14;
+
 
 // Task 15
 // При нажатии b-15 выполняете функцию f15. Функция должна вывести в out-15 длину самого большого вложенного массива в a15.
@@ -300,8 +309,8 @@ function f15() {
     }
     out15.innerHTML = maxLength;
 }
-
 document.querySelector('.b-15').onclick = f15;
+
 
 // Task 16
 // Впишите в переменную a16 массив, который соответствует всем условиям приведенным ниже ( все console.log должны дать true;
