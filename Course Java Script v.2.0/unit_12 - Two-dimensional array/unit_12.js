@@ -53,10 +53,8 @@ function f5() {
         if (a5[i][0] % 2 == 0) out += a5[i][0] + ' ';
         if (a5[i][1] % 2 == 0) out += a5[i][1] + ' ';
     }
-
     document.querySelector('.out-5').innerHTML = out;
 }
-
 document.querySelector('.b-5').onclick = f5;
 
 
@@ -72,8 +70,8 @@ function f6() {
     }
     document.querySelector('.out-6').innerHTML = out;
 }
-
 document.querySelector('.b-6').onclick = f6;
+
 
 // Task 7
 // При нажатии b-7 выполняете функцию f7. Функция должна вывести в out-7 четные значения из массива a7. Как видите, вложенные массивы имеют разную длину, значит, предыдущий вариант уже не работает. Используем цикл. Вывод - через пробел.
@@ -93,10 +91,9 @@ function f7() {
         }
     }
     document.querySelector('.out-7').innerHTML = out;
-
 }
-
 document.querySelector('.b-7').onclick = f7;
+
 
 // Task 8
 // При нажатии b-8 выполняете функцию f8. Функция должна вывести в out-8 нечетные значения из массива a8. Как видите, вложенные массивы имеют разную длину, значит, предыдущий вариант уже не работает. Используем цикл. Вывод - через пробел.
@@ -118,7 +115,6 @@ function f8() {
     }
     document.querySelector('.out-8').innerHTML = out;
 }
-
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
@@ -141,8 +137,8 @@ function f9() {
     }
     document.querySelector('.out-9').innerHTML = out;
 }
-
 document.querySelector('.b-9').onclick = f9;
+
 
 // Task 10
 // При нажатии b-10 выполняете функцию f10. Функция должна вывести в out-10 значения из массива a10, которые являются строкой. Используем цикл. Вывод - через пробел.
@@ -164,7 +160,6 @@ function f10() {
     }
     document.querySelector('.out-10').innerHTML = out;
 }
-
 document.querySelector('.b-10').onclick = f10;
 
 
@@ -186,8 +181,8 @@ function f11() {
     }
     document.querySelector('.out-11').innerHTML = out;
 }
-
 document.querySelector('.b-11').onclick = f11;
+
 
 // Task 12
 // Дан массив a12 который моделирует шахматную доску. Используя цикл выведите в out-12 единицы из этого массива. Все действия в функции f12. Функция запускается при нажатии на b12. Вывод через пробел.
@@ -211,8 +206,8 @@ function f12() {
     }
     document.querySelector('.out-12').innerHTML = out;
 }
-
 document.querySelector('.b-12').onclick = f12;
+
 
 // Task 13
 // При нажатии b-13 выполняете функцию f13. Функция должна присвоить переменной a13 массив эмулирующий шахматную доску. 
@@ -222,33 +217,33 @@ let a13 = [];
 
 function f13() {
     for (let i = 0; i < 8; i++) {
+
         let temp = [];
+
         if (i % 2 == 0) {
-            for (k = 0; k < 8; k++) {
+            for (let k = 0; k < 8; k++) {
                 if (k % 2 == 0) {
                     temp.push(0);
                 }
                 else {
-                    temp.push(1)
+                    temp.push(1);
                 }
             }
-            a13.push(temp);
         }
         else {
-            for (k = 0; k < 8; k++) {
+            for (let k = 0; k < 8; k++) {
                 if (k % 2 == 0) {
                     temp.push(1);
                 }
                 else {
-                    temp.push(0)
+                    temp.push(0);
                 }
             }
-            a13.push(temp);
         }
+        a13.push(temp);
     }
     console.log(a13);
 }
-
 document.querySelector('.b-13').onclick = f13;
 
 // Task 14
