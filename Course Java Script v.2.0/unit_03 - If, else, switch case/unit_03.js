@@ -79,6 +79,7 @@ function f4() {
 }
 document.querySelector('.b-4').onclick = f4;
 
+
 // Task 5. 
 // На странице есть input c классом i-5, куда пользователь может ввести число. 
 // Есть кнопка b-5 которая запускает функцию f5. 
@@ -123,6 +124,7 @@ function f6() {
 }
 document.querySelector('.b-6').onclick = f6;
 
+
 // Task 7.
 // Даны 2 input - .i-71 и .i-72, оба - input[type=number]. При нажатии кнопки .b-7 срабатывает функция f7. 
 // Функция должна число из .i-71 возвести в степень .i-72, вывести результат в  .out-7. 
@@ -139,6 +141,7 @@ function f7() {
    out.innerHTML = result;
 }
 document.querySelector('.b-7').onclick = f7;
+
 
 // Task 8.
 // Дан select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При ее  нажатии срабатывает функция f8. 
@@ -299,6 +302,3 @@ function f15() {
    }
 }
 document.querySelector('.b-15').onclick = f15;
-
-
-
