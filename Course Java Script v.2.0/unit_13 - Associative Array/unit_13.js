@@ -74,10 +74,10 @@ function f4() {
     }
     return out;
 }
-
 document.querySelector('.b-4').onclick = () => {
     document.querySelector('.out-4').innerHTML = f4();
 }
+
 
 // Task 5
 // Функция f4 жестко привязана к массиву a4. Это не удобно. 
@@ -90,14 +90,7 @@ function f5(arr, block) {
         out += `${key} : ${arr[key]} <br>`;
     }
     document.querySelector(block).innerHTML = out;
-
-    // формат вывода `${key} : ${arr[key]} <br>`;
-    //
-    // тут вывод в блок block
 }
-
-// давайте протестируем f5
-
 document.querySelector('.b-5').onclick = () => {
     let a5 = {
         "one": 1,
@@ -116,9 +109,6 @@ let a6 = {
     "b": 17,
     "e": 22
 };
-//a6.i61.value = 
-
-
 function f6() {
     let i61 = document.querySelector('.i-61').value;
     let i62 = document.querySelector('.i-62').value;
@@ -131,8 +121,8 @@ function f6() {
     }
     document.querySelector('.out-6').innerHTML = out;
 }
-
 document.querySelector('.b-6').onclick = f6;
+
 
 // Task 7
 // Добавьте input .i-7. При нажатии b-7 выполняете функцию f7. Функция должна получать из i-7 ключ. 
