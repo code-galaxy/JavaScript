@@ -283,8 +283,8 @@ function f13() {
     }
     document.querySelector('.out-13').innerHTML = sum;
 }
-
 document.querySelector('.b-13').onclick = f13;
+
 
 // Task 14
 // При нажатии b-14 выполняете функцию f14. Функция должна в out-14 выводить нулевые (по индексу)  элементы вложенных массивов в a14. Вывод через пробел.
