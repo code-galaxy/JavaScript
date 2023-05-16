@@ -46,8 +46,7 @@ function f3() {
         "odd": "hi",
         "mix": "mix"
     };
-    let out = a3.five + ' ' + a3.odd;
-    return out;
+   return `${a3.five} ${a3.odd}`;
 }
 document.querySelector('.b-3').onclick = () => {
     document.querySelector('.out-3').innerHTML = f3();
