@@ -104,7 +104,6 @@ document.querySelector('.b-5').onclick = () => {
 // Добавьте input .i-61 и i-62. При нажатии b-6 выполняете функцию f6. 
 // Функция должна получать из i-61 ключ, а из i-62 значение и добавлять его в массив a6. После этого, с помощью функции f5 выводите массив a6 в out-6.
 
-
 let a6 = {
     "b": 17,
     "e": 22
@@ -117,7 +116,7 @@ function f6() {
     let out = '';
     for (let key in a6) {
         //out += key + ' : '+ a6[key] +'<br>';
-        out += ` ${key} : ${a6[key]} <br>`;
+        out += `${key} : ${a6[key]} <br>`;
     }
     document.querySelector('.out-6').innerHTML = out;
 }
@@ -132,8 +131,6 @@ let a7 = {
     "b": 17,
     "e": 22
 };
-
-
 function f7() {
     let out = 0;
     let i7 = document.querySelector('.i-7').value;
@@ -145,8 +142,8 @@ function f7() {
     }
     document.querySelector('.out-7').innerHTML = out;
 }
-
 document.querySelector('.b-7').onclick = f7;
+
 
 // Task 8
 // Добавьте input .i-8. При нажатии b-8 выполняете функцию f8. Функция должна выводить значение в out-8, если ключ введенный в i-8 есть в массиве, если нет - 0.
