@@ -152,7 +152,6 @@ let a8 = {
     "b": 17,
     "e": 22
 };
-
 function f8() {
     let out = 0;
     let i8 = document.querySelector('.i-8').value;
@@ -165,8 +164,8 @@ function f8() {
     document.querySelector('.out-8').innerHTML = out;
     return out;
 }
-
 document.querySelector('.b-8').onclick = f8;
+
 
 // Task 9
 // Добавьте input .i-9. При нажатии b-9 выполняете функцию f9. Функция должна вывести в out-9 все ключи массива a9,
@@ -190,8 +189,8 @@ function f9() {
     }
     document.querySelector('.out-9').innerHTML = out;
 }
-
 document.querySelector('.b-9').onclick = f9;
+
 
 // Task 10
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. 
