@@ -204,14 +204,12 @@ function f10(arr, val) {
     }
     return false;
 }
-
 document.querySelector('.b-10').onclick = () => {
     let a10 = {
         "k": 22,
         "d": 54,
         "m": 22,
     }
-
     document.querySelector('.out-10').innerHTML = f10(a10, 22);
 };
 
@@ -234,11 +232,10 @@ function f11() {
     if (a11[i11]) {
         delete a11[i11];
     }
-
     f5(a11, '.out-11');
 }
-
 document.querySelector('.b-11').onclick = f11;
+
 
 // Task 12
 //  При нажатии b-12 выполняете функцию f12. Функция должна получить значение из i-12 и удалить запись из массива a12 с таким значением. После этого вывести массив в out-12. Для вывода используйте функцию f5.
