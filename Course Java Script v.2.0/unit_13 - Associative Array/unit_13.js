@@ -11,14 +11,12 @@ function f1() {
     document.querySelector('.out-1').innerHTML = a1.two;
     return a1.two;
 }
-
 document.querySelector('.b-1').onclick = f1;
 
 
 // Task 2
 // При нажатии b-2 выполняете функцию f2. Функция должна вывести в out-2 значение hi из массива a2. Возвратите это значение.
 // Вывод, как и в предыдущем задании пишем "руками"
-
 
 function f2() {
     let a2 = {
@@ -29,7 +27,6 @@ function f2() {
 
     return a2.five;
 }
-
 document.querySelector('.b-2').onclick = () => {
     document.querySelector('.out-2').innerHTML = f2();
 }
@@ -38,7 +35,6 @@ document.querySelector('.b-2').onclick = () => {
 // Task 3
 // При нажатии b-3 выполняете функцию f3. Функция должна вывести в out-3 значение hi из массива a3. Возвратите это значение. Вывод - через пробел.
 // Вывод, как и в предыдущем задании пишем "руками"
-
 
 function f3() {
     let a3 = {
@@ -52,7 +48,6 @@ function f3() {
     let out = a3.five + ' ' + a3.odd;
     return out;
 }
-
 document.querySelector('.b-3').onclick = () => {
     document.querySelector('.out-3').innerHTML = f3();
 }
