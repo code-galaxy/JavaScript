@@ -68,8 +68,8 @@ const f6 = () => {
     let s6 = new Set(a6);
     document.querySelector('.out-6').innerHTML = s6.size;
 }
-
 document.querySelector('.b-6').onclick = f6;
+
 
 // Task 7
 // При нажатии b-7 выполняете функцию f7. Функция должна получать из i-7 значение пароля и проверять,
@@ -90,12 +90,12 @@ const f7 = () => {
     }
 document.querySelector('.b-7').onclick = f7;
 
+
 // Task 8
 // При нажатии b-8 выполняете функцию f8. Функция должна перебрать набор s8 и добавить в массив ar8 только числа больше 5. Выведите массив в консоль.
 
 let s8 = new Set([1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56, 4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56]);
 let ar8 = [];
-
 const f8 = () => {
     let a8 = new Set(s8);
     for (let item of a8) {
@@ -121,23 +121,20 @@ const f9 = our_set => {
     return out;
 
     //return Array.from(our_set).join(' ');            // 2-й варіант.
-
 }
-
 document.querySelector('.b-9').onclick = () => {
     let s9 = new Set([9, 8, 7, 6, 5]);
     document.querySelector('.out-9').innerHTML = f9(s9);
 }
+
 
 // Task 10
 // При нажатии b-10 выполняете функцию f10. Функция должна принимать набор set в качестве параметра и выводить его в указанный элемент. 
 //Элемент указывается как второй параметр функции f10. Вывод значений - через пробел.
 
 const f10 = (out_set, elem) => {
-
     document.querySelector(elem).innerHTML = Array.from(out_set).join(' ');
 }
-
 document.querySelector('.b-10').onclick = () => {
     let a10 = new Set(['4', '5', '6']);
     f10(a10, '.out-10');
@@ -167,7 +164,6 @@ document.querySelector('.b-11').onclick = f11;
 //Потом создать набор на основе массива и возвратить его.
 
 let str12 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
-
 const f12 = () => {
     let out = [];
     for (let i = 0; i < str12.length; i++) {
@@ -176,7 +172,6 @@ const f12 = () => {
     let s12 = new Set(out);
     return s12;
 }
-
 document.querySelector('.b-12').onclick = () => {
     console.log(f12());
 }
@@ -187,8 +182,6 @@ document.querySelector('.b-12').onclick = () => {
 // { "H" : 1, 'e' : 1, 'l' : 2, "o" : 2, " ": 1}
 
 let str13 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
-
-
 const f13 = () => {
     let s13 = new Set(str13);
     let obj13 = {}; 
