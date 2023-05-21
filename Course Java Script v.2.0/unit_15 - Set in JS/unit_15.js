@@ -169,6 +169,9 @@ const f12 = () => {
     for (let i = 0; i < str12.length; i++) {
         out.push(str12[i]);
     }
+//      other version 
+//     let out = Array.from(str12);
+    
     let s12 = new Set(out);
     return s12;
 }
