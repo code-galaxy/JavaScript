@@ -151,15 +151,15 @@ function f9() {
 
     for (let i = 1; i < a9.length; i++) {
         if (out < a9[i].length) {
-            out = a9[i].length - 1;
+            out = a9[i].length;
         }
     }
-    return out;
+    return out-1;
 }
-
 document.querySelector('.b-9').addEventListener('click', () => {
     document.querySelector('.out-9').innerHTML = f9();
 });
+
 
 // Task 10
 //При нажатии .b-10 выполняете функцию f10. Функция должна преобразовывать массив a10 в ассоциативный массив вида {4: 4, 6: 6, 9: 9, hello : "hello"} и возвращать полученный массив.
