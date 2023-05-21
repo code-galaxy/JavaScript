@@ -76,14 +76,14 @@ document.querySelector('.b-5').addEventListener('click', () => {
 let a6 = [[1, 2], [3, 4], [5, 6,]];
 
 function f6() {
-    // 1-й варіант == Вложені цикли.
+    // First version == Cycle in cycle.
     /*     let out = [];
     for (let i = 0; i < a6.length; i++) {
         for (let k = 0; k < a6[i].length; k++) {
             out.push(a6[i][k]);
         }} */
    
-// 2-q second version
+// Second version
     let out = a6.flat(); 
 //    for (let item of out) document.querySelector('.out-6').innerHTML += item + ' ';
 //    or
