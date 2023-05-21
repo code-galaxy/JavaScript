@@ -130,12 +130,15 @@ function f8() {
     for (let i = 0; i < a8.length; i++) {
         out.push(a8[i].id);
     }
+//      for (item of a8) {
+//         out.push(item.id);
+//     }
     return out;
 }
-
 document.querySelector('.b-8').addEventListener('click', () => {
     console.log(f8());
 });
+
 
 // Task 9
 //При нажатии .b-9 выполняете функцию f9. Функция должна возвращать в out-9 самый большой индекс из вложенных в a9 массивов. 
