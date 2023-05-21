@@ -65,10 +65,10 @@ function f5() {
     }
     return out;
 }
-
 document.querySelector('.b-5').addEventListener('click', () => {
     document.querySelector('.out-5').innerHTML = f5();
 });
+
 
 // Task 6
 //При нажатии .b-6 выполняете функцию f6. Функция должна превратить массив a6 в одномерный. Результат вывести в out-6 через пробел.
@@ -82,14 +82,15 @@ function f6() {
         for (let k = 0; k < a6[i].length; k++) {
             out.push(a6[i][k]);
         }} */
-    // 2-й варіант  == Concat 
-    // let out = a6[0].concat(a6[1], a6[2]);
-
-    let out = a6.flat(); // короткий варіант
-    for (let item of out) document.querySelector('.out-6').innerHTML += item + ' ';
+   
+// 2-q second version
+    let out = a6.flat(); 
+//    for (let item of out) document.querySelector('.out-6').innerHTML += item + ' ';
+//    or
+    document.querySelector('.out-6').innerHTML = a6.flat().join(' ');
 }
-
 document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // Task 7
 //При нажатии .b-7 выполняете функцию f7. Функция должна переиндексировать массив a7. 
