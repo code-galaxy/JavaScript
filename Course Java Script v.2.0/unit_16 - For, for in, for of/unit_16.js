@@ -9,8 +9,8 @@ function f1() {
         document.querySelector('.out-1').innerHTML += a1[i] + ' ';
     }
 }
-
 document.querySelector('.b-1').addEventListener('click', f1);
+
 
 // Task 2
 // При нажатии .b-2 выполняете функцию f2. Функция перебирает массив a2  c помощью цикла for (let i. 
@@ -25,13 +25,12 @@ function f2() {
     }
     document.querySelector('.out-2').innerHTML = out;
 }
-
 document.querySelector('.b-2').addEventListener('click', f2);
+
 
 // Task 3
 // При нажатии .b-3 выполняете функцию f3. Функция получает div.out-3 со страницы с помощью getElementsByClassName 
 // и в каждый записывает число 3, перезаписывая содержимое div.
-
 
 function f3() {
     let out = document.getElementsByClassName('out-3');
@@ -52,6 +51,7 @@ function f4() {
     }
 }
 document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // Task 5
 //При нажатии .b-5 выполняете функцию f5. Функция должна с помощью for of перебрать массив a5 и возвратить новый массив куда входят элементы из a5 большие 7.
