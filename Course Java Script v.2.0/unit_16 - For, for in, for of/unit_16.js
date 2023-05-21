@@ -195,6 +195,7 @@ let a11 = {
     three: 13,
     four: 0
 }
+
 function f11() {
 
     for (let key in a11) {
@@ -202,6 +203,15 @@ function f11() {
             document.querySelector('.out-11').innerHTML += a11[key] + ' ';
         }
     }
+//     Second version
+//     let out = [];
+//     for (let key in a11) {
+//         if (a11[key] > 10) {
+//             out.push(a11[key])
+//         }
+//     }
+//     document.querySelector('.out-11').innerHTML = out.join(' ');
+    
 }
 document.querySelector('.b-11').addEventListener('click', f11);
 
