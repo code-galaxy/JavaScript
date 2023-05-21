@@ -105,6 +105,11 @@ function f7() {
     for (let i = 0; i < a7.length; i++) {
         out[a7[i].id] = a7[i].name;
     }
+//      Second version
+//      for (let item of a7) {
+//      out[item.id] = item.name;
+//     }
+    
     return out;
 }
 
