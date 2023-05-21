@@ -164,19 +164,19 @@ document.querySelector('.b-11').onclick = f11;
 //Потом создать набор на основе массива и возвратить его.
 
 let str12 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
-const f12 = () => {
+const f12 = (str) => {
     let out = [];
-    for (let i = 0; i < str12.length; i++) {
-        out.push(str12[i]);
+    for (let i = 0; i < str.length; i++) {
+        out.push(str[i]);
     }
 //      other version 
-//     let out = Array.from(str12);
+//     let out = Array.from(str);
     
     let s12 = new Set(out);
     return s12;
 }
 document.querySelector('.b-12').onclick = () => {
-    console.log(f12());
+    console.log(f12(str12));
 }
 
 
@@ -186,22 +186,21 @@ document.querySelector('.b-12').onclick = () => {
 // { "H" : 1, 'e' : 1, 'l' : 2, "o" : 2, " ": 1}
 
 let str13 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
-const f13 = () => {
-    let s13 = new Set(str13);
+const f13 = (str) => {
+    let s13 = new Set(str);
     let obj13 = {}; 
    
     for (let item of s13) {
         let count = 0;
-        for (let i = 0; i < str13.length; i++) {
-            if (item === str13[i]) {
+        for (let i = 0; i < str.length; i++) {
+            if (item === str[i]) {
                 count++;
             }
         }
             obj13[item] = count;
     }
-    console.log(obj13);
     return obj13;
 }
 document.querySelector('.b-13').onclick = () => {
-    console.log(f13());
+    console.log(f13(str13));
 }
