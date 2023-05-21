@@ -250,6 +250,14 @@ function f14() {
     for (let item of a14) {
         document.querySelector('.out-14').innerHTML += item + ' ';
     }
+    
+//     Second version
+//     let out = []; or out ='';
+//     for (let item of a14) {
+//         out.push(item);
+//     }
+//     document.querySelector('.out-14').innerHTML = out.join(' ');
+    
 }
 document.querySelector('.b-14').addEventListener('click', f14);
 
