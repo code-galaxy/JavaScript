@@ -175,6 +175,9 @@ function f10() {
     for (let i = 0; i < a10.length; i++) {
         out[a10[i]] = a10[i];
     }
+//     for (let item of a10) {
+//         out[item] = item;
+//     }
     return out;
 }
 document.querySelector('.b-10').addEventListener('click', () => {
