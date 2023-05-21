@@ -73,7 +73,7 @@ document.querySelector('.b-5').addEventListener('click', () => {
 // Task 6
 //При нажатии .b-6 выполняете функцию f6. Функция должна превратить массив a6 в одномерный. Результат вывести в out-6 через пробел.
 
-let a6 = [[1, 2], [3, 4], [5, 6,]];
+let a6 = [[1, 2], [3, 4], [5, 6, [7, 8, 9]]];
 
 function f6() {
     // First version == Cycle in cycle.
@@ -84,10 +84,10 @@ function f6() {
         }} */
    
 // Second version
-    let out = a6.flat(); 
+    let out = a6.flat(2); 
 //    for (let item of out) document.querySelector('.out-6').innerHTML += item + ' ';
 //    or
-    document.querySelector('.out-6').innerHTML = a6.flat().join(' ');
+    document.querySelector('.out-6').innerHTML = a6.flat(2).join(' ');
 }
 document.querySelector('.b-6').addEventListener('click', f6);
 
