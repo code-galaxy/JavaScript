@@ -107,20 +107,19 @@ let a6 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t6() {
     a6_res = a6.filter(elem => {
-        if (typeof elem == typeof 1 && elem > 14) return elem;
+        if (typeof elem === 'number' && elem > 14) return elem;
     })
     return a6_res;
 }
-
 document.querySelector('.b-6').onclick = () => {
     console.log(t6());
 }
 
 
-// Task 7 ============================================
-/*  Дан массив a7 = ['Alto`s Adventure', 'Angry Birds 2', 'Anno 2205', 'Assassin`s Creed Chronicles'].
+// Task 7
+// Дан массив a7 = ['Alto`s Adventure', 'Angry Birds 2', 'Anno 2205', 'Assassin`s Creed Chronicles'].
 // C помощью map переберите массив a7 и создайте  a7_res, который содержит элементы массива a7 приведенные к нижнему регистру. 
-// Действия должны запускаться при вызове функции t7. Функция должна возвращать a7_res. */
+// Действия должны запускаться при вызове функции t7. Функция должна возвращать a7_res.
 
 let a7 = ['Alto`s Adventure', 'Angry Birds 2', 'Anno 2205', 'Assassin`s Creed Chronicles'];
 
@@ -130,15 +129,15 @@ function t7() {
     })
     return a7_res;
 }
-
 document.querySelector('.b-7').onclick = () => {
     console.log(t7());
 }
 
-// Task 8 ============================================
-/* Дан массив a8 = [3, 14, 15, 92, 7, 32, 59]. C помощью цикла или метода - решить самостоятельно, 
-//переберите массив a8 и добавьте в a8_res индексы четных элементов. 
-//Т.е. для данного примера по результату работы функции в a8_res должны быть [1, 3, 5]. Функция должна возвращать a8_res. */
+
+// Task 8
+// Дан массив a8 = [3, 14, 15, 92, 7, 32, 59]. C помощью цикла или метода - решить самостоятельно, 
+// переберите массив a8 и добавьте в a8_res индексы четных элементов. 
+// Т.е. для данного примера по результату работы функции в a8_res должны быть [1, 3, 5]. Функция должна возвращать a8_res. 
 
 let a8 = [3, 14, 15, 92, 7, 32, 59];
 
@@ -150,7 +149,6 @@ function t8() {
     }
     return a8_res;
 }
-
 document.querySelector('.b-8').onclick = () => {
     console.log(t8());
 }
