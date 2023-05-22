@@ -144,7 +144,7 @@ let a8 = [3, 14, 15, 92, 7, 32, 59];
 function t8() {
     for (let i = 0; i < a8.length; i++) {
         if (a8[i] % 2 == 0) {
-            a8_res.push(a8.indexOf(a8[i]));
+            a8_res.push(i);
         }
     }
     return a8_res;
@@ -154,9 +154,10 @@ document.querySelector('.b-8').onclick = () => {
 }
 
 
-
-// Task 9 ============================================
-/*  Дан массив a9 = ['Quantum Break', 'Gears of War 4', 'Mass Effect: Andromeda', 'Far Cry Primal']. С помощью forEach, переберите массив a9 и преобразуйте все записи в массиве в нижний регистр. Действия должны запускаться при вызове функции t9. Функция должна возвращать a9. */
+// Task 9
+// Дан массив a9 = ['Quantum Break', 'Gears of War 4', 'Mass Effect: Andromeda', 'Far Cry Primal']. 
+// С помощью forEach, переберите массив a9 и преобразуйте все записи в массиве в нижний регистр. 
+// Действия должны запускаться при вызове функции t9. Функция должна возвращать a9.
 
 let a9 = ['Quantum Break', 'Gears of War 4', 'Mass Effect: Andromeda', 'Far Cry Primal'];
 
