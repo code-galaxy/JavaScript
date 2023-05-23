@@ -130,7 +130,7 @@ document.querySelector('.b-9').onclick = t9;
 function t10() {
     let a10 = { name: 'ivan', age: 15, sex: 1, id: 45 };
     for (let key in a10) {
-        a10_res += (key + '=' + a10[key] + '&');
+        a10_res += `${key} = ${a10[key]}&`;
     }
     document.querySelector('.out-10').innerHTML = '?' + a10_res;
 }
