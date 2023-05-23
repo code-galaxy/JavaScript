@@ -54,16 +54,14 @@ function t4() {
     out4.forEach(elem => {
         a4_res.push(elem.getAttribute('data'));
     });
-
     document.querySelector('.out-4').innerHTML = a4_res;
 }
-
 document.querySelector('.b-4').onclick = t4;
 
 
-// Task 5 ============================================
-/*  На странице созданы 3 p.task-5 c атрибутом data. С помощью forEach переберите их и добавьте событие клик. 
-//Напишите функцию t5, которая будет запускаться при клике и добавлять атрибут data элемента, по которому кликнули в массив a5_res.*/
+// Task 5 
+// На странице созданы 3 p.task-5 c атрибутом data. С помощью forEach переберите их и добавьте событие клик. 
+// Напишите функцию t5, которая будет запускаться при клике и добавлять атрибут data элемента, по которому кликнули в массив a5_res.
 
 function t5() {
     let out5 = document.querySelectorAll('.task-5');
