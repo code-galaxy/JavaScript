@@ -79,14 +79,14 @@ document.querySelector('.div-6').ondblclick = t6;
 function t7(event) {
    let out = document.querySelector('.div-7');
    out.classList.toggle('active');
+   return false;
 }
-
-// ваше событие здесь!!!
 document.querySelector('.div-7').oncontextmenu = t7;
 
-// Task 8 ============================================
-/*  Дано checkbox .ch-8. Повесьте на него событие onchange при котором на документе отключается
- клик правой кнопкой мыши если checkbox выбран и отключает если не выбран. */
+
+// Task 8 
+// Дано checkbox .ch-8. Повесьте на него событие onchange при котором на документе отключается
+// клик правой кнопкой мыши если checkbox выбран и отключает если не выбран. 
 
 function t8() {
    let checkbox = document.querySelector('.ch-8');
@@ -96,8 +96,6 @@ function t8() {
       };
    }
 }
-
-// ваше событие здесь!!!
 document.querySelector('.ch-8').onchange = t8;
 
 
