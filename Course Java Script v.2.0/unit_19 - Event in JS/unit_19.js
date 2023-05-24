@@ -164,22 +164,20 @@ document.querySelector('.div-13').onmouseup = t132;
 function t14() {
    let out = document.querySelector('.div-14');
    out.classList.add('active');
-
 }
 document.querySelector('.b-14').onclick = t14;
 
 
 // Task 15 ============================================
-/*  Дан блок .div-15. Добавьте на него событие move. При каждом движении мыши увеличивайте число внутри на 1. */
+// Дан блок .div-15. Добавьте на него событие move. При каждом движении мыши увеличивайте число внутри на 1. 
 
 let count = document.querySelector('.div-15').innerHTML;
-
 function t15() {
    let out = document.querySelector('.div-15');
    out.innerHTML = count++;
 }
-// ваше событие здесь!!!
 document.querySelector('.div-15').onmousemove = t15;
+
 
 // Task 16 ============================================
 /*  Дан блок .div-16. Добавьте на него событие move. При каждом движении мыши увеличивайте ширину блока на 1px. */
