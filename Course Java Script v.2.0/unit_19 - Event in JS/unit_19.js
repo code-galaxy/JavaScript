@@ -47,12 +47,12 @@ function t4() {
    document.querySelector('.out-4').innerHTML = out;
    return out;
 }
-
-// ваше событие здесь!!!
 document.querySelector('.div-4').ondblclick = t4;
 
-// Task 5 ============================================
-/*  Дан блок .div-5.active. Добавьте на него событие двойной клик, по которому удалется класс active если он есть и добавляется если такого класса нет. */
+
+// Task 5 
+// Дан блок .div-5.active. Добавьте на него событие двойной клик, 
+// по которому удалется класс active если он есть и добавляется если такого класса нет.
 
 function t5() {
    let out = document.querySelector('.div-5');
