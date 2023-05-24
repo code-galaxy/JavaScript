@@ -105,20 +105,19 @@ document.querySelector('.ch-8').onchange = t8;
 
 function t9() {
    document.querySelector('.div-9 img').src = 'img/2.png';
+   return false;
 }
-
-// ваше событие здесь!!!
 document.querySelector('.div-9 img').oncontextmenu = t9;
 
-// Task 10 ============================================
-/*  Дан блок .div-10. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. */
+
+// Task 10 
+// Дан блок .div-10. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png.
 
 function t10() {
    document.querySelector('.div-10 img').src = 'img/2.png';
 }
-
-// ваше событие здесь!!!
 document.querySelector('.div-10 img').onmouseenter = t10;
+
 
 // Task 11 ============================================
 /*  Дан блок .div-11. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. При уведении мыши - mouseleave - возвращайте исходное изображение. */
