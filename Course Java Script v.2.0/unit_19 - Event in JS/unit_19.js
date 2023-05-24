@@ -17,13 +17,9 @@ document.querySelector('.div-1').onclick = t1;
 // Также, выводите на экран результат. Вывод осуществляется в out-2.
 
 function t2(event) {
-   let out = document.querySelector('.out-2');
-   if (event.altKey == true) {
-      out.innerHTML = true;
-      return true;
-   }
-   out.innerHTML = false;
-   return false;
+   console.log(event)
+   document.querySelector('.out-2').innerHTML = event.altKey;
+   return event.altKey;
 }
 document.querySelector('.div-2').onclick = t2;
 
