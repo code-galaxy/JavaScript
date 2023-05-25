@@ -26,7 +26,6 @@ document.querySelector('.i-2').onkeypress = t2;
 // Дан input .i-3. Напишите функцию t3, которая выводит на страницу true если введен символ и false если цифра. 
 // Для определения - используйте keyCode.
 
-
 function t3(event) {
     let out = document.querySelector('.out-3');
     if (event.keyCode >= 48 && event.keyCode <= 57) {
@@ -36,15 +35,15 @@ function t3(event) {
         out.innerHTML = true;
     }
 }
-
 document.querySelector('.i-3').onkeypress = t3;
 
 
-// Task 4 ============================================
-/*  Дан input .i-4. Напишите функцию t4, которая выводит в .out-4 только символы в нижнем регистре. Т.е. ввели ab4Bci в out-4 получаем ab4ci. */
+// Task 4 
+// Дан input .i-4. Напишите функцию t4, которая выводит в .out-4 только символы в нижнем регистре. 
+// Т.е. ввели ab4Bci в out-4 получаем ab4ci.
 
 function t4(event) {
-    //    console.log(event.keyCode);
+    console.log(event.keyCode);
     let out = document.querySelector('.out-4');
     if (event.keyCode >= 65 && event.keyCode <= 90) {
     }
@@ -52,11 +51,12 @@ function t4(event) {
         out.innerHTML += event.key;
     }
 }
-
 document.querySelector('.i-4').onkeypress = t4;
 
-// Task 5 ============================================
-/*  Дан input .i-5. Напишите функцию t5, которая выводит в .out-5 все вводимые символы в верхнем регистре. Т.е. пользователь ввел AbCd и функция выведет ABCD. */
+
+// Task 5 
+// Дан input .i-5. Напишите функцию t5, которая выводит в .out-5 все вводимые символы в верхнем регистре. 
+// Т.е. пользователь ввел AbCd и функция выведет ABCD. 
 
 function t5(event) {
     console.log(event);
