@@ -138,6 +138,12 @@ function t9(event) {
     if (event.keyCode == 40) {
         count++;
     }
+
+//    or other variant
+//    if (event.key == 'ArrowDown') {
+//         count++;
+//     }
+
     document.querySelector('.out-9').innerHTML = count;
 }
 document.querySelector('.i-9').onkeydown = t9;
