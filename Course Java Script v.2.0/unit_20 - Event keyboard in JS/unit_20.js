@@ -176,12 +176,11 @@ function t10(event) {
         h++;
         out.style.height = h + 'px';
     }
-
 }
-
 document.querySelector('.i-10').onkeydown = t10;
 
-// Task 11 ============================================
+
+// Task 11 
 /*  Проект. 
 1. Изучите верстку клавиатуры.
 2. При вводе символа в i-11 ( латиница, нижний регистр) - клавише с таким символом присвойте класс .active. Это окрасит клавишу оранжевым фоном. Перед поиском и присвоением active, с помощью цикла удалите класс active у всех клавиш с классом keyboard.
@@ -220,5 +219,4 @@ function t11(event) {
         activeButton.classList.add('active');
     };
 }
-
 document.querySelector('.i-11').onkeydown = t11;
