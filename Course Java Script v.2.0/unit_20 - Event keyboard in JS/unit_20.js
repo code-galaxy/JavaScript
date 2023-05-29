@@ -118,10 +118,10 @@ function t8(event) {
     let out8 = document.querySelector('.out-8');
 
     if (a8[event.key] != undefined) {
-        out8.innerHTML += a8[event.key];
+        out8.innerHTML = a8[event.key];
     }
     else {
-        out8.innerHTML += event.key;
+        out8.innerHTML = event.key;
     }
     return;
 }
