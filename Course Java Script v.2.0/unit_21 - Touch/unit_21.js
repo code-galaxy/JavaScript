@@ -79,7 +79,7 @@ document.querySelector('.b-4').addEventListener('touchstart', t4);
 
 
 // Task 5 ============================================
-/*  There is a button with class 'b-5'. When pushing a button, remove the event listener (ontouchstart) on the block with class 'div-4'.
+/*  There is a button with class 'b-5'. When pushing a button, remove or clean the event listener (ontouchstart) on the block with class 'div-4'.
 
 let btn5 = document.querySelector('.b-5');
 function t5() {
