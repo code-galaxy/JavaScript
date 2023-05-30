@@ -28,11 +28,12 @@ let div31 = document.querySelector('.div-3_1');
 let div32 = document.querySelector('.div-3_2');
 
 function t3(event) {
-   if (event.target.classList.contains('div-3_1'))
-      out3.innerHTML = div31.innerHTML;
-   else
-      out3.innerHTML = div32.innerHTML;
-      console.log(event);
+   if (event.target.classList.contains('div-3_1')) out3.innerHTML = div31.innerHTML;
+   else out3.innerHTML = div32.innerHTML;
+   console.log(event);
+   
+//    or other short variant
+//    document.querySelector('.out-3').innerHTML = this.innerHTML;
 }
 document.querySelector('.div-3_1').addEventListener('touchstart', t3);
 document.querySelector('.div-3_2').addEventListener('touchstart', t3);
