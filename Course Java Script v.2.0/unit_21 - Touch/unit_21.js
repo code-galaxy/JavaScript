@@ -70,22 +70,22 @@ btn4.onclick = t4;
 function t4(event) {
    console.log(event);
    document.querySelector('.div-4').addEventListener('touchstart', t4_1)
-
-   function t4_1(event) {
+}
+function t4_1(event) {
       console.log(event);
       document.querySelector('.out-4').innerHTML = 'touch';
-   }
 }
 document.querySelector('.b-4').addEventListener('touchstart', t4);
 
 
 // Task 5 ============================================
-/*  There is a button with class 'b-5'. При ее нажатии очищайте событие ontouchstart на блоке div-4. */
-let btn5 = document.querySelector('.b-5');
+/*  There is a button with class 'b-5'. When pushing a button, remove the event listener (ontouchstart) on the block with class 'div-4'.
 
+let btn5 = document.querySelector('.b-5');
 function t5() {
-   btn4.classList.remove('active');
    div4.ontouchstart = null;
+   
+//    div4.removeEventListener('touchstart', t4_1);
 }
 btn5.onclick = t5;
 
