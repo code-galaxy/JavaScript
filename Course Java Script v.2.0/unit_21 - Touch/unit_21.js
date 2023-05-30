@@ -43,6 +43,8 @@ document.querySelector('.div-3_2').addEventListener('touchstart', t3);
 /*  Создайте блок div-4. И кнопку b-4. При нажатии кнопки - добавляйте событие ontouchstart на блок div-4.
 При событии происходит вывод текста touch в out-4.  */
 
+// Create a block with class 'div-4' and a button with class 'b-4'.
+
 let div4 = document.querySelector('.div-4');
 let out4 = document.querySelector('.out-4');
 let btn4 = document.createElement('button');
@@ -56,15 +58,26 @@ div4.after(btn4);
 
 function t4() {
    this.classList.toggle('active');
-
    div4.ontouchstart = () => {
       out4.innerHTML = 'touch';
    };
 }
-
 btn4.onclick = t4;
 
-// ваше событие здесь!!!
+
+// ==================================================
+//  second short variant
+function t4(event) {
+   console.log(event);
+   document.querySelector('.div-4').addEventListener('touchstart', t4_1)
+
+   function t4_1(event) {
+      console.log(event);
+      document.querySelector('.out-4').innerHTML = 'touch';
+   }
+}
+document.querySelector('.b-4').addEventListener('touchstart', t4);
+
 
 // Task 5 ============================================
 /*  Дана кнопка b-5. При ее нажатии очищайте событие ontouchstart на блоке div-4. */
