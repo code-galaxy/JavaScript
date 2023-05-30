@@ -66,16 +66,16 @@ btn4.onclick = t4;
 
 
 // ==================================================
-//  second short variant
-function t4(event) {
-   console.log(event);
-   document.querySelector('.div-4').addEventListener('touchstart', t4_1)
-}
-function t4_1(event) {
-      console.log(event);
-      document.querySelector('.out-4').innerHTML = 'touch';
-}
-document.querySelector('.b-4').addEventListener('touchstart', t4);
+//  second variant
+// function t4(event) {
+//    console.log(event);
+//    document.querySelector('.div-4').addEventListener('touchstart', t4_1)
+// }
+// function t4_1(event) {
+//       console.log(event);
+//       document.querySelector('.out-4').innerHTML = 'touch';
+// }
+// document.querySelector('.b-4').addEventListener('touchstart', t4);
 
 
 // Task 5 ============================================
