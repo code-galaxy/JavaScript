@@ -162,8 +162,12 @@ div10.ontouchmove = t10;
 
 let div11 = document.querySelector('.div-10');
 function t11() {
+   console.log(event.targetTouches[0].radiusX);
+   document.querySelector('.out-11').innerHTML = 'radiusX =' + event.targetTouches[0].radiusX + ', ' + 'radiusY =' + event.targetTouches[0].radiusY;
 }
-//div11.ontouchmove = t11;
+div11.ontouchmove = t11;
+// document.querySelector('.div-11').addEventListener('touchstart', t11);
+
 
 // Task 12 ============================================
 /*  Мини проект. Ознакомьтесь с версткой в задании 12.
@@ -180,13 +184,11 @@ let imgMax = document.querySelector('.img-12-max');
 const images = document.querySelectorAll('.img-12-min');
 let count = 0; // переменная, которая указывает на номер активного изображения в images
 
-
 const next = document.querySelector('.next');
 next.onclick = nextFunction;
 
 const prev = document.querySelector('.prev');
 prev.onclick = prevFunction;
-
 
 function nextFunction() {
    if (count + 1 < images.length) {
@@ -202,7 +204,6 @@ function nextFunction() {
    imgMax.src = images[count].src;
 }
 
-
 function prevFunction() {
    if (count - 1 < 0) {
       count = images.length;
@@ -215,7 +216,6 @@ function prevFunction() {
    imgMax.src = images[count].src;
 }
 
-
 function resetFunction() {
    for (let item of images) item.classList.remove('active-img');
    count = 0;
@@ -224,9 +224,5 @@ function resetFunction() {
 
 }
 
-
 const reset = document.querySelector('.reset');
 reset.onclick = resetFunction;
-
-// ваше событие здесь!!!
-
