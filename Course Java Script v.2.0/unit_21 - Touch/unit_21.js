@@ -100,7 +100,6 @@ function t6(event) {
       out6.innerHTML = 'touchend';
 }
 div4.ontouchend = t6;
-// ваше событие здесь!!!
 
 
 // Task 7 ============================================
@@ -113,7 +112,7 @@ function t7() {
 
 }
 div7.ontouchstart = t7;
-// ваше событие здесь!!!
+
 
 // Task 8 ============================================
 /*  Дан блок div-8. Добавьте на него событие touch, которое при срабатывании окрашивает блок случаным цветом из массива 
@@ -130,7 +129,6 @@ function t8() {
    div8.style.background = a8[randomNum];
 }
 div8.ontouchstart = t8;
-// ваше событие здесь!!!
 
 
 // Task 9 ============================================
@@ -145,7 +143,6 @@ function t9(event) {
    out9.innerHTML = event.touches.length;
 }
 div9.ontouchstart = t9;
-// ваше событие здесь!!!
 
 
 // Task 10 ============================================
@@ -154,26 +151,19 @@ div9.ontouchstart = t9;
 let div10 = document.querySelector('.div-10');
 
 let w = 75;
-
 function t10() {
-
    div10.style.width = w++ + 'px';
 }
-
 div10.ontouchmove = t10;
 
-// ваше событие здесь!!!
 
 // Task 11 ============================================
 /*  Дан блок div-11. Добавьте на него событие touch. При срабатывании выводите радиус события radiusX, radiusY. */
 
 let div11 = document.querySelector('.div-10');
-
 function t11() {
-
 }
 //div11.ontouchmove = t11;
-// ваше событие здесь!!!
 
 // Task 12 ============================================
 /*  Мини проект. Ознакомьтесь с версткой в задании 12.
