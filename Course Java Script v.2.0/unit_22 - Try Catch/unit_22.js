@@ -74,13 +74,14 @@ document.querySelector('.b-4').onclick = t4;
 
 
 //  Task 5
-// Добавьте try, catch, finnaly так, чтобы в out-5 выводился 0 при ошибки. А в out-5-1 всегда выводилось слово 'finnaly';
+// Add try, catch, finnaly so that in the block with class 'out-5' is output '0' on error. And in the block with class 'out-5-1', the word 'finally' was always displayed.
 
 function t5() {
     let p = document.querySelectorAll('p');
     try {
+        console.log(p);
         p.push(3);
-        //console.log(p.length);
+        console.log(p);
     }
     catch {
         document.querySelector('.out-5').innerHTML = '0';
