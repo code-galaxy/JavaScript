@@ -70,15 +70,13 @@ function t5() {
    b = JSON.parse(b);
 
    let out = '';
-
    for (let key in b) {
-      out += key + ' ' + b[key] + '<br>';
+      out += `${key} {$b[key]}<br>`;
    }
-
    document.querySelector('.out-5').innerHTML = out;
 }
 document.querySelector('.b-5').onclick = t5;
-// ваше событие здесь!!!
+
 
 // Task 6 ============================================
 /*  Создайте функцию t6 которая очищает весь LS. Запуск по кнопке b-6*/
