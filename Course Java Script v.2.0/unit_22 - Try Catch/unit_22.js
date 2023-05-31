@@ -32,7 +32,6 @@ function t2() {
         document.querySelector('.out-2').innerHTML = a * b;
     }
 }
-
 document.querySelector('.b-2').onclick = t2;
 
 
@@ -52,8 +51,8 @@ function t3() {
         document.querySelector('.b-3').after(div3);
     }
 }
-
 document.querySelector('.b-3').onclick = t3;
+
 
 //  Task 4
 // Дана переменная a. В переменную делается push. Используя try catch отловите ошибки если они есть. Если ошибка вывести в out-4 число 0. Если не ошибка - то результирующий массив через пробел.
@@ -62,20 +61,15 @@ let a = [2, 3, 4];
 // a = 5;
 
 function t4() {
-    let out = '';
-
-    try {
+   try {
         a.push(7);
-        for (let i = 0; i < a.length; i++) {
-            out += a[i] + ' ';
-        }
-        document.querySelector('.out-4').innerHTML = out;
+        document.querySelector('.out-4').innerHTML = a.join(' ');
     }
-    catch {
+    catch (err) {
+        console.log(err);
         document.querySelector('.out-4').innerHTML = 0;
     }
 }
-
 document.querySelector('.b-4').onclick = t4;
 
 
@@ -84,7 +78,6 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
     let p = document.querySelectorAll('p');
-
     try {
         p.push(3);
         //console.log(p.length);
@@ -96,6 +89,4 @@ function t5() {
         document.querySelector('.out-5-1').innerHTML = 'finnaly';
     }
 }
-
 document.querySelector('.b-5').onclick = t5;
-
