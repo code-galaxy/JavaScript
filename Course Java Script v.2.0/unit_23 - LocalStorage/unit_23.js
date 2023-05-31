@@ -71,7 +71,7 @@ function t5() {
 
    let out = '';
    for (let key in b) {
-      out += `${key} {$b[key]}<br>`;
+      out += `${key} ${b[key]} <br>`;
    }
    document.querySelector('.out-5').innerHTML = out;
 }
