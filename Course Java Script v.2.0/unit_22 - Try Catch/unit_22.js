@@ -1,28 +1,20 @@
 //  Task 1
 // Добавьте в код функции try catch так, чтобы вместо ошибки выводилось в out-1 цифра 1.
 
-
 function t1() {
-    // тут добавляете try
     let a = 22;
     let c;
-
     try {
         c = a + d;
         document.querySelector('.out-1').innerHTML = c;
     }
-
-    // тут catch
     catch (err) {
         //console.log(err);
         document.querySelector('.out-1').innerHTML = 1;
     }
-
-    // .. и вывод
-
 }
-
 document.querySelector('.b-1').onclick = t1;
+
 
 //  Task 2
 // Добавьте в код функции try catch так, чтобы вместо ошибки был вывод результата в out-2.
