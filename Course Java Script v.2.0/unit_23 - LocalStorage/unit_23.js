@@ -32,7 +32,20 @@ function t3() {
    document.querySelector('.out-3').innerHTML = out;
 }
 document.querySelector('.b-3').onclick = t3;
-// ваше событие здесь!!!
+
+// other variant
+function t3() {
+   let b = localStorage.getItem('a2');
+   b = JSON.parse(b);
+   console.log(b);
+   console.log(typeof b);
+   let out = '';
+   b.forEach((element, index) => {
+      out += `${index} ${element}<br>`;
+   });
+   document.querySelector('.out-3').innerHTML = out;
+}
+document.querySelector('.b-3').onclick = t3;
 
 
 // Task 4 ============================================
@@ -47,7 +60,7 @@ function t4() {
    localStorage.setItem('a4', JSON.stringify(a4));
 }
 document.querySelector('.b-4').onclick = t4;
-// ваше событие здесь!!!
+
 
 // Task 5 ============================================
 /*   При нажатии кнопки b-5 выведите из LS сохранненный массив a4. Выведите в out-5 в формате ключ пробел значение перенос строки. */
