@@ -82,12 +82,9 @@ document.querySelector('.b-5').onclick = t5;
 /*  Создайте функцию t6 которая очищает весь LS. Запуск по кнопке b-6*/
 
 function t6() {
-
    localStorage.clear();
-
 }
 document.querySelector('.b-6').onclick = t6;
-// ваше событие здесь!!!
 
 
 // Task 7 ============================================
@@ -98,12 +95,10 @@ let a7 = [];
 
 function t7() {
    a7.push(i7.value);
-
    localStorage.setItem('a7', JSON.stringify(a7));
-
 }
 document.querySelector('.b-7').onclick = t7;
-// ваше событие здесь!!!
+
 
 // Task 8 ============================================
 /*   Создайте функцию t8 при запуске которой из a7 удаляется последний элемент. После чего массив сохраняется в LS с ключем a7. Использовать массив из предыдущего задания. */
@@ -111,9 +106,5 @@ document.querySelector('.b-7').onclick = t7;
 function t8() {
    a7.pop();
    localStorage.setItem('a7', JSON.stringify(a7));
-
 }
 document.querySelector('.b-8').onclick = t8;
-// ваше событие здесь!!!
-
-
