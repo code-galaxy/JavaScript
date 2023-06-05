@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://itgid.info/images/site/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://itgid.info/css/skeleton.css">
+    <link rel="stylesheet" href="https://itgid.info/css/style_js20.css">
+    <!-- Ночной режим CSS удалите комментарий -->
+    <!-- <link rel="stylesheet" href="https://itgid.info/css/night.css"> -->
+    <title>JS 2.0. СПРИНТ 25 | JS 2.0</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SPRINT 25. Запросы GET, POST на JS. Асинхронный JS, AJAX</h1>
+        <h2><a href="https://itgid.info/ru/course/js20" target="_blank">JavaScript v.2.0 - курс Лущенко
+                Александра</a></h2>
+
+        <p class="text-orange">Внимание! Можно включать темную тему оформления! Для этого снимите комментарий с
+            night.css</p>
+
+        <section>
+            <h4>Task 1</h4> 
+            <p>При нажатии кнопки .b-1, срабатывает функция f1. Функция отсылает <a href="https://api.itgid.info#api-random-random-string" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/random/random-string</li>
+                <li>method: GET</li>
+                <li>Ответ сервера (строку случайных символов) - выводит в .out-1</li>
+            </ul>
+            <p>Не забывайте для авторизации отправлять apikey с указанным ключом.</p>
+            
+            <button class="button-primary b-1">Task-1</button>
+            <div class="out-1"></div>
+        </section>
+
+        <section>
+            <h4>Task 2</h4>
+            <p>При нажатии кнопки .b-2, срабатывает функция f2. Функция отсылает <a href="https://api.itgid.info#api-random-random-string-length" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/random/random-string</li>
+                <li>method: GET</li>
+                <li>в качестве query параметра задайте length равный числу из input .i-2</li>
+                <li>Ответ сервера (строку случаных символов длиной length) - выводите в .out-2</li>
+            </ul>
+
+            <input type="text" class="i-2" value="8">
+            <button class="button-primary b-2">Task-2</button>
+            <div class="out-2"></div>
+        </section>
+
+        <section>
+            <h4>Task 3</h4>
+            <p>При нажатии кнопки .b-3, срабатывает функция f3. Функция отсылает <a href="https://api.itgid.info#api-sr-read" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/sr/read</li>
+                <li>method: POST</li>
+                <li>если запрос отправлен верно, то будет получен массив с описаниями рас игры "Космические рейнджеры"</li>
+                <li>выведите в .out-3 названия рас (race) через пробел</li>
+            </ul>
+
+            <button class="button-primary b-3">Task-3</button>
+            <div class="out-3"></div>
+        </section>
+
+        <section>
+            <h4>Task 4</h4>
+            <p>При нажатии кнопки .b-4, срабатывает функция f4. Функция отсылает <a href="https://api.itgid.info#api-random-random-number-get-arguments" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/random/random-number</li>
+                <li>method: GET</li>
+                <li>укажите параметры запроса min = переменной min, max равное переменной max</li>
+                <li>если запрос отправлен верно, то будет получен массив c случайным числом от min до max</li>
+                <li>выведите в .out-4 полученное число</li>
+            </ul>
+            <button class="button-primary b-4">Task-4</button>
+            <div class="out-4"></div>
+        </section>
+
+        <section>
+            <h4>Task 5</h4>
+            <p>При нажатии кнопки .b-5, срабатывает функция f5. Функция отсылает <a href="https://api.itgid.info#api-random-random-number-post" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/random/random-number</li>
+                <li>method: POST</li>
+                <li>укажите параметры в body POST запроса min = переменной min, max равное переменной max</li>
+                <li>формат - form-data</li>
+                <li>если запрос отправлен верно, то будет получен массив c случайным числом от min до max</li>
+            </ul>
+            <p>Выведите в .out-5 полученное число.</p>
+
+            <button class="button-primary b-5">Task-5</button>
+            <div class="out-5"></div>
+        </section>
+
+        <section>
+            <h4>Task 6</h4>
+            <p>При нажатии кнопки .b-6, срабатывает функция f6. Функция отсылает запрос на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/random/circle</li>
+                <li>method: POST</li>
+                <li>без аргументов</li>
+                <li>поскольку такого адреса в API не предусмотрено, то сервер должен вернуть ошибку 404</li>
+            </ul>
+            <p>Выведите статус ответа сервера в .out-6-status.</p>
+            <p>Выведите сообщение ответа сервера в out-6-response.</p>
+
+            <button class="button-primary b-6">Task-6</button>
+            <div class="out-6 out-6-status"></div>
+            <div class="out-6 out-6-response"></div>
+        </section>
+
+        <section>
+            <h4>Task 7</h4>
+            <p>При нажатии кнопки .b-7, срабатывает функция f7. Функция отсылает <a href="https://api.itgid.info#api-sr-read-get-arguments" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/sr/read</li>
+                <li>method: GET</li>
+                <li>укажите параметр запроса race равный переменной requestRace</li>
+                <li>если запрос отправлен верно, то будет получен массив c описанием расы "Гаальцев" из игры "Космические рейнджеры"</li>
+        
+            </ul>
+
+            <p>Выведите в .out-7 изображение image расы. Для этого создайте image и присвойте src ссылку на изображение.</p>
+            <p>В начале функции делайте очистку .out-7.</p>
+
+            <button class="button-primary b-7">Task-7</button>
+            <div class="out-7"></div>
+        </section>
+
+        <section>
+            <h4>Task 8</h4>
+
+            <p>При нажатии кнопки .b-8, срабатывает функция f8. Функция отсылает <a href="https://api.itgid.info#api-employee-read" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/employee/read</li>
+                <li>method: POST</li>
+                <li>без параметров</li>
+                <li>если запрос отправлен верно, то будет получен массив сотрудников компании</li>
+            </ul>
+
+            <p>Выведите в .out-8 число сотрудников компании itemCount.</p>
+
+            <button class="button-primary b-8">Task-8</button>
+            <div class="out-8"></div>
+        </section>
+
+        <section>
+            <h4>Task 9</h4>
+            <p>При нажатии кнопки .b-9, срабатывает функция f9. Функция отсылает <a href="https://api.itgid.info#api-emloyee-read-post-arg" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/employee/read/5</li>
+                <li>method: POST</li>
+                <li>где 5 - число считываемое из input .i-9. Понятно, что число может быть введено в input - любое</li>
+                <li>если запрос отправлен верно, то будет получен массив с описанием сотрудника компании с id = 5</li>
+            </ul>
+            <p>Выведите обозначение (designation) сотрудника в .out-9</p>
+           
+            <input type="number" class="i-9" value="5">
+            <button class="button-primary b-9">Task-9</button>
+            <div class="out-9"></div>
+        </section>
+
+        <section>
+            <h4>Task 10</h4>
+            <p>При нажатии кнопки .b-10, срабатывает функция f10. Функция отсылает <a href="https://api.itgid.info#api-emloyee-read-post-arg" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/employee/read/7</li>
+                <li>method: GET</li>
+                <li>если запрос отправлен верно, то будет получен массив c сотрудника с id = 7</li>
+                <li>число 7 получайте с input .i-10</li>
+            </ul>
+            <p>Выведите в .out-10 возраст сотрудника, данные которого вы получили.</p>
+
+            <input type="number" class="i-10" value="7">
+            <button class="button-primary b-10">Task-10</button>
+            <div class="out-10"></div>
+        </section>
+
+        <section>
+            <h4>Task 11</h4>
+            <p>При нажатии кнопки .b-11, срабатывает функция f11. Функция отсылает <a href="https://api.itgid.info#api-random-generate-password" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+           <ul>
+                <li>url: /api/25/random/generate-password</li>
+                <li>method: POST</li>
+                <li>укажите в body POST запроса аргумент length равный числу из input .i-11 (form-data) </li>
+                <li>если запрос отправлен верно, то будет возвращен пароль длиной равный указанной длине</li>
+           </ul>
+
+           <p>Выведите в .out-11 полученный пароль.</p>
+           <input type="number" class="i-11" value="7">
+           <button class="button-primary b-11">Task-11</button>
+
+            <div class="out-11"></div>
+        </section>
+
+        <section>
+            <h4>Task 12</h4>
+            <p>При нажатии кнопки .b-12, срабатывает функция f12. Функция отсылает <a href="https://api.itgid.info#api-random-generate-password" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+           <ul>
+                <li>url: /api/25/random/generate-password</li>
+                <li>method: POST</li>
+                <li>укажите в body POST запроса аргумент length равный числу из input .i-12 (form-data)</li>
+                <li>укажите в body POST запроса аргумент symbols равный 0 или 1, данные берем из состояния checkbox .ch-12</li>
+                <li>если запрос отправлен верно, то будет возвращен пароль длиной равный указанной длине и если указан symbols равный 1 то в пароле будут спецсимволы</li>
+           </ul>
+
+           <p>Выведите в .out-12 полученный пароль.</p>
+
+           <input type="number" class="i-12" value="7">
+           <div>
+            <label for="ch-12">
+                <input type="checkbox" class="ch-12" id="ch-12">
+                <span class="label-body">symbols</span>
+              </label>
+           </div>
+           <button class="button-primary b-12">Task-12</button>
+
+            <div class="out-12"></div>
+        </section>
+
+        <section>
+            <h4>Task 13</h4>
+            <p>При нажатии кнопки .b-13, срабатывает функция f13. Функция отсылает <a href="https://api.itgid.info#api-random-generate-password" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/random/generate-password</li>
+                <li>укажите в body POST запроса аргумент length равный числу из input .i-13 (form-data)</li>
+                <li>укажите в body POST запроса аргумент symbols равный 0 или 1, данные берем из cостояния checkbox .ch-131</li>
+                <li>укажите в body POST запроса аргумент uppercase равный 0 или 1, данные берем из cостояния checkbox .ch-132</li>
+                <li>если запрос отправлен верно, то будет возвращен пароль длиной равный указанной длине и если указан symbols равный 1 то в пароле будут спецсимволы, и аналогично если uppercase равен 1 то будут символы в разных регистрах</li>
+               
+            </ul>
+
+            <p>Выведите в .out-13 полученный пароль.</p>
+
+            <input type="number" class="i-13" value="7">
+           <div>
+            <label class="" for="ch-131">
+                <input type="checkbox" class="ch-131" id="ch-131">
+                <span class="label-body">symbols</span>
+              </label>
+           </div>
+           <div>
+            <label class="" for="ch-132">
+                <input type="checkbox" class="ch-132" id="ch-132">
+                <span class="label-body">uppercase</span>
+              </label>
+           </div>
+           <button class="button-primary b-13">Task-13</button>
+
+            <div class="out-13"></div>
+        </section>
+
+        <section>
+            <h4>Task 14</h4>
+            <p>При нажатии кнопки .b-14, срабатывает функция f14. Функция отсылает <a href="https://api.itgid.info#api-sr-read-post-arg" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/sr/read/human</li>
+                <li>method: GET</li>
+                <li>human - аргумент (название расы), который получается из s-14.</li>
+                <li>если все сделано верно, то получите массив с описанием расы из игры КР</li>
+            </ul>
+            <p>Выведите в .out-14 описание description расы (вывод через innerHTML).</p>
+            <div>
+                <select class="s-14">
+                    <option value="" selected disabled>choose race</option>
+                    <option value="malok">Малоки</option>
+                    <option value="peleng">Пеленги</option>
+                    <option value="human">Люди</option>
+                    <option value="gaal">Гаальцы</option>
+                    <option value="feyan">Феяне</option>
+                </select>
+            </div>
+            <button class="button-primary b-14">Task-14</button>
+            <div class="out-14"></div>
+        </section>
+
+        <section>
+            <h4>Task 15</h4>
+            <p>При нажатии кнопки .b-15, срабатывает функция f15. Функция отсылает <a href="https://api.itgid.info#api-sr-read" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/sr/read</li>
+                <li>method: POST</li>
+                <li>если все сделано верно, то получите массив с описанием всех рас из игры КР</li>
+                <li>В начале функции очистите .out-15</li>
+            </ul>
+
+            <p>Выведите изображения рас в .out-15.</p>
+
+            <button class="button-primary b-15">Task-15</button>
+            <div class="out-15"></div>
+        </section>
+
+        <section>
+            <h4>Task 16</h4> 
+            <p>При нажатии кнопки .b-16, срабатывает функция f16. Функция отсылает <a href="https://api.itgid.info#api-gow-world" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/gow/world</li>
+                <li>method: GET</li>
+                <li>если все сделано верно, то получите массив с описанием всех миров игры GoW.</li>
+            </ul>
+
+            <p>Выведите в .out-16 названия (title) миров через пробел.</p>
+
+            <button class="button-primary b-16">Task-16</button>
+            <div class="out-16"></div>
+        </section>
+
+        <section>
+            <h4>Task 17</h4> 
+            <p>При нажатии кнопки .b-17, срабатывает функция f17. Функция отсылает <a href="https://api.itgid.info#api-gow-world-get-arg" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/gow/world/niflheim</li>
+                <li>method: GET</li>
+                <li>где niflheim - название мира полученное из .s-17</li>
+                <li>если все сделано верно, то получите описание выбранного в select .s-17</li>
+            </ul>
+
+            <p>Выведите в .out-17 описание мира.</p>
+
+            <div>
+                <select class="s-17">
+                    <option value="" selected disabled>choose world</option>
+                    <option value="Alfheim">Альвхейм</option>
+                    <option value="Asgard">Асгард</option>
+                    <option value="Helheim">Хельхейм</option>
+                    <option value="Jotunheim">Йотунхейм</option>
+                    <option value="Midgard">Мидгард</option>
+                    <option value="Muspelheimr">Муспельхейм</option>
+                    <option value="Niflheim">Нифльхейм</option>
+                    <option value="Svartalfheim">Свартальвхейм</option>
+                    <option value="Vanaheim">Ванахейм</option>
+                </select>
+            </div>
+            <button class="button-primary b-17">Task-17</button>
+            <div class="out-17"></div>
+        </section>
+
+        <section>
+            <h4>Task 18</h4> 
+            <p>При нажатии кнопки .b-18, срабатывает функция f18. Функция отсылает <a href="https://api.itgid.info#api-gow-rune" target="_blank">запрос</a> на api.itgid.info со следующими параметрами:</p>
+            <ul>
+                <li>url: /api/25/gow/rune</li>
+                <li>method: POST</li>
+                <li>если все сделано верно, то получите массив с названиями миров и рунами</li>
+            </ul>
+
+            <p>Выведите в .out-18 руны как изображения, а в качестве атрибута alt установите название мира.</p>
+            <p>Выполните очистку .out-18 в начале функции.</p>
+         
+            <button class="button-primary b-18">Task-18</button>
+            <div class="out-18"></div>
+        </section>
+
+        <p><a href="https://itgid.info" title="Материалы с сайта ItGid.info" target="_blank">ItGid.info - курс JavaScript 2.0</a></p>
+    </div>
+    <script src="config.js"></script>
+    <script src="unit_25.js"></script>
+</body>
+
+</html>
