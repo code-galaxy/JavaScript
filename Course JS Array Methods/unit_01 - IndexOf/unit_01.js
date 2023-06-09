@@ -18,12 +18,9 @@ const f1 = () => {
 
 let a2 = [4, 12, 4, 2, 15, 98];
 let out2 = document.querySelector('.out-2');
-
 const f2 = () => {
-    // обратите внимание в массиве только ЧИСЛА!g('02');
     let i2 = +document.querySelector('.i-2').value;
-
-    if (a2.indexOf(i2) != -1) {
+    if (a2.indexOf(i2) !== -1) {
         out2.innerHTML = a2.indexOf(i2)
     }
     else {
@@ -31,23 +28,23 @@ const f2 = () => {
     }
 }
 
+
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция считывает значение из i-3 и с помощью indexOf и ищет данный элемент в массиве a3. Выводит в out-3  false, если такого элемента нет в массиве, и true если есть.
 // Как тестируется - ввожу числа и проверяю результат.
 
-
 let a3 = [4, 12, 4, 2, 15, 98];
 let out3 = document.querySelector('.out-3');
-
 const f3 = () => {
     let i3 = +document.querySelector('.i-3').value;
-    if (a3.indexOf(i3) != -1) {
+    if (a3.indexOf(i3) !== -1) {
         out3.innerHTML = true;
     }
     else {
         out3.innerHTML = false;
     }
 }
+
 
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция принимает 2 параметра, первый - массив, второй элемент. 
