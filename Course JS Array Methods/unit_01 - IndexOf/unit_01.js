@@ -3,15 +3,13 @@
 // Выводит в out-1 результат работы.
 // Как тестируется - ввожу числа и проверяю результат.
 
-
 let a1 = [4, 12, 4, 2, 15, 98];
-let out1 = document.querySelector('.out-1');
-
+let i1 = document.querySelector('.i-1');
 const f1 = () => {
-    // обратите внимание в массиве только ЧИСЛА!
-    let i1 = +document.querySelector('.i-1').value;
-    out1.innerHTML = a1.indexOf(i1);
+    let i = +i1.value;
+    document.querySelector('.out-1').innerHTML = a1.indexOf(i);
 }
+
 
 // TASK 02
 // По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 и с помощью indexOf и ищет данный элемент в массиве a2. 
