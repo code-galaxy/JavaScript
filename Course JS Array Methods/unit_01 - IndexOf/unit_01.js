@@ -104,6 +104,8 @@ const f6 = () => {
     let i6 = document.querySelector('.i-6').value;
     out6.innerHTML = a6.indexOf(i6);
 }
+document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция принимает 2 параметра, первый массив, второй - искомое число. 
@@ -126,6 +128,10 @@ const f7 = (arr, elem) => {
         }
     }
 }
+document.querySelector('.b-7').addEventListener('click', () => {
+    let num = +document.querySelector('.i-7').value;
+    f7(a7, num);
+});
 
 
 // TASK 08 * - сложная
@@ -180,6 +186,8 @@ const f9 = () => {
         }
     }
 }
+document.querySelector('.b-9').addEventListener('click', f9);
+
 
 // TASK 10
 // По нажатию b-10 выполняется функция f10. Как вы заметили, indexOf ищет по строгому сравнению ( 4 task ).
@@ -207,11 +215,3 @@ const f10 = (arr, elem) => {
 document.querySelector('.b-10').addEventListener('click', () => {
     document.querySelector('.out-10').innerHTML = f10(a10, -6);
 });
-
-
-document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', () => {
-    let num = +document.querySelector('.i-7').value;
-    f7(a7, num);
-});
-document.querySelector('.b-9').addEventListener('click', f9);
