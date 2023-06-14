@@ -100,7 +100,6 @@ let a6 = '987123abcdefyttb4';
 let out6 = document.querySelector('.out-6');
 
 const f6 = () => {
-
     let i6 = document.querySelector('.i-6').value;
     out6.innerHTML = a6.indexOf(i6);
 }
