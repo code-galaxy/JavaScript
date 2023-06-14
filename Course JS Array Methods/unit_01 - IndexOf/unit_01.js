@@ -9,6 +9,7 @@ const f1 = () => {
     let i = +i1.value;
     document.querySelector('.out-1').innerHTML = a1.indexOf(i);
 }
+document.querySelector('.b-1').addEventListener('click', f1);
 
 
 // TASK 02
@@ -27,6 +28,7 @@ const f2 = () => {
         out2.innerHTML = false;
     }
 }
+document.querySelector('.b-2').addEventListener('click', f2);
 
 
 // TASK 03
@@ -44,6 +46,7 @@ const f3 = () => {
         out3.innerHTML = false;
     }
 }
+document.querySelector('.b-3').addEventListener('click', f3);
 
 
 // TASK 04
@@ -56,13 +59,13 @@ let a4 = [1, '1', 2, '2', '3'];
 let out4 = document.querySelector('.out-4');
 
 const f4 = (arr, elem) => {
-
     out4.innerHTML = arr.indexOf(elem);
 }
 document.querySelector('.b-4').addEventListener('click', () => {
-    f4(a4, '3'); // изучите какой индекс вывело. Разберитесь почему
-    // f4(a4, 2); // изучите какой индекс вывело. Разберитесь почему
+    f4(a4, '3'); 
+    // f4(a4, 2); 
 });
+
 
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция считывает значение из i-5-1 и индекс с которого начинается поиск в массиве с i-5-2 и с помощью indexOf и ищет данный элемент в массиве a5 c позиции указанной в i-5-2. Выводит в out-5 индекс если он есть в массиве, или -1 если нет.
@@ -83,10 +86,13 @@ const f5 = () => {
     out5.innerHTML = a5.indexOf(i51, i52);
     console.log(a5.indexOf(22, 0));
 }
+document.querySelector('.b-5').addEventListener('click', f5);
 
 
 // TASK 06
-// По нажатию b-6 выполняется функция f6. Функция считывает значение из i-6 и с помощью indexOf и ищет данный элемент в СТРОКЕ a6. Выводит в out-6 результат поиска.
+// По нажатию b-6 выполняется функция f6.
+// Функция считывает значение из i-6 и с помощью indexOf и ищет данный элемент в СТРОКЕ a6. 
+// Выводит в out-6 результат поиска.
 // Изучите поведение введя по очереди 3, '3', 'a', 5, ytt
 
 
@@ -100,18 +106,19 @@ const f6 = () => {
 }
 
 // TASK 07
-// По нажатию b-7 выполняется функция f7. Функция принимает 2 параметра, первый массив, второй - искомое число. Функция должна эмулировать работу метода indexOf с помощью цикла. Что понимается под эмуляцией? Мы не используем метод indexOf, а циклом перебираем массив и с помощью if решаем задачу. Функция должна только либо выводить в out-7 число -1, если искомого числа нет в массиве, или индекс числа в массиве.
+// По нажатию b-7 выполняется функция f7. Функция принимает 2 параметра, первый массив, второй - искомое число. 
+// Функция должна эмулировать работу метода indexOf с помощью цикла. Что понимается под эмуляцией? 
+// Мы не используем метод indexOf, а циклом перебираем массив и с помощью if решаем задачу. 
+// Функция должна только либо выводить в out-7 число -1, если искомого числа нет в массиве, или индекс числа в массиве.
 
 
 let a7 = [21, 22, 23, 24, 25, 26, 27];
 let out7 = document.querySelector('.out-7');
 
 const f7 = (arr, elem) => {
-
     for (let i = 0; i < arr.length; i++) {
-
         if (arr[i] === elem) {
-            out7.innerHTML = i;
+            out7.innerHTML = 'index = ' + i;
             break;
         }
         else {
@@ -201,11 +208,7 @@ document.querySelector('.b-10').addEventListener('click', () => {
     document.querySelector('.out-10').innerHTML = f10(a10, -6);
 });
 
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
 
-document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
 document.querySelector('.b-7').addEventListener('click', () => {
     let num = +document.querySelector('.i-7').value;
