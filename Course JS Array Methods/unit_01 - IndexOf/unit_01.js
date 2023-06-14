@@ -77,14 +77,13 @@ let a5 = [22, 33, 44, 55, 66, 77, 88, 33, 44, 55, 66, 77];
 let out5 = document.querySelector('.out-5');
 
 const f5 = () => {
-
     let i51 = +document.querySelector('.i-5-1').value;
     let i52 = +document.querySelector('.i-5-2').value;
 
     out5.innerHTML = a5.indexOf(i51, i52);
     console.log(a5.indexOf(22, 0));
-
 }
+
 
 // TASK 06
 // По нажатию b-6 выполняется функция f6. Функция считывает значение из i-6 и с помощью indexOf и ищет данный элемент в СТРОКЕ a6. Выводит в out-6 результат поиска.
