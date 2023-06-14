@@ -149,6 +149,14 @@ const f8 = () => {
         res08.push(idx);
         idx = a8.indexOf(num, idx + 1);
     }
+    
+//     OR other variant 
+//     for (let i = 0; i < a8.length; i++) {
+//         if (idx != -1) {
+//             res08.push(idx);
+//             idx = a8.indexOf(num, idx + 1);
+//         }
+    
     document.querySelector('.out-8').innerHTML = res08;
 }
 document.querySelector('.b-8').addEventListener('click', f8);
