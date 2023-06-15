@@ -1,13 +1,14 @@
 // TASK 01
 // По нажатию b-1 выполняется функция f1. Функция считывает значение из i-1 и с помощью push добавляет полученную из input строку в массив a1. Функция выводит массив a1 в консоль.
 
-
 let a1 = ['hello', 't'];
+let i1 = document.querySelector('.i-1');
 
 const f1 = () => {
-    let i1 = document.querySelector('.i-1').value;
-    a1.push(i1);
+    let data = i1.value;
+    a1.push(data);
     console.log(a1);
+    i1.value = '';
 }
 document.querySelector('.b-1').addEventListener('click', f1);
 
