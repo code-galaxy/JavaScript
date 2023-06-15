@@ -142,25 +142,32 @@ const f9 = () => {
 document.querySelector('.b-9').addEventListener('click', f9);
 
 // TASK 10
-// Ну и на прокачку ваших скиллов. Напишем функцию, которая эмулирует работу pop - удаляет последний элемент массива a10 и возвращает удаленный элемент.
+// Ну и на прокачку ваших скиллов. Напишем функцию, которая эмулирует работу pop() - удаляет последний элемент массива a10 и возвращает удаленный элемент.
 
 let a10 = [67, '55', 2, 5, '4', '8', 8, '66', '54', 11];
 
 const f10 = () => {
-    //console.log(a10);
 
-    if (!a10.length) return undefined;
+    if (!a10.length) {
+        console.log(!a10.length);
+        return undefined;
+    }
+
+    console.log(a10[a10.length - 1]);
 
     let elem = a10[a10.length - 1];
-    let index = a10.length - 1;
 
-    a10.length = index;
+    console.log('Array a10 length = ' + a10.length);
+
+    a10.length = a10.length - 1;
+
+    console.log('Array a10 length after deleting the last element = ' + a10.length);
 
     return elem;
 }
 
 document.querySelector('.b-10').addEventListener('click', () => {
-    console.log(f10());
+    console.log('Last delete element with a10 = ' + f10());
 });
 
 
