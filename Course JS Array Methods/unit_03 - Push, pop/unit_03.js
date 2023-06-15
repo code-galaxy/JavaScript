@@ -30,28 +30,27 @@ const f2 = () => {
 }
 document.querySelector('.b-2').addEventListener('click', f2);
 
+
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция считывает значение из i-3 и с помощью push добавляет значение в массив a3.
 // Изучите вывод в консоль. Разберитесь, что возвращает метод push.
 
-
 let a3 = ['a', 'b'];
+let i3 = document.querySelector('.i-3');
 
 const f3 = () => {
-    // ваш код
-    let i3 = document.querySelector('.i-3').value;
-    a3.push(i3);
-    //console.log(a3.push(i3));
-    //console.log(a3.length);
+    let data = i3.value;
+    a3.push(data);
+    // console.log(a3.push(data));
+    // console.log(a3.length);
     console.log(a3);
-
-    // console.log(a3.push(ваша переменная));
+    i3.value = '';
 }
 document.querySelector('.b-3').addEventListener('click', f3);
 
+
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция добавляет в массив a4 переменную a4_1. Выводит a4 в консоль. Изучите результат.
-
 
 let a4 = [1, 2];
 let a4_1 = [5, 6];
