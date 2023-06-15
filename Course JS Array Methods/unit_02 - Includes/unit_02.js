@@ -117,20 +117,15 @@ document.querySelector('.b-5').addEventListener('click', f5);
 //Выводит в out-6 false если искомой строки нет в a6 и true если есть.
 // Изучите поведение введя по очереди Hi, HI, WIFI, wifi, wiFI
 
-
 let a6 = ['Hi', 'wiFI'];
 let out6 = document.querySelector('.out-6');
 
 const f6 = () => {
     let i6 = document.querySelector('.i-6').value;
-    if (a6.includes(i6)) {
-        out6.innerHTML = a6.includes(i6);
-    }
-    else {
-        out6.innerHTML = a6.includes(i6);
-    }
+    out6.innerHTML = a6.includes(i6);
 }
 document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция принимает 2 параметра, первый массив, второй - искомое число. 
@@ -138,12 +133,10 @@ document.querySelector('.b-6').addEventListener('click', f6);
 //Мы не используем метод includes ( и indexOf тоже), а циклом перебираем массив и с помощью if решаем задачу. 
 //Функция должна только либо выводить в out-7 false, если искомого числа нет в массиве, или true если есть.
 
-
 let a7 = [21, 22, 23, 24, 25, 26, 27];
 let out7 = document.querySelector('.out-7');
 
 const f7 = (arr, elem) => {
-
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === elem) {
             out7.innerHTML = true;
@@ -154,14 +147,13 @@ const f7 = (arr, elem) => {
         }
     }
 }
-
 document.querySelector('.b-7').addEventListener('click', () => {
     f7(a7, 23);
 });
 
+
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция должна получить символ из i-8 и с помощью includes проверить есть ли подобный символ в строке a8 или нет. Если есть - вывести true, если нет false;
-
 
 let a8 = 'JSbestever';
 let out8 = document.querySelector('.out-8');
