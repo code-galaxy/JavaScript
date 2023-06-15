@@ -19,10 +19,12 @@ document.querySelector('.b-1').addEventListener('click', f1);
 
 let a2 = [4, 12, 4, 2, 15, 98];
 let out2 = document.querySelector('.out-2');
+let i2 = document.querySelector('.i-2');
+
 const f2 = () => {
-    let i2 = +document.querySelector('.i-2').value;
-    if (a2.indexOf(i2) !== -1) {
-        out2.innerHTML = a2.indexOf(i2)
+    let data = +i2.value;
+    if (a2.indexOf(data) !== -1) {
+        out2.innerHTML = a2.indexOf(data)
     }
     else {
         out2.innerHTML = false;
@@ -38,9 +40,11 @@ document.querySelector('.b-2').addEventListener('click', f2);
 
 let a3 = [4, 12, 4, 2, 15, 98];
 let out3 = document.querySelector('.out-3');
+let i3 = document.querySelector('.i-3');
+
 const f3 = () => {
-    let i3 = +document.querySelector('.i-3').value;
-    if (a3.indexOf(i3) !== -1) {
+    let data = +i3.value;
+    if (a3.indexOf(data) !== -1) {
         out3.innerHTML = true;
     }
     else {
@@ -81,12 +85,14 @@ document.querySelector('.b-4').addEventListener('click', () => {
 
 let a5 = [22, 33, 44, 55, 66, 77, 88, 33, 44, 55, 66, 77];
 let out5 = document.querySelector('.out-5');
+let i51 = document.querySelector('.i-5-1');
+let i52 = document.querySelector('.i-5-2');
 
 const f5 = () => {
-    let i51 = +document.querySelector('.i-5-1').value;
-    let i52 = +document.querySelector('.i-5-2').value;
-
-    out5.innerHTML = a5.indexOf(i51, i52);
+let data1 = +i51.value;    
+let data2 = +i52.value;
+    
+    out5.innerHTML = a5.indexOf(data1, data2);
     console.log(a5.indexOf(22, 0));
 }
 document.querySelector('.b-5').addEventListener('click', f5);
@@ -101,10 +107,11 @@ document.querySelector('.b-5').addEventListener('click', f5);
 
 let a6 = '987123abcdefyttb4';
 let out6 = document.querySelector('.out-6');
+let i6 = document.querySelector('.i-6');
 
 const f6 = () => {
-    let i6 = document.querySelector('.i-6').value;
-    out6.innerHTML = a6.indexOf(i6);
+let data = i6.value;
+    out6.innerHTML = a6.indexOf(data);
 }
 document.querySelector('.b-6').addEventListener('click', f6);
 
@@ -142,12 +149,12 @@ document.querySelector('.b-7').addEventListener('click', () => {
 
 let a8 = [1, 2, 3, 1, 3, 2, 55, 23, 53, 24, 55, 3, 1, 5, 2, 3, 5, 4, 6, 7, 12, 53];
 let res08 = [];
-const f8 = () => {
-    // ваш код
-    res08 = [];
-    let num = +document.querySelector('.i-8').value;
-    let idx = a8.indexOf(num);
+let i8 = document.querySelector('.i-8');
 
+const f8 = () => {
+    res08 = [];
+    let idx = a8.indexOf(num);
+    let num = +i8.value;
     while (idx != -1) {
         res08.push(idx);
         idx = a8.indexOf(num, idx + 1);
@@ -183,15 +190,15 @@ let a9 = [
 ];
 
 let out9 = document.querySelector('.out-9');
+let i9 = document.querySelector('.i-9');
 
 const f9 = () => {
-    let i9 = +document.querySelector('.i-9').value;
     out9.innerHTML = '';
-
+    let data = +i9.value;
     for (let i = 0; i < a9.length; i++) {
         for (let k = 0; k < a9[i].length; k++) {
 
-            if (a9[i][a9[i].indexOf(i9)] === a9[i][k]) {
+            if (a9[i][a9[i].indexOf(data)] === a9[i][k]) {
                 out9.innerHTML += i + ' ';
             }
         }
