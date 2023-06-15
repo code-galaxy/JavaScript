@@ -107,13 +107,7 @@ let out5 = document.querySelector('.out-5');
 const f5 = () => {
     let i51 = +document.querySelector('.i-5-1').value;
     let i52 = +document.querySelector('.i-5-2').value;
-
-    if (a5.includes(i51, i52)) {
-        out5.innerHTML = a5.includes(i51, i52);
-    }
-    else {
-        out5.innerHTML = a5.includes(i51, i52);
-    }
+    out5.innerHTML = a5.includes(i51, i52);
 }
 document.querySelector('.b-5').addEventListener('click', f5);
 
