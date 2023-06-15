@@ -120,12 +120,15 @@ document.querySelector('.b-7').addEventListener('click', f7);
 let a8 = [99, 98, 97, 96];
 
 const f8 = () => {
-    //console.log(a8);
-    return a8.pop();
+    console.log(a8);
+    let out = a8.pop();
+    console.log(a8);
+    return out;
 }
 document.querySelector('.b-8').addEventListener('click', () => {
     console.log(f8());
 });
+
 
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция должна применить pop() к массиву a9. После применения массив выведите в консоль.
