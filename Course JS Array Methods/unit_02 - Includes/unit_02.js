@@ -5,11 +5,11 @@
 
 
 let a1 = [4, 12, 4, 2, 15, 98];
+let i1 = document.querySelector('.i-1');
 
 const f1 = () => {
-    // обратите внимание в массиве только ЧИСЛА!
-    let i1 = +document.querySelector('.i-1').value;
-    document.querySelector('.out-1').innerHTML = a1.includes(i1);
+    let data = +i1.value;
+    document.querySelector('.out-1').innerHTML = a1.includes(data);
 }
 document.querySelector('.b-1').addEventListener('click', f1);
 
@@ -21,15 +21,15 @@ document.querySelector('.b-1').addEventListener('click', f1);
 // Как тестируется - ввожу числа и проверяю результат.
 
 let a2 = [4, 12, 4, 2, 15, 98];
+let i2 = document.querySelector('.i-2');
 
 const f2 = () => {
-    let i2 = +document.querySelector('.i-2').value;
-
-    if (a2.includes(i2)) {
-        document.querySelector('.out-2').innerHTML = a2.indexOf(i2);
+    let data = +i2.value;
+    if (a2.includes(data)) {
+        document.querySelector('.out-2').innerHTML = a2.indexOf(data);
     }
     else {
-        document.querySelector('.out-2').innerHTML = a2.includes(i2);
+        document.querySelector('.out-2').innerHTML = a2.includes(data);
     }
 }
 document.querySelector('.b-2').addEventListener('click', f2);
@@ -44,12 +44,12 @@ document.querySelector('.b-2').addEventListener('click', f2);
 
 
 let a3 = [[3, 4, 5], [6, 7, 1], [5, 6, 7, 1, 12], [134, 234, 432]];
+let i3 = document.querySelector('.i-3');
 
 const f3 = () => {
-    let i3 = +document.querySelector('.i-3').value;
-
+    let data = +i3.value;
     for (let i = 0; i < a3.length; i++) {
-        if (a3[i].includes(i3)) {
+        if (a3[i].includes(data)) {
             document.querySelector('.out-3').innerHTML = true;
             break;
         }
@@ -74,15 +74,15 @@ let a4 = {
 };
 
 let out4 = document.querySelector('.out-4');
+let i4 = document.querySelector('.i-4');
 
 const f4 = () => {
-
-    let i4 = +document.querySelector('.i-4').value;
+    let data = +i4.value;
     let result = '';
 
     for (let key in a4) {
 
-        if (a4[key].includes(i4)) {
+        if (a4[key].includes(data)) {
             result += key + ' ';
         }
         else {
@@ -90,9 +90,7 @@ const f4 = () => {
         }
     }
     out4.innerHTML = result;
-
 }
-
 document.querySelector('.b-4').addEventListener('click', f4);
 
 
@@ -108,11 +106,13 @@ document.querySelector('.b-4').addEventListener('click', f4);
 
 let a5 = [22, 33, 44, 55, 66, 77, 88, 33, 44, 55, 66, 77];
 let out5 = document.querySelector('.out-5');
+let i51 = document.querySelector('.i-5-1');
+let i52 = document.querySelector('.i-5-2');
 
 const f5 = () => {
-    let i51 = +document.querySelector('.i-5-1').value;
-    let i52 = +document.querySelector('.i-5-2').value;
-    out5.innerHTML = a5.includes(i51, i52);
+    let data1= +i51.value;
+    let data2= +i52.value;
+    out5.innerHTML = a5.includes(data1, data2);
 }
 document.querySelector('.b-5').addEventListener('click', f5);
 
@@ -124,10 +124,11 @@ document.querySelector('.b-5').addEventListener('click', f5);
 
 let a6 = ['Hi', 'wiFI'];
 let out6 = document.querySelector('.out-6');
+let i6 = document.querySelector('.i-6');
 
 const f6 = () => {
-    let i6 = document.querySelector('.i-6').value;
-    out6.innerHTML = a6.includes(i6);
+    let data = i6.value;
+    out6.innerHTML = a6.includes(data);
 }
 document.querySelector('.b-6').addEventListener('click', f6);
 
@@ -163,9 +164,10 @@ document.querySelector('.b-7').addEventListener('click', () => {
 
 let a8 = 'JSbestever';
 let out8 = document.querySelector('.out-8');
+let i8 = document.querySelector('.i-8');
 
 const f8 = () => {
-    let i8 = document.querySelector('.i-8').value;
+    let data = i8.value;
     out8.innerHTML = a8.includes(i8);
 }
 document.querySelector('.b-8').addEventListener('click', f8);
@@ -183,19 +185,16 @@ document.querySelector('.b-8').addEventListener('click', f8);
 
 let a9 = ['A', 'b', 'c', 'C', 'D', 12, 5, 'd', 1, 0];
 let out9 = document.querySelector('.out-9');
+let i9 = document.querySelector('.i-9');
 
 const f9 = () => {
-    console.log('09');
-    let i9 = document.querySelector('.i-9').value;
-
-    if (a9.includes(i9.toUpperCase()) || a9.includes(i9.toLowerCase())) {
+    let data = i9.value;
+    if (a9.includes(data.toUpperCase()) || a9.includes(data.toLowerCase())) {
         out9.innerHTML = true;
     }
-
-    else if (a9.includes(Number(i9))) {
+    else if (a9.includes(Number(data))) {
         out9.innerHTML = true;
     }
-
     else {
         out9.innerHTML = false;
     }
