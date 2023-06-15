@@ -160,15 +160,10 @@ let out8 = document.querySelector('.out-8');
 
 const f8 = () => {
     let i8 = document.querySelector('.i-8').value;
-
-    if (a8.includes(i8)) {
-        out8.innerHTML = a8.includes(i8);
-    }
-    else {
-        out8.innerHTML = a8.includes(i8);
-    }
+    out8.innerHTML = a8.includes(i8);
 }
 document.querySelector('.b-8').addEventListener('click', f8);
+
 
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция должна получить из i-9 символ и с помощью includes искать его в массиве a9. 
