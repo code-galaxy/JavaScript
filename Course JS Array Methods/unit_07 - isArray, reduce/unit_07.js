@@ -95,6 +95,7 @@ const f5 = () => {
     });
     document.querySelector('.out-5').innerHTML = res;
 }
+document.querySelector('.b-5').addEventListener('click', f5);
 
 
 // TASK 06
@@ -110,6 +111,8 @@ const f6 = () => {
     });
     document.querySelector('.out-6').innerHTML = res;
 }
+document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция перебирает с помощью reduce массив и суммирует все числа больше нуля. 
@@ -126,6 +129,8 @@ const f7 = () => {
     }, 0)
     document.querySelector('.out-7').innerHTML = res;
 }
+document.querySelector('.b-7').addEventListener('click', f7);
+
 
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция перебирает с помощью reduce массив и суммирует все числа больше нуля. Результат - сумму положительных элементов массива выводится в out-8. Обратите внимание, что если вы будете решать предыдущим методом, что получите странный результат. Почему так? Разберитесь, а потом, после функции callback reduce добавьте 0.
@@ -357,10 +362,6 @@ const f20 = () => {
 
 
 
-document.querySelector('.b-4').addEventListener('click', f4);
-document.querySelector('.b-5').addEventListener('click', f5);
-document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', f7);
 document.querySelector('.b-8').addEventListener('click', f8);
 document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', f10);
