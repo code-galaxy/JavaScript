@@ -113,12 +113,11 @@ document.querySelector('.b-7').addEventListener('click', () => {
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция должна применить slice с параметрами (1,4) к массиву a8 и вывести массив в консоль.
 
-
 let a8 = [44, 45, 46, 47, 48, 49];
-
 const f8 = () => {
-
-    console.log(a8.slice(1, 4));
+    // console.log(a8.slice(1, 4));
+    let b = a8.slice(1, 4);
+    console.log(b)
 }
 document.querySelector('.b-8').addEventListener('click', f8);
 
