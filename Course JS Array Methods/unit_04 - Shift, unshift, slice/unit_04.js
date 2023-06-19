@@ -29,26 +29,25 @@ const f2 = () => {
 }
 document.querySelector('.b-2').addEventListener('click', f2);
 
+
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция считывает значение из i-3 и с помощью unShift добавляет значение в массив a3.
 // Изучите вывод в консоль. Разберитесь, что возвращает метод unShift.
 
 let a3 = ['a', 'b'];
+let i3 = document.querySelector('.i-3');
 
 const f3 = () => {
-    // ваш код
-    let i3 = document.querySelector('.i-3').value;
-    a3.unshift(i3);
-    console.log(a3.unshift(i3));
+    let data = i3.value;
+    a3.unshift(data);
+    console.log(a3.unshift(data));  // return length
     console.log(a3);
-
-    document.querySelector('.i-3').value = '';
 }
 document.querySelector('.b-3').addEventListener('click', f3);
 
+
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция удаляет из массива первое значение с помощью shift. Выводит a4 в консоль. Изучите результат.
-
 
 let a4 = [14, 15, 16, 17, 18];
 
