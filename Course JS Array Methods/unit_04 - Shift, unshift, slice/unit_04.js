@@ -100,7 +100,6 @@ document.querySelector('.b-6').addEventListener('click', () => {
 // По нажатию b-7 выполняется функция f7. Функция применяет метод shift к массиву a7, выводит массив в консоль и возврщает новую длину массива a7.
 
 let a7 = [21, 22, 23, 24, 25, 26, 27];
-
 const f7 = () => {
     a7.shift();
     console.log(a7);
@@ -109,6 +108,8 @@ const f7 = () => {
 document.querySelector('.b-7').addEventListener('click', () => {
     console.log(f7());
 });
+
+
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция должна применить slice с параметрами (1,4) к массиву a8 и вывести массив в консоль.
 
@@ -121,27 +122,24 @@ const f8 = () => {
 }
 document.querySelector('.b-8').addEventListener('click', f8);
 
+
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция должна применить slice с параметрами (2) к массиву a9 и вывести массив в консоль.
 
 let a9 = ['A', 2, 43, 12, 13, 14, 15, 16];
-
 const f9 = () => {
     let arr = a9.slice(2);
     console.log(arr);
 }
 document.querySelector('.b-9').addEventListener('click', f9);
 
+
 // TASK 10
 // По нажатию b-10 выполняется функция f10. Функция должна применить slice с параметрами (2, -2) к массиву a10 и вывести массив в консоль.
 
 let a10 = [100, 2, 43, 12, 13, 14, 15, 16];
-
 const f10 = () => {
-
     let arr = a10.slice(2, -2);
     console.log(arr);
-
 }
-
 document.querySelector('.b-10').addEventListener('click', f10());
