@@ -15,16 +15,16 @@ document.querySelector('.b-1').addEventListener('click', f1);
 
 
 // TASK 02
-// По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 (число). С помощью unShift число и его третью степень (куб) добавляются в массив a2.
-// Обратите внимание, что добавление двух чисел нужно выполнить с помощью одного unShift. Функция выводит a2 в консоль и возвращает массив a2.
+// По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 (число). С помощью unshift число и его третью степень (куб) добавляются в массив a2.
+// Обратите внимание, что добавление двух чисел нужно выполнить с помощью одного unshift. Функция выводит a2 в консоль и возвращает массив a2.
 
 let a2 = ['b', 'c', 12, 34, 'dh', 17];
+let i2 = document.querySelector('.i-2');
 
 const f2 = () => {
-    let i2 = +document.querySelector('.i-2').value;
-    a2.unshift(i2, i2 ** 3);
+    let data = +i2.value;
+    a2.unshift(Math.pow(data, 3));
     console.log(a2);
-    document.querySelector('.i-2').value = '';
     return a2;
 }
 document.querySelector('.b-2').addEventListener('click', f2);
