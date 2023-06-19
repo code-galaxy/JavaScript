@@ -132,6 +132,20 @@ const f8 = () => {
     })
     console.log(a8);
     console.log(a8_res);
+
+
+    //another variant
+    //  for (let i = 0; i < a8.length; i++) {
+    //     let sum = a8[i][0];
+    //     console.log(a8[i][0]);
+
+    //     for (let k = 1; k < a8[i].length; k++) {
+    //         console.log(a8[i][k]);
+    //         sum = sum + a8[i][k];
+    //     }
+    //     a8_res.push(sum);
+    // }
+    
 }
 
 // TASK 09
