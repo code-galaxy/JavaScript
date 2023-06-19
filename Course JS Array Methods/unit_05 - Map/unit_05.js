@@ -1,10 +1,8 @@
 // TASK 01
 // По нажатию b-1 выполняется функция f1. Функция применяет к массиву a1 метод map. В качестве функции callback указывается функция, которая умножает каждый элемент массива a1 на 3. Результат выполнения map присваивается в a1_res. После применения map выведите a1 в консоль, a1_res в консоль.
 
-
 let a1 = [5, 6, 7];
 let a1_res;
-
 const f1 = () => {
     a1_res = a1.map(item => {
         return item * 3;
@@ -12,6 +10,8 @@ const f1 = () => {
     console.log(a1);
     console.log(a1_res);
 }
+document.querySelector('.b-1').addEventListener('click', f1);
+
 
 // TASK 02
 // По нажатию b-2 выполняется функция f2. Функция применяет к массиву a2 метод map. В качестве функции callback указывается функция, которая умножает каждый элемент массива a2 на 3. Результат выполнения map присваивается в a2_res. После применения map выведите a2 в консоль, a2_res в консоль.
@@ -31,6 +31,8 @@ const f2 = () => {
     console.log(a2);
     console.log(a2_res);
 }
+document.querySelector('.b-2').addEventListener('click', f2);
+
 
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция применяет к массиву a3 метод map. В качестве функции callback указывается функция, которая умножает каждый элемент массива a3 на 3. Результат выполнения map присваивается в a3_res. После применения map выведите a3 в консоль, a3_res в консоль. Обратите внимание на условие внутри - оно изменит 3 элемент массива до того как до него дойдет очередь map.
@@ -50,6 +52,8 @@ const f3 = () => {
     console.log(a3);
     console.log(a3_res);
 }
+document.querySelector('.b-3').addEventListener('click', f3);
+
 
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция применяет к a4 метод map и возвращает в массив a4_res текущий элемент массива a4 если он больше нуля или 0 если равен или меньше. Выведите в консоль оба массива после выполнения f4.
@@ -66,6 +70,8 @@ const f4 = () => {
     console.log(a4);
     console.log(a4_res);
 }
+document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция применяет к a5 метод map и возвращает в массив a5_res содержащий индексы массива a5. Выведите в консоль оба массива после выполнения f5.
@@ -80,6 +86,8 @@ const f5 = () => {
     console.log(a5);
     console.log(a5_res);
 }
+document.querySelector('.b-5').addEventListener('click', f5);
+
 
 // TASK 06
 // По нажатию b-6 выполняется функция f6. Функция применяет к a6 метод map и возвращает в массив a6_res содержащий индексы массива a6. Выведите в консоль оба массива после выполнения f6.
@@ -98,6 +106,8 @@ const f6 = () => {
     console.log(a6);
     console.log(a6_res);
 }
+document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция применяет к a7 метод map и возвращает в массив a7_res содержащий длины вложенных массивов. Выведите в консоль оба массива после выполнения f7.
@@ -112,6 +122,8 @@ const f7 = () => {
     console.log(a7);
     console.log(a7_res);
 }
+document.querySelector('.b-7').addEventListener('click', f7);
+
 
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция применяет к a8 метод map и возвращает в массив a8_res содержащий суммы элементов вложенных массивов. Выведите в консоль оба массива после выполнения f8.
@@ -145,8 +157,9 @@ const f8 = () => {
     //     }
     //     a8_res.push(sum);
     // }
-    
 }
+document.querySelector('.b-8').addEventListener('click', f8);
+
 
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция применяет к a9 метод map и создает два массива. a9_even содержит четные элементы a9, a9_index содержит 
@@ -157,22 +170,29 @@ let a9_index;
 let a9_even;
 
 const f9 = () => {
-
-    a9_index = [];
     a9_even = [];
+    
+    a9_index = a9.map((item, index) =>{
+    return index;        
+    })
 
-    a9.map((item, index) => {
-        a9_index.push(index);
-
+    a9.map(item => {
         if (item % 2 === 0) {
             a9_even.push(item);
         }
-
     });
 
     console.log(a9_index);
     console.log(a9_even);
+
+    // another variant = Method 'filter':
+    // a9_even = a9.filter(item => {
+    //     if (item % 2 === 0) {
+    //         return true;
+    //     }
+    // })
 }
+document.querySelector('.b-9').addEventListener('click', f9);
 
 
 // TASK 10
@@ -184,7 +204,6 @@ const f9 = () => {
 
 let a10 = [2, 3, 4, 5, 6, 7];
 let a10_res;
-
 
 const f10 = (arr, fc) => {
     a10_res = [];
@@ -198,20 +217,9 @@ const f10 = (arr, fc) => {
 
 function callback10(elem) {
     //console.log(elem);
-    // ваш код
     return elem * 2;
 }
 
-
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
-document.querySelector('.b-4').addEventListener('click', f4);
-document.querySelector('.b-5').addEventListener('click', f5);
-document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', f7);
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', () => {
     console.log(f10(a10, callback10));
 });
