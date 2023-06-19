@@ -80,7 +80,7 @@ document.querySelector('.b-5').addEventListener('click', () => {
 let a6 = ['a', 'b', 'c', 'd', 'e', 'f'];
 
 const f6 = (elem) => {
-    arr = [];
+    let arr = [];
     arr.push(elem);
 
     for (let i = 0; i < a6.length; i++) {
@@ -90,7 +90,6 @@ const f6 = (elem) => {
     console.log(a6);
     return a6.length;
 }
-
 document.querySelector('.b-6').addEventListener('click', () => {
     let elem = document.querySelector('.i-6').value;
     console.log(f6(elem));
