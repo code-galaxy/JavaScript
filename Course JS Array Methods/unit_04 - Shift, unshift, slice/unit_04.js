@@ -2,16 +2,17 @@
 // По нажатию b-1 выполняется функция f1. Функция считывает значение из i-1 и с помощью unShift добавляет полученную из input строку в массив a1.
 // Функция выводит массив a1 в консоль и возращает массив a1.
 
-
 let a1 = ['hello', 't'];
+let i1 = document.querySelector('.i-1');
 
 const f1 = () => {
-    let i1 = document.querySelector('.i-1').value;
-    a1.unshift(i1);
+    let data = i1.value;
+    a1.unshift(data);
     console.log(a1);
     return a1;
 }
 document.querySelector('.b-1').addEventListener('click', f1);
+
 
 // TASK 02
 // По нажатию b-2 выполняется функция f2. Функция считывает значение из i-2 (число). С помощью unShift число и его третью степень (куб) добавляются в массив a2.
