@@ -1,7 +1,6 @@
 // TASK 01
 // По нажатию b-1 выполняется функция f1. Функция с помощью isArray проверяет a1. Результат проверки - вывести в out-1. Проверьте на строке и set.
 
-
 let a1 = [5, 6, 7, 8, 44, 21, 43, 26, 78, 100, -2, 0, 17];
 // a1 = 'hello';
 a1 = new Set([2, 3]);
@@ -9,6 +8,8 @@ a1 = new Set([2, 3]);
 const f1 = () => {
     document.querySelector('.out-1').innerHTML = Array.isArray(a1);
 }
+document.querySelector('.b-1').addEventListener('click', f1);
+
 
 // TASK 02
 //Выполним эмуляцию метода isArray. В качестве критерия будем проверять следующее - содержимое переменной можно перебрать с помощью цикла for let i = . Т.е. все индексы должны быть числами. Функция должна выводить в out-2 true или false, в зависимости от того, что лежит в a2. Проверьте функцию на переменных указанных в комментариях.
@@ -45,6 +46,8 @@ const f2 = () => {
         return false;
     }
 };
+document.querySelector('.b-2').addEventListener('click', f2);
+
 
 // TASK 03
 //По нажатию b-3 выполняется функция f3. Функция применяет к массиву a3 метод reduce и выводит переменные accum, item в консоль. Обратите внимание на начальное значение accum и значения, учитывая что мы не делаем return. Обратите внимание, сколько раз сработал цикл - на один меньше чем элементов в массиве. 
@@ -60,6 +63,8 @@ const f3 = () => {
         console.log('==============');
     });
 }
+document.querySelector('.b-3').addEventListener('click', f3);
+
 
 // TASK 04
 //По нажатию b-4 выполняется функция f4. Функция будет похожа на предыдущую, за единственным исключением, мы делаем return. 
@@ -86,10 +91,11 @@ let a5 = [2, 3, 4, 5, 6];
 
 const f5 = () => {
     let res = a5.reduce((accum, item) => {
-        return accum + item;
+        return accum += item;
     });
     document.querySelector('.out-5').innerHTML = res;
 }
+
 
 // TASK 06
 // По нажатию b-6 выполняется функция f6. Функция перебирает с помощью reduce массив и перемножает все его элементы. 
@@ -351,9 +357,6 @@ const f20 = () => {
 
 
 
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
 document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
