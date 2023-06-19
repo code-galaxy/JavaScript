@@ -62,7 +62,6 @@ const f4 = () => {
     a4_res = a4.map(item => {
         if (item > 0) return item;
         else return 0;
-
     })
     console.log(a4);
     console.log(a4_res);
