@@ -69,9 +69,7 @@ document.querySelector('.b-3').addEventListener('click', f3);
 // TASK 04
 //По нажатию b-4 выполняется функция f4. Функция будет похожа на предыдущую, за единственным исключением, мы делаем return. 
 
-
 let a4 = [2, 3, 4, 5];
-
 const f4 = () => {
     console.clear();
     let res = a4.reduce((accum, item) => {
@@ -81,6 +79,8 @@ const f4 = () => {
         return item;
     });
 }
+document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // TASK 05
 //По нажатию b-5 выполняется функция f5. Функция перебирает с помощью reduce массив и суммирует все его элементы.
