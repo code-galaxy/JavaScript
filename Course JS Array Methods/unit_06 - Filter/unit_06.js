@@ -8,6 +8,7 @@ const f1 = () => {
     z1 = a1.filter(item => (item % 2 === 0));
     console.log(z1);
 }
+document.querySelector('.b-1').addEventListener('click', f1);
 
 
 // TASK 02
@@ -20,6 +21,7 @@ const f2 = () => {
     z2 = a2.filter((item, index) => (index % 2 === 0));
     console.log(z2);
 }
+document.querySelector('.b-2').addEventListener('click', f2);
 
 
 // TASK 03
@@ -36,6 +38,7 @@ const f3 = () => {
     })
     console.log(z3);
 }
+document.querySelector('.b-3').addEventListener('click', f3);
 
 
 // TASK 04
@@ -52,6 +55,8 @@ const f4 = () => {
     })
     console.log(z4);
 }
+document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция перебирает с помощью filter массив a5 и добавляет в z5 те вложенные массивы, в которых есть число 5. 
@@ -67,6 +72,7 @@ const f5 = () => {
     })
     console.log(z5);
 }
+document.querySelector('.b-5').addEventListener('click', f5);
 
 
 // TASK 06
@@ -84,6 +90,7 @@ const f6 = () => {
     })
     console.log(z6);
 }
+document.querySelector('.b-6').addEventListener('click', f6);
 
 
 // TASK 07
@@ -106,6 +113,8 @@ const f7 = () => {
     })
     console.log(z7);
 }
+document.querySelector('.b-7').addEventListener('click', f7);
+
 
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция применяет к массиву a8 метод filter и создает новый массив z8 куда входят только четные элементы массива a8. Остальные элементы добавляет в z8_2. Результат выводится в консоль.
@@ -125,6 +134,8 @@ const f8 = () => {
     console.log(z8);
     console.log(z8_2);
 }
+document.querySelector('.b-8').addEventListener('click', f8);
+
 
 // TASK 09
 // Задача на повторение. По нажатию b-9 выполняется функция f9. Функция на основе массива a9 должна сделать объект z9 где ключи - такие же как и значения. Вывести результат в консоль.
@@ -133,13 +144,13 @@ let a9 = [6, 7, 9];
 let z9 = {}; // {6 : 6, 7: 7, 9: 9}
 
 const f9 = () => {
-
     for (let i = 0; i < a9.length; i++) {
         z9[a9[i]] = a9[i];
     }
-
     console.log(z9)
 }
+document.querySelector('.b-9').addEventListener('click', f9);
+
 
 // TASK 10
 // // По нажатию b-10 выполняется функция f10. Функция перебирает объект a10 и создает новый объект z10 со значениямия которые по модулю больше 5. Связка ключ - значение сохраняется. Вывести результат в консоль.
@@ -148,7 +159,6 @@ let a10 = { "hi": 5, "test": 2, "best": 12, "quest": -6 };
 let z10 = {}; // ожидаю {"best" : 12, "quest" : -6};
 
 const f10 = () => {
-
     for (let key in a10) {
         elem = a10[key];
 
@@ -159,18 +169,6 @@ const f10 = () => {
 }
 
 function callback10(elem) {
-
     if (Math.abs(elem) > 5) return true;
 }
-
-
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
-document.querySelector('.b-4').addEventListener('click', f4);
-document.querySelector('.b-5').addEventListener('click', f5);
-document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', f7);
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', f10);
