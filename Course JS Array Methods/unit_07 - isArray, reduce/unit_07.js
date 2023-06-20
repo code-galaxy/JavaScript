@@ -330,9 +330,9 @@ let a18 = [];
 a18[100] = 67;
 a18[2000] = 15;
 
-const f18 = () => {
+ const f18 = () => {
     let res = a18.reduce((accum, item, index) => {
-        accum += `${index} ${item} <br>`;
+        accum += `index ${index} = ${item} <br>`;
         return accum;
     }, '')
     document.querySelector('.out-18').innerHTML = res;
