@@ -113,16 +113,9 @@ document.querySelector('.b-7').addEventListener('click', f7);
 let a8 = [100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 1];
 n8 = 4;
 k8 = 3;
-
-let out8 = document.querySelector('.out-8');
-
 const f8 = () => {
-    let out = '';
-    a8.splice(k8, n8);
-
-    for (let i = 0; i < a8.length; i++)
-        out += a8[i] + ' ';
-    out8.innerHTML = out;
+   let res = a8.splice(n8, k8);
+    document.querySelector('.out-8').innerHTML = res.join(' ');
 }
 document.querySelector('.b-8').addEventListener('click', f8);
 
