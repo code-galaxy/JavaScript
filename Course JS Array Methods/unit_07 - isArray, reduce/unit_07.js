@@ -244,6 +244,20 @@ const f14 = () => {
     })
     document.querySelector('.out-14').innerHTML = res;
 }
+document.querySelector('.b-14').addEventListener('click', f14);
+
+// Another variant: 
+// const f14 = () => {
+//     let res = a14.reduce((accum, item, index, arr) => {
+//         if (accum < item.length) {
+//             accum = arr.indexOf(item);
+//         }
+//         return accum;
+//     }, 0)
+//     document.querySelector('.out-14').innerHTML = a14[res];;
+// }
+// document.querySelector('.b-14').addEventListener('click', f14);
+
 
 // TASK 15
 // По нажатию b-15 выполняется функция f15. Функция должна перебрать массив a15 измерений температуры за сутки  и вывести в out-15 
@@ -258,6 +272,7 @@ const f15 = () => {
     })
     document.querySelector('.out-15').innerHTML = res / a15.length;
 }
+
 
 // TASK 16
 // По нажатию b-16 выполняется функция f16. Функция должна выполнить переиндексацию массива a16 и получить объект который состоит из ключей - id и значений name.
@@ -368,7 +383,6 @@ const f20 = () => {
 
 
 
-document.querySelector('.b-14').addEventListener('click', f14);
 document.querySelector('.b-15').addEventListener('click', f15);
 document.querySelector('.b-16').addEventListener('click', f16);
 document.querySelector('.b-17').addEventListener('click', f17);
