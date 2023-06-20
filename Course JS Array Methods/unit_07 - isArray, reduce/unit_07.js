@@ -296,8 +296,10 @@ const f16 = () => {
     //console.log(res);
 
     for (let key in res)
-        document.querySelector('.out-16').innerHTML += key + ' ' + res[key] + '<br>';
+        document.querySelector('.out-16').innerHTML += `${key} : ${res[key]} <br>`;
 }
+document.querySelector('.b-16').addEventListener('click', f16);
+
 
 // TASK 17
 // По нажатию b-17 выполняется функция f17. Функция должна преобразовать объект в массив, который содержит только название стран. 
@@ -308,22 +310,17 @@ let a17 = {
     "Berlin": "Germany",
     "Paris": "France"
 };
-
 let a17_res = [];
 
 const f17 = () => {
     a17_res = [];
-    document.querySelector('.out-17').innerHTML = '';
-
     for (let key in a17) {
         a17_res.push(a17[key]);
     }
-    //    console.log(a17_res);
-
-    for (let i = 0; i < a17_res.length; i++) {
-        document.querySelector('.out-17').innerHTML += a17_res[i] + ' ';
-    }
+    document.querySelector('.out-17').innerHTML = a17_res.join(' ');
 }
+document.querySelector('.b-17').addEventListener('click', f17);
+
 
 // TASK 18
 // По нажатию b-18 выполняется функция f18. Функция должна вывести в out-18 массив a18 в формате ключ пробел значение перенос строки.
@@ -384,8 +381,6 @@ const f20 = () => {
 
 
 
-document.querySelector('.b-16').addEventListener('click', f16);
-document.querySelector('.b-17').addEventListener('click', f17);
 document.querySelector('.b-18').addEventListener('click', f18);
 document.querySelector('.b-19').addEventListener('click', f19);
 document.querySelector('.b-20').addEventListener('click', f20);
