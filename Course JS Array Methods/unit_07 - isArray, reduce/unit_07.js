@@ -272,6 +272,7 @@ const f15 = () => {
     })
     document.querySelector('.out-15').innerHTML = res / a15.length;
 }
+document.querySelector('.b-15').addEventListener('click', f15);
 
 
 // TASK 16
@@ -383,7 +384,6 @@ const f20 = () => {
 
 
 
-document.querySelector('.b-15').addEventListener('click', f15);
 document.querySelector('.b-16').addEventListener('click', f16);
 document.querySelector('.b-17').addEventListener('click', f17);
 document.querySelector('.b-18').addEventListener('click', f18);
