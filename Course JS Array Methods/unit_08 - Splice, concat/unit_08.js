@@ -60,6 +60,7 @@ const f4 = () => {
     }
     out4.innerHTML = out;
 }
+document.querySelector('.b-4').addEventListener('click', f4);
 
 
 // TASK 05
@@ -74,6 +75,9 @@ const f5 = (ar1, ar2) => {
     console.log(res);
     return res;
 }
+document.querySelector('.b-5').addEventListener('click', () => {
+    document.querySelector('.out-5').innerHTML = f5([3, 4, 5], [6, 7, 8]);
+});
 
 
 // TASK 06
@@ -81,16 +85,15 @@ const f5 = (ar1, ar2) => {
 // для примера я написал 1, но тестировать буду с любым количеством
 
 const f6 = (...arg1) => {
-    let res = [];
-
-    for (let k = 0; k < arg1.length; k++) {
-        for (let i = 0; i < arg1[k].length; i++) {
-            res.push(arg1[k][i])
-        }
-    }
+    let arr = [];
+    let res = arr.concat(...arg1);
     console.log(res);
-    return res;
+    return res.join(' ');
 }
+document.querySelector('.b-6').addEventListener('click', () => {
+    document.querySelector('.out-6').innerHTML = f6([2, 3], ['hi'], [6, 7, 8], [23, 5]);
+});
+
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция удалить 3 элемента из a7 начиная со второго индекса с помощью splice. Выведите a7 в out-7 через пробел.
@@ -107,6 +110,8 @@ const f7 = () => {
     }
     out7.innerHTML = out;
 }
+document.querySelector('.b-7').addEventListener('click', f7);
+
 
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция удалить n8 элементoв из a8 начиная со k8 индекса с помощью splice. Выведите a8 в out-8 через пробел.
@@ -125,6 +130,8 @@ const f8 = () => {
         out += a8[i] + ' ';
     out8.innerHTML = out;
 }
+document.querySelector('.b-8').addEventListener('click', f8);
+
 
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция перебирает удаляет 3 элемента с начала массива a9 и добавляет элементы 7 и 8 (числа) вместо удаленных. 
@@ -139,6 +146,8 @@ const f9 = () => {
         out += a9[i] + ' ';
     out9.innerHTML = out;
 }
+document.querySelector('.b-9').addEventListener('click', f9);
+
 
 // TASK 10
 // Напишите функцию эмуляцию splice. Функция принимает 4 параметра - исходный массив, индекс с которого удалять, количество удаляемых элементов,
@@ -159,19 +168,6 @@ const f10 = (arr, from, num, add) => {
 
     return res;
 }
-
-
-
-document.querySelector('.b-4').addEventListener('click', f4);
-document.querySelector('.b-5').addEventListener('click', () => {
-    document.querySelector('.out-5').innerHTML = f5([3, 4, 5], [6, 7, 8]);
-});
-document.querySelector('.b-6').addEventListener('click', () => {
-    document.querySelector('.out-6').innerHTML = f6([2, 3], ['hi'], [6, 7, 8], [23, 5]);
-});
-document.querySelector('.b-7').addEventListener('click', f7);
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', () => {
     document.querySelector('.out-10').innerHTML = f10(a10, from, num, add);
 });
