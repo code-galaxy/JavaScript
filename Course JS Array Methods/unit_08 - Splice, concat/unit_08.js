@@ -6,17 +6,12 @@ let a1 = [5, 6, 7];
 let a1_1 = [55, 66, 77];
 let a1_res;
 
-let out1 = document.querySelector('.out-1');
-
 const f1 = () => {
-    let out = '';
     a1_res = a1.concat(a1_1);
-    //console.log(a1_res);
-    for (let i = 0; i < a1_res.length; i++) {
-        out += a1_res[i] + ' ';
-    }
-    out1.innerHTML = out;
+    document.querySelector('.out-1').innerHTML = a1_res.join(' ');
 }
+document.querySelector('.b-1').addEventListener('click', f1);
+
 
 // TASK 02
 // По нажатию b-2 выполняется функция f2. Функция с помощью concat объединяет строки a2 и a2_1 в строку a2_res. Результирующая строка выводится в out-2.
@@ -26,10 +21,11 @@ let a2_1 = 'best';
 let a2_res;
 
 const f2 = () => {
-
     a2_res = a2.concat(a2_1);
     document.querySelector('.out-2').innerHTML = a2_res;
 }
+document.querySelector('.b-2').addEventListener('click', f2);
+
 
 // TASK 03
 //По нажатию b-3 выполняется функция f3. Функция с помощью concat объединяет строки a3 и массив a3_1 с помощью метода concat. Результат поместите в строку a3_res. Результирующая строка выводится в out-3.
@@ -165,8 +161,6 @@ const f10 = (arr, from, num, add) => {
 
 
 
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
 document.querySelector('.b-3').addEventListener('click', f3);
 document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', () => {
