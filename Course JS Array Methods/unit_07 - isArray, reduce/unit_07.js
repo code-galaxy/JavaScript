@@ -332,12 +332,13 @@ a18[2000] = 15;
 
 const f18 = () => {
     let res = a18.reduce((accum, item, index) => {
-        accum += index + ' ' + item + '<br>';
+        accum += `${index} ${item} <br>`;
         return accum;
     }, '')
-
     document.querySelector('.out-18').innerHTML = res;
 }
+document.querySelector('.b-18').addEventListener('click', f18);
+
 
 // TASK 19
 // По нажатию b-19 выполняется функция f19. Функция должна вывести в out-19 массив a19 в формате ключ пробел значение перенос строки. 
@@ -381,6 +382,5 @@ const f20 = () => {
 
 
 
-document.querySelector('.b-18').addEventListener('click', f18);
 document.querySelector('.b-19').addEventListener('click', f19);
 document.querySelector('.b-20').addEventListener('click', f20);
