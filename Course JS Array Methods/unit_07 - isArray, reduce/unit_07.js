@@ -361,23 +361,8 @@ document.querySelector('.b-19').addEventListener('click', f19);
 // Т.е. res должен быть массивом с обратным порядком по отношению к a20. 
 
 let a20 = [4, 5, 6];
-
 const f20 = () => {
-    let res = a20.reduce((accum, item) => {
-        accum = [];
-
-        for (let i = (a20.length - 1); i >= 0; i--) {
-            accum.push(a20[i]);
-        }
-        console.log(accum);
-        return accum;
-    }, [])
-    //console.log(res);
-    // res = [6,5,4]
-
-    document.querySelector('.out-20').innerHTML = '';
-
-    for (let i = 0; i < res.length; i++)
-        document.querySelector('.out-20').innerHTML += res[i] + ' ';
+    let res = a20.reverse().join(' ')
+    document.querySelector('.out-20').innerHTML = res;
 }
 document.querySelector('.b-20').addEventListener('click', f20);
