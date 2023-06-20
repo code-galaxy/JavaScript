@@ -185,13 +185,13 @@ const f10 = () => {
 let a11 = [-2, 3, 14, 5, -6, 7];  // 14
 
 const f11 = () => {
-
     let res = a11.reduce((accum, item) => {
         if (accum < item) accum = item;
         return accum;
     })
     document.querySelector('.out-11').innerHTML = res;
 }
+
 
 // TASK 12
 // По нажатию b-12 выполняется функция f12. Функция должна перебрать массив a12 и вывести в out-12 индекс самого большого числа в массиве. Применяем reduce.
