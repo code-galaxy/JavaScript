@@ -344,16 +344,17 @@ document.querySelector('.b-18').addEventListener('click', f18);
 // По нажатию b-19 выполняется функция f19. Функция должна вывести в out-19 массив a19 в формате ключ пробел значение перенос строки. 
 //Для формирования строки для вывода используйте reduce. Чтобы из строки сделать массив - split. Результат вывести в out-19. 
 
-let a19 = 'hello';
+let a19 = 'hello IT community';
 
 const f19 = () => {
     let res = a19.split('').reduce((accum, item, index) => {
-        accum += index + ' ' + item + '<br>';
+        accum += `${index} ${item} <br>`;
         return accum;
-    }, '')
-
+    }, '');
     document.querySelector('.out-19').innerHTML = res;
 }
+document.querySelector('.b-19').addEventListener('click', f19);
+
 
 // TASK 20
 // По нажатию b-20 выполняется функция f20. Функция должна вывести в out-20 массив a20 в обратном порядке, через пробел. 
@@ -379,8 +380,4 @@ const f20 = () => {
     for (let i = 0; i < res.length; i++)
         document.querySelector('.out-20').innerHTML += res[i] + ' ';
 }
-
-
-
-document.querySelector('.b-19').addEventListener('click', f19);
 document.querySelector('.b-20').addEventListener('click', f20);
