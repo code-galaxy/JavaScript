@@ -99,16 +99,10 @@ document.querySelector('.b-6').addEventListener('click', () => {
 // По нажатию b-7 выполняется функция f7. Функция удалить 3 элемента из a7 начиная со второго индекса с помощью splice. Выведите a7 в out-7 через пробел.
 
 let a7 = [3, -4, 5, -6, 7, 45, 67];
-let out7 = document.querySelector('.out-7');
 
 const f7 = () => {
-    let out = '';
-    a7.splice(2, 3);
-
-    for (let i = 0; i < a7.length; i++) {
-        out += a7[i] + ' ';
-    }
-    out7.innerHTML = out;
+   let res = a7.splice(2, 3);
+   document.querySelector('.out-7').innerHTML = res.join(' ');
 }
 document.querySelector('.b-7').addEventListener('click', f7);
 
