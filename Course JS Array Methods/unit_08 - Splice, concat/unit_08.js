@@ -30,7 +30,6 @@ document.querySelector('.b-2').addEventListener('click', f2);
 // TASK 03
 //По нажатию b-3 выполняется функция f3. Функция с помощью concat объединяет строки a3 и массив a3_1 с помощью метода concat. Результат поместите в строку a3_res. Результирующая строка выводится в out-3.
 
-
 let a3 = 'some_text';
 let a3_1 = [5, 7];
 let a3_res;
@@ -39,6 +38,8 @@ const f3 = () => {
     a3_res = a3.concat(a3_1);
     document.querySelector('.out-3').innerHTML = a3_res;
 }
+document.querySelector('.b-3').addEventListener('click', f3);
+
 
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция с помощью concat объединяет массив a4 и строку a4_1 с помощью метода concat. Результат поместите в a4_res. Результат выведите в out-4 через пробел.
@@ -161,7 +162,6 @@ const f10 = (arr, from, num, add) => {
 
 
 
-document.querySelector('.b-3').addEventListener('click', f3);
 document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', () => {
     document.querySelector('.out-5').innerHTML = f5([3, 4, 5], [6, 7, 8]);
