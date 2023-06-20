@@ -146,6 +146,7 @@ const f8 = () => {
     }, 0)
     document.querySelector('.out-8').innerHTML = res;
 }
+document.querySelector('.b-8').addEventListener('click', f8);
 
 
 // TASK 09
@@ -161,6 +162,7 @@ const f9 = () => {
     }, 1)
     document.querySelector('.out-9').innerHTML = res;
 }
+document.querySelector('.b-9').addEventListener('click', f9);
 
 
 // TASK 10
@@ -177,6 +179,7 @@ const f10 = () => {
     }, [0, 0])
     document.querySelector('.out-10').innerHTML = res;
 }
+document.querySelector('.b-10').addEventListener('click', f10);
 
 
 // TASK 11
@@ -191,6 +194,7 @@ const f11 = () => {
     })
     document.querySelector('.out-11').innerHTML = res;
 }
+document.querySelector('.b-11').addEventListener('click', f11);
 
 
 // TASK 12
@@ -199,15 +203,14 @@ const f11 = () => {
 let a12 = [-2, 3, 14, 15, -6, 7];
 
 const f12 = () => {
-
     let res = a12.reduce((accum, item) => {
         if (accum < item) accum = item;
         return accum;
-
-    }, 0)
-
+    });
     document.querySelector('.out-12').innerHTML = a12.indexOf(res);
 }
+document.querySelector('.b-12').addEventListener('click', f12);
+
 
 // TASK 13
 // По нажатию b-13 выполняется функция f13. Функция должна перебрать массив a13 и вывести в out-13 длину самого большого вложенного в a13 массива. 
@@ -220,10 +223,11 @@ const f13 = () => {
         if (accum < item.length)
             accum = item.length;
         return accum;
-
     }, 0)
     document.querySelector('.out-13').innerHTML = res;
 }
+document.querySelector('.b-13').addEventListener('click', f13);
+
 
 // TASK 14
 // По нажатию b-14 выполняется функция f14. Функция должна перебрать массив a14 и вывести в out-14 самый большой вложенный в a14 массив. Применяем reduce.
@@ -364,12 +368,6 @@ const f20 = () => {
 
 
 
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', f9);
-document.querySelector('.b-10').addEventListener('click', f10);
-document.querySelector('.b-11').addEventListener('click', f11);
-document.querySelector('.b-12').addEventListener('click', f12);
-document.querySelector('.b-13').addEventListener('click', f13);
 document.querySelector('.b-14').addEventListener('click', f14);
 document.querySelector('.b-15').addEventListener('click', f15);
 document.querySelector('.b-16').addEventListener('click', f16);
