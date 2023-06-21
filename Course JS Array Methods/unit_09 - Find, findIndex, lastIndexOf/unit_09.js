@@ -152,7 +152,6 @@ let a8_1 = 'a'; // 43 ожидаю и на a и на A
 
 const f8 = () => {
    let res = str8.toLocaleLowerCase().lastIndexOf(a8_1.toLocaleLowerCase());
-
    document.querySelector('.out-8').innerHTML = res;
 }
 document.querySelector('.b-8').addEventListener('click', f8);
@@ -167,7 +166,6 @@ let a9_1 = '5'; // ожидаю индекс 5
 
 const f9 = () => {
    let res = a9.lastIndexOf(a9_1);
-   //console.log(a9);
    document.querySelector('.out-9').innerHTML = res;
 }
 document.querySelector('.b-9').addEventListener('click', f9);
