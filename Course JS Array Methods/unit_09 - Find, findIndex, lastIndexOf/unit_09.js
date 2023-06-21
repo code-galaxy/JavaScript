@@ -101,7 +101,6 @@ document.querySelector('.b-5').addEventListener('click', f5);
 // значение которого лежит от a6_from до a6_to (больше a6_from но меньше a6_to). Вывести найденный индекс в out-6.
 // Если значение не найдено то выводить false.
 
-
 let a6 = [13, 15, 22, 23, 26, 35, 72];
 let a6_from = 23;
 let a6_to = 67;
@@ -112,20 +111,26 @@ const f6 = () => {
       a6_res.push(a6[i]);
 
    let res = a6_res.findIndex(item => {
-
       if (item > a6_from && item < a6_to)
          return true;
    })
-   //console.log(a6);
+
+   // Another variant
+   // let res = a6.reverse().findIndex(item => {
+   //    if (item > a6_from && item < a6_to) {
+   //       return true;
+   //    }
+   // })
 
    if (res === -1) document.querySelector('.out-6').innerHTML = false;
    else document.querySelector('.out-6').innerHTML = (a6.length - 1) - res;
 }
+document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция с помощью lastIndexOf должна найти наибольший индекс символа a7_1 в строке str7, и вывести out-7.
 // Если значение не найдено то выводить -1. Обратите внимание, что lastIndexOf зависит от регистра. 
-
 
 let str7 = 'cccaBCcbBDabBddcCadcDbACacbbCdbBCADBDBdaAdcCd';
 let a7_1 = 'C'; // 43
@@ -192,7 +197,6 @@ const f10 = () => {
 
 
 
-document.querySelector('.b-6').addEventListener('click', f6);
 document.querySelector('.b-7').addEventListener('click', f7);
 document.querySelector('.b-8').addEventListener('click', f8);
 document.querySelector('.b-9').addEventListener('click', f9);
