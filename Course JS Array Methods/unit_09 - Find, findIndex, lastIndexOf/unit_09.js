@@ -197,4 +197,21 @@ const f10 = () => {
    document.querySelector('.out-10').innerHTML = out;
    //console.log(a10_res);
 }
+
+// Another variant
+// const f10 = () => {
+//    let out = [];
+
+//    let res = a10.filter(item => {
+//       for (let i = 0; i < a11.length; i++) {
+//          if (item === a10[a11[i]]) {
+//             out.push(a10[a11[i]])
+//          }
+//       }
+//       return true;
+//    })
+//    document.querySelector('.out-10').innerHTML = out.join(' ');
+//    console.log(out);
+// }
+
 document.querySelector('.b-10').addEventListener('click', f10);
