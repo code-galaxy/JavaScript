@@ -140,6 +140,8 @@ const f7 = () => {
    // console.log(res);
    document.querySelector('.out-7').innerHTML = res;
 }
+document.querySelector('.b-7').addEventListener('click', f7);
+
 
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция с помощью lastIndexOf должна найти наибольший индекс символа a8_1 в строке str8, и вывести out-8. 
@@ -153,6 +155,8 @@ const f8 = () => {
 
    document.querySelector('.out-8').innerHTML = res;
 }
+document.querySelector('.b-8').addEventListener('click', f8);
+
 
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция с помощью lastIndexOf должна найти наибольший индекс символа a9_1 в массиве a9, и вывести out-9. 
@@ -166,6 +170,8 @@ const f9 = () => {
    //console.log(a9);
    document.querySelector('.out-9').innerHTML = res;
 }
+document.querySelector('.b-9').addEventListener('click', f9);
+
 
 // TASK 10
 // По нажатию b-10 выполняется функция f10. Функция должна заполнить массив a10_res, на основе массива значений a10 и массива индексов a11. 
@@ -190,14 +196,7 @@ const f10 = () => {
    for (let i = 0; i < a10_res.length; i++) {
       out += a10_res[i] + ' ';
    }
-
    document.querySelector('.out-10').innerHTML = out;
    //console.log(a10_res);
 }
-
-
-
-document.querySelector('.b-7').addEventListener('click', f7);
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', f10);
