@@ -86,15 +86,15 @@ document.querySelector('.b-4').addEventListener('click', f4);
 let a5 = [13, 15, 22, 23, 26, 35, 72];
 let a5_from = 23;
 let a5_to = 67;
-
 const f5 = () => {
    let res = a5.findIndex(item => {
       if (item > a5_from && item < a5_to)
          return true;
    })
    document.querySelector('.out-5').innerHTML = res;
-
 }
+document.querySelector('.b-5').addEventListener('click', f5);
+
 
 // TASK 06
 //  По нажатию b-6 выполняется функция f6. Функция с помощью findIndex должна найти ПОСЛЕДНИЙ индекс элемента массива a6, 
@@ -192,7 +192,6 @@ const f10 = () => {
 
 
 
-document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
 document.querySelector('.b-7').addEventListener('click', f7);
 document.querySelector('.b-8').addEventListener('click', f8);
