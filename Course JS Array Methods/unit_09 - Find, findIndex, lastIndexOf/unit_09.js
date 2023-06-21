@@ -55,6 +55,8 @@ const f3 = () => {
    console.log(a3_res);
    document.querySelector('.out-3').innerHTML = a3_res[0];
 }
+document.querySelector('.b-3').addEventListener('click', f3);
+
 
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция с помощью FIND должна найти первый элемент строки str4, 
@@ -73,10 +75,10 @@ const f4 = () => {
       if (item > a4_from && item < a4_to)
          return true;
    })
-
    document.querySelector('.out-4').innerHTML = a4_res;
-
 }
+document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция с помощью findIndex должна найти индекс элемента массива a5, значение которого лежит от a5_from до a5_to (больше a5_from но меньше a5_to). Вывести найденный индекс в out-5. Если значение не найдено то выводить -1.
@@ -190,8 +192,6 @@ const f10 = () => {
 
 
 
-document.querySelector('.b-3').addEventListener('click', f3);
-document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', f6);
 document.querySelector('.b-7').addEventListener('click', f7);
