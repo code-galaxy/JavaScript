@@ -3,11 +3,9 @@
 //значение которого лежит от a1_from до a1_to (больше a1_from но меньше a1_to). Вывести найденный элемент в out-1.
 // Если значение не найдено то выводить undefined.
 
-
 let a1 = [13, 15, 22, 23, 26, 35, 72];
 let a1_from = 23;
 let a1_to = 27;
-// ожидаю 26, но вы протестируйте и на других
 
 const f1 = () => {
    let res = a1.find(item => {
@@ -16,6 +14,7 @@ const f1 = () => {
    })
    document.querySelector('.out-1').innerHTML = res;
 }
+document.querySelector('.b-1').addEventListener('click', f1);
 
 
 // TASK 02
@@ -34,6 +33,8 @@ const f2 = () => {
    if (res === undefined) document.querySelector('.out-2').innerHTML = false;
    else document.querySelector('.out-2').innerHTML = res;
 }
+document.querySelector('.b-2').addEventListener('click', f2);
+
 
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция с помощью FILTER должна найти все элементы массива a3, значение которых лежит от a3_from до a3_to (больше a3_from но меньше a3_to). Добавить их в a3_res, предварительно очистить a3_res. В out-3 вывести нулевой элемент массива a3_res. Считаем что в a3_res будет всегда минимум одно значение. 
@@ -189,8 +190,6 @@ const f10 = () => {
 
 
 
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
 document.querySelector('.b-3').addEventListener('click', f3);
 document.querySelector('.b-4').addEventListener('click', f4);
 document.querySelector('.b-5').addEventListener('click', f5);
