@@ -1,15 +1,16 @@
 // TASK 01
 // По нажатию b-1 выполняется функция f1. Функция с помощью reverse должна развернуть массив a1 и вывести в out-1 через пробел.
 
-
 let a1 = [22, 33, 44, 55, 66, 77, 88];
-
 const f1 = () => {
     let out = '';
     a1.reverse();
     for (let i = 0; i < a1.length; i++)
         out += a1[i] + ' ';
     document.querySelector('.out-1').innerHTML = out;
+
+    // Another variant 
+    // document.querySelector('.out-1').innerHTML = a1.reverse().join(' ');
 }
 
 
