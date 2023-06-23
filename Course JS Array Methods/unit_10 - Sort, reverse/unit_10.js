@@ -242,4 +242,21 @@ const f10 = () => {
 
     document.querySelector('.out-10').innerHTML = out;
 }
+
+// ==========================================================
+//  OR another variant
+// const f10 = () => {
+//     document.querySelector('.out-10').innerHTML = '';
+//     a10.sort((a, b) => {
+//         return a.age - b.age;
+//     })
+
+//     let res = [];
+//     a10.map(item => {
+//         res.push(item.name);
+//     });
+//     document.querySelector('.out-10').innerHTML += res.join(' ');
+// }
+// ==========================================================
+
 document.querySelector('.b-10').addEventListener('click', f10);
