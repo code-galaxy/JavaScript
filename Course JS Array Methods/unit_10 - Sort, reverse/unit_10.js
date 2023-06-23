@@ -21,12 +21,14 @@ let s2 = 'mazahackercrackall';
 
 const f2 = () => {
     let str = s2.split('').reverse();
-
     let out = '';
     for (let i = 0; i < str.length; i++)
         out += str[i];
     document.querySelector('.out-2').innerHTML = out;
+
+    // document.querySelector('.out-2').innerHTML = s2.split('').reverse().join(' ');
 }
+
 
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция с помощью reverse должна развернуть вложенные в a3 и присвоить a3_res, вывести в out-3 через пробел. 
