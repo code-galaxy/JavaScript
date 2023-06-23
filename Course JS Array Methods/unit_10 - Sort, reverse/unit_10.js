@@ -100,6 +100,24 @@ const f5 = () => {
 }
 //console.log(f5());
 
+// ==========================================================
+// Another variant with map
+// const f5 = () => {
+//     let a5_res = [];
+
+//     a5.map((item, index, arr) => {
+//         if (index % 2 != 0) {
+//             a5_res.push(arr[index - 1]);
+//         }
+//         else if (index % 2 == 0) {
+//             a5_res.push(arr[index + 1]);
+//         }
+//     });
+//     console.log(a5_res);
+//     document.querySelector('.out-5').innerHTML = a5_res;
+//     return a5_res;
+// }
+// ==========================================================
 
 // TASK 06
 //  Напишите функцию f6, которая запускается по кнопке b-6. Функция сортирует массив a6 по возрастанию и выводит в out-6 через пробел.
@@ -118,6 +136,9 @@ const f6 = () => {
         out += a6[i] + ' ';
 
     document.querySelector('.out-6').innerHTML = out;
+
+    // OR
+    // document.querySelector('.out-6').innerHTML = a6.sort().join(' ');
 }
 
 // TASK 07
