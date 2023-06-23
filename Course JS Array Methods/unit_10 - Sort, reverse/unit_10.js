@@ -12,6 +12,7 @@ const f1 = () => {
     // Another variant 
     // document.querySelector('.out-1').innerHTML = a1.reverse().join(' ');
 }
+document.querySelector('.b-1').addEventListener('click', f1);
 
 
 // TASK 02
@@ -28,6 +29,7 @@ const f2 = () => {
 
     // document.querySelector('.out-2').innerHTML = s2.split('').reverse().join(' ');
 }
+document.querySelector('.b-2').addEventListener('click', f2);
 
 
 // TASK 03
@@ -53,6 +55,8 @@ const f3 = () => {
     }
     document.querySelector('.out-3').innerHTML = out;
 }
+document.querySelector('.b-3').addEventListener('click', f3);
+
 
 // TASK 04
 // Функция reverse меняет исходный массив. Напишите функцию f4, которая запускается по кнопке b-4. 
@@ -71,6 +75,8 @@ const f4 = () => {
     document.querySelector('.out-4').innerHTML = a4_res;
     return a4_res;
 }
+document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // TASK 05
 // Напишите функцию f5, которая запускается по кнопке b-5. Функция создает и возвращает новый массив 
@@ -118,6 +124,8 @@ const f5 = () => {
 //     return a5_res;
 // }
 // ==========================================================
+document.querySelector('.b-5').addEventListener('click', f5);
+
 
 // TASK 06
 //  Напишите функцию f6, которая запускается по кнопке b-6. Функция сортирует массив a6 по возрастанию и выводит в out-6 через пробел.
@@ -140,6 +148,8 @@ const f6 = () => {
     // OR
     // document.querySelector('.out-6').innerHTML = a6.sort().join(' ');
 }
+document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // TASK 07
 // Напишите функцию f7, которая запускается по кнопке b-7. Функция сортирует массив a7 по возрастанию и выводит в out-7 через пробел. 
@@ -158,6 +168,8 @@ const f7 = () => {
 
     document.querySelector('.out-7').innerHTML = out;
 }
+document.querySelector('.b-7').addEventListener('click', f7);
+
 
 // TASK 08
 //  Напишите функцию f8, которая запускается по кнопке b-8. Функция сортирует массив a8 по возрастанию и выводит в out-8 через пробел.
@@ -176,6 +188,8 @@ const f8 = () => {
 
     document.querySelector('.out-8').innerHTML = out;
 }
+document.querySelector('.b-8').addEventListener('click', f8);
+
 
 // TASK 09
 // Напишите функцию f9, которая запускается по кнопке b-9. Функция сортирует массив a9  по возрастанию или по убыванию в зависимости от аргумента s.
@@ -195,8 +209,10 @@ const f9 = (s) => {
     })
     console.log(a9);
     return a9;
-
 }
+document.querySelector('.b-9').addEventListener('click', () => {
+    document.querySelector('.out-9').innerHTML = f9('ASC');
+});
 
 // TASK 10
 // По нажатию b-10 выполняется функция f10. Функция сортирует массив a10 по полю age (по позрастанию) и выводит имена (после сортировки) в out-10. 
@@ -226,18 +242,4 @@ const f10 = () => {
 
     document.querySelector('.out-10').innerHTML = out;
 }
-
-
-
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
-document.querySelector('.b-4').addEventListener('click', f4);
-document.querySelector('.b-5').addEventListener('click', f5);
-document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', f7);
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', () => {
-    document.querySelector('.out-9').innerHTML = f9('ASC');
-});
 document.querySelector('.b-10').addEventListener('click', f10);
