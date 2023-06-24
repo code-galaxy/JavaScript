@@ -146,4 +146,18 @@ const f10 = () => {
     out += res[i]+ ' ';
     document.querySelector('.out-10').innerHTML = out;
 }
+
+// ================================================================
+// OR another variant
+// const f10 = () => {
+//     a10_res = [...s10];
+//     console.log(a10_res);
+//     let res = a10_res.filter(item => {
+//         if (item > 'l') return true;
+//     })
+//     console.log(res);
+//     document.querySelector('.out-10').innerHTML = res.join(' ');
+// }
+// ================================================================
+
 document.querySelector('.b-10').addEventListener('click', f10);
