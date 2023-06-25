@@ -13,6 +13,7 @@ const f1 = () => {
     })
     document.querySelector('.out-1').innerHTML = a1_res;
 }
+document.querySelector('.b-1').addEventListener('click', f1);
 
 
 // TASK 02
@@ -29,6 +30,8 @@ const f2 = () => {
     })
     document.querySelector('.out-2').innerHTML = a2_res;
 }
+document.querySelector('.b-2').addEventListener('click', f2);
+
 
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция с помощью every проверяет, что сумма элементов каждого из вложенных массивов в массив a3 больше 20 
@@ -52,6 +55,7 @@ const summa = (arr) => {
     })
     return res;
 }
+document.querySelector('.b-3').addEventListener('click', f3);
 
 
 // TASK 04
@@ -67,6 +71,8 @@ const f4 = () => {
     })
     document.querySelector('.out-4').innerHTML = a4_res;
 }
+document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция с помощью every проверяет, что все совершеннолетние пользователи (больше или равно 16 лет) 
@@ -89,11 +95,12 @@ const f5 = () => {
     })
     document.querySelector('.out-5').innerHTML = a5_res;
 }
+document.querySelector('.b-5').addEventListener('click', f5);
+
 
 // TASK 06
 // По нажатию b-6 выполняется функция f6. Проверяет что все элементы массива a6 больше чем переменная a6_from и выводит в out-6 true или false, 
 //в зависимости от результата. Задачу решать без применения every. 
-
 
 let a6 = [1, 4, 2, 6, 7, 3, 5, 2, 9];
 let a6_from = 1;
@@ -108,6 +115,8 @@ const f6 = () => {
     }
     document.querySelector('.out-6').innerHTML = out;
 }
+document.querySelector('.b-6').addEventListener('click', f6);
+
 
 // TASK 07
 // Напишите функцию f7, которая запускается по кнопке b-7. Функция с помощью every проверяет все ли элементы массива a7 больше чем a7_from. 
@@ -129,6 +138,8 @@ const f7 = () => {
     });
     document.querySelector('.out-7').innerHTML = res;
 }
+document.querySelector('.b-7').addEventListener('click', f7);
+
 
 // TASK 08
 //  Напишите функцию f8, которая запускается по кнопке b-8. Функция c помощью some проверяет, что хотя один из элементов массива a8 был больше 100. 
@@ -143,6 +154,8 @@ const f8 = () => {
     })
     document.querySelector('.out-8').innerHTML = res;
 }
+document.querySelector('.b-7').addEventListener('click', f8);
+
 
 // TASK 09
 // Напишите функцию f9, которая запускается по кнопке b-9. Функция проверяет массив a9 с помощью some на наличие пользователей 
@@ -167,6 +180,8 @@ const f9 = () => {
     })
     document.querySelector('.out-9').innerHTML = res;
 }
+document.querySelector('.b-9').addEventListener('click', f9);
+
 
 // TASK 10
 // По нажатию b-10 выполняется функция f10. Функция с помощью some проверяет, что в a10 есть элементы большие чем a10_from. 
@@ -185,15 +200,4 @@ const f10 = () => {
 
     document.querySelector('.out-10').innerHTML = res;
 }
-
-
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
-document.querySelector('.b-4').addEventListener('click', f4);
-document.querySelector('.b-5').addEventListener('click', f5);
-document.querySelector('.b-6').addEventListener('click', f6);
-document.querySelector('.b-7').addEventListener('click', f7);
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', f10);
