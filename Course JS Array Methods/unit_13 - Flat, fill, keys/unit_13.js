@@ -2,21 +2,19 @@
 // По нажатию b-1 выполняется функция f1. Функция с помощью flat должна двумерный массив a1 превратить в одномерный a1_res. 
 // Вывести a1_res в out-1. Разделитель - пробел.
 
-
 let a1 = [13, [4, 5], 22, [6, 7], [26, 35, 72]];
 let a1_res = [];
 
 const f1 = () => {
-
     a1_res = a1.flat(); // 1
     //console.log(a1_res);
-
     let = out = '';
     for (let i = 0; i < a1_res.length; i++) {
         out += a1_res[i] + ' ';
     }
     document.querySelector('.out-1').innerHTML = out;
 }
+document.querySelector('.b-1').addEventListener('click', f1);
 
 
 // TASK 02
@@ -28,14 +26,14 @@ let a2_res = [];
 
 const f2 = () => {
     a2_res = a2.flat(); // по дефолту 1
-    //console.log(a2_res);
-
     let = out = '';
     for (let i = 0; i < a2_res.length; i++) {
         out += a2_res[i] + ' ';
     }
     document.querySelector('.out-2').innerHTML = out;
 }
+document.querySelector('.b-2').addEventListener('click', f2);
+
 
 // TASK 03
 // По нажатию b-3 выполняется функция f3. Функция с помощью flat должна массив a3 превратить в одномерный a3_res. 
@@ -56,31 +54,30 @@ const f3 = () => {
     }
     document.querySelector('.out-3').innerHTML = out;
 }
+document.querySelector('.b-3').addEventListener('click', f3);
+
 
 // TASK 04
 // По нажатию b-4 выполняется функция f4. Функция с помощью fill должна изменить массив a4 так, что со 2 индекса по 5 будут залиты числом 7. 
 // Выведите a4 в out-4, разделитель пробел.
 
-
-
 let a4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 const f4 = () => {
     let a4_res = a4.fill(7, 2, 5);
     //console.log(a4);
     //console.log(a4_res);
-
     let = out = '';
     for (let i = 0; i < a4_res.length; i++) {
         out += a4_res[i] + ' ';
     }
     document.querySelector('.out-4').innerHTML = out;
 }
+document.querySelector('.b-4').addEventListener('click', f4);
+
 
 // TASK 05
 // По нажатию b-5 выполняется функция f5. Функция с помощью fill должна изменить массив a5 так, 
 // что со 2 индекса все элементы будут равны 0. Выведите a5 в out-5, разделитель пробел.
-
 
 let a5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -93,8 +90,9 @@ const f5 = () => {
         out += a5_res[i] + ' ';
     }
     document.querySelector('.out-5').innerHTML = out;
-
 }
+document.querySelector('.b-5').addEventListener('click', f5);
+
 
 // TASK 06 
 // По нажатию b-6 выполняется функция f6. Напишем функцию, которая принимает 2 параметра - количество элементов массива и число, 
@@ -204,11 +202,6 @@ const f10 = () => {
 
 
 
-document.querySelector('.b-1').addEventListener('click', f1);
-document.querySelector('.b-2').addEventListener('click', f2);
-document.querySelector('.b-3').addEventListener('click', f3);
-document.querySelector('.b-4').addEventListener('click', f4);
-document.querySelector('.b-5').addEventListener('click', f5);
 document.querySelector('.b-6').addEventListener('click', () => {
     let arr = f6(4, 7); // ожидаю [7,7,7,7];
     document.querySelector('.out-6').innerHTML = arr;
