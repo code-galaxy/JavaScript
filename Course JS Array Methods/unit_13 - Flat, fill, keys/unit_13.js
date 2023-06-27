@@ -108,24 +108,31 @@ const f6 = (l, n) => {
     //console.log(arr);
     return arr;
 }
+document.querySelector('.b-6').addEventListener('click', () => {
+    let arr = f6(4, 7); // ожидаю [7,7,7,7];
+    document.querySelector('.out-6').innerHTML = arr;
+});
+
 
 // TASK 07
 // По нажатию b-7 выполняется функция f7. Функция принимает параметр - длину массива и возвращает массив 
 // заполненный случайными целыми числами от 0 до 100 включительно указанной длины. 
 
-
 const f7 = (l) => {
     arr = [];
-
     for (let i = 0; i < l; i++) {
         arr[i] = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
         arr.push(arr[i]);
-
     }
     arr.length = l;
     // console.log(arr);
     return arr;
 }
+document.querySelector('.b-7').addEventListener('click', () => {
+    let arr = f7(4); // ожидаю [99, 23, 11, 3]; например
+    document.querySelector('.out-7').innerHTML = arr;
+});
+
 
 // TASK 08
 // По нажатию b-8 выполняется функция f8. Функция должна получить ключи из массива a8 и поместить их в массив a8_res. 
@@ -146,6 +153,8 @@ const f8 = () => {
     }
     document.querySelector('.out-8').innerHTML = out;
 }
+document.querySelector('.b-8').addEventListener('click', f8);
+
 
 // TASK 09
 // По нажатию b-9 выполняется функция f9. Функция должна получить ключи из массива a9 и поместить их в массив a9_res. 
@@ -170,12 +179,13 @@ const f9 = () => {
     }
     document.querySelector('.out-9').innerHTML = out;
 }
+document.querySelector('.b-9').addEventListener('click', f9);
+
 
 // TASK 10
 // По нажатию b-10 выполняется функция f10. Функция эмулирует работу keys с помощью цикла. 
 // Перебирает массив a10 и заполняет массив a10_res теми ключами, у которых значения не равны undefined. 
 // Результат, массив a10_res выводится в out-10. Разделитель пробел. 
-
 
 let a10 = [11, 22];
 a10[100] = 200;
@@ -185,7 +195,6 @@ let a10_res = [];
 
 const f10 = () => {
     a10_res = [];
-
     for (let i = 0; i < a10.length; i++) {
         if (a10[i] !== undefined) {
             a10_res.push(a10.indexOf(a10[i]));
@@ -199,17 +208,4 @@ const f10 = () => {
     }
     document.querySelector('.out-10').innerHTML = out;
 }
-
-
-
-document.querySelector('.b-6').addEventListener('click', () => {
-    let arr = f6(4, 7); // ожидаю [7,7,7,7];
-    document.querySelector('.out-6').innerHTML = arr;
-});
-document.querySelector('.b-7').addEventListener('click', () => {
-    let arr = f7(4); // ожидаю [99, 23, 11, 3]; например
-    document.querySelector('.out-7').innerHTML = arr;
-});
-document.querySelector('.b-8').addEventListener('click', f8);
-document.querySelector('.b-9').addEventListener('click', f9);
 document.querySelector('.b-10').addEventListener('click', f10);
