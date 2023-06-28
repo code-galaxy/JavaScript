@@ -75,11 +75,9 @@ function t4() {
 function t4_1() {
     t4();
 }
-
-// тут ваша функция t4_1
-
+// document.querySelector('.b-4').onclick = t4_1;
+//  OR addEventListener
 document.querySelector('.b-4').addEventListener('click', t4_1);
-
 
 
 // Task 5
@@ -87,22 +85,17 @@ document.querySelector('.b-4').addEventListener('click', t4_1);
 // проверяет его на четность и запускает even если число четное и odd если нет.
 
 const out5 = document.querySelector('.out-5');
-
 function odd() {
     out5.textContent = 'odd';
 }
-
 function even() {
     out5.textContent = 'even';
 }
-
-
 function t5() {
     let i5 = +document.querySelector('.i-5').value;
     if (i5 % 2 == 0) even();
     else odd();
 }
-
 document.querySelector('.b-5').addEventListener('click', t5);
 
 
