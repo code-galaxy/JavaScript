@@ -205,7 +205,10 @@ document.querySelector('.b-9').addEventListener('click', f9);
 // Результат, массив a10_res выводится в out-10. Разделитель пробел. 
 
 let a10 = [11, 22];
+a10[20] = 200;
+a10[250] = 200;
 a10[100] = 200;
+a10[105] = 200;
 a10[200] = 300;
 
 let a10_res = [];
@@ -214,11 +217,9 @@ const f10 = () => {
     a10_res = [];
     for (let i = 0; i < a10.length; i++) {
         if (a10[i] !== undefined) {
-            a10_res.push(a10.indexOf(a10[i]));
+            a10_res.push(i);
         }
     }
-    //console.log(a10_res);
-
     let = out = '';
     for (let i = 0; i < a10_res.length; i++) {
         out += a10_res[i] + ' ';
