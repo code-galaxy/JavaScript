@@ -153,15 +153,13 @@ let z8 = 0;
 function showNumber() {
     out8.innerHTML = digit[z8];
 }
-
 function t8() {
-    if (z8 <= 8) z8++;
-    else z8 = 0;
+    z8++;
     showNumber();
+    if (z8 === 9) ;
+    z8 = 0;
 }
-
 document.querySelector('.b-8').addEventListener('click', t8);
-
 
 
 // Task 9
@@ -170,13 +168,10 @@ document.querySelector('.b-8').addEventListener('click', t8);
 
 let z9 = 3;
 const s9 = document.querySelector('.s-9');
-
 function t9() {
     s9.value = s9[z9 - 1].value;
 }
-
 document.querySelector('.b-9').addEventListener('click', t9);
-
 
 
 // Task 10
