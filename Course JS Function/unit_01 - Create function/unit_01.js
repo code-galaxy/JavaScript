@@ -3,8 +3,6 @@
 // Все переменные должны быть внутри функции. Запустите эту функцию.
 
 const out1 = document.querySelector('.out-1');
-
-// функцию пишите здесь
 function getRandomInt() {
     const min = 117;
     const max = 132;
@@ -16,7 +14,6 @@ getRandomInt();
 
 
 // Task 2.
-
 // Чуть усложним. Сейчас первая задача жестко завязана на значения 117 и 132. Напишите функцию getRandomInt2, 
 // которая на основе min, max генерирует случайное целое число в этом диапазоне и выводит в out-2. Запустите эту функцию. 
 
@@ -30,8 +27,6 @@ function getRandomInt2() {
 }
 getRandomInt2();
 
-// функцию пишите здесь
-
 
 // Task 3.
 // Не забываем, что функции можно вызывать внутри другой функции. 
@@ -43,19 +38,16 @@ const out3 = document.querySelector('.out-3');
 function hello() {
     out3.innerHTML = 'Hello ';
 }
-
 function f2021() {
     out3.innerHTML += 2021;
 }
-
-
 function t3() {
     // тут вызываете hello и f2021
     hello();
     f2021();
 }
-
 document.querySelector('.b-3').addEventListener('click', t3);
+
 
 // Task 4
 // Да, мы отработали запуск одной функции внутри другой, но сейчас мы чуть усложним задачу,
