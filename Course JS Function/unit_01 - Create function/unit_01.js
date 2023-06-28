@@ -123,11 +123,8 @@ function t6() {
 
     if (out2 % 2 == 0) even();
     else odd();
-
 }
-
 document.querySelector('.b-6').addEventListener('click', t6);
-
 
 
 // Task 7
@@ -142,9 +139,7 @@ function t7() {
         z7++;
     out7.innerHTML = z7;
 }
-
 document.querySelector('.b-7').addEventListener('click', t7);
-
 
 
 // Task 8
