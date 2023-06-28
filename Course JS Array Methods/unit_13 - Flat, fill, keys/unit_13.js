@@ -129,9 +129,26 @@ const f7 = (l) => {
     return arr;
 }
 document.querySelector('.b-7').addEventListener('click', () => {
-    let arr = f7(4); // ожидаю [99, 23, 11, 3]; например
+    let arr = f7(4); 
     document.querySelector('.out-7').innerHTML = arr;
 });
+
+// ==========================================================================
+// OR another variant with method fill
+// const f7 = (l) => {
+//     arr = [];
+//     arr.length = l;
+//     for (let i = 0; i < arr.length; i++) {
+//         let randomNum = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
+//         arr.fill(randomNum, i);
+//     }
+//     return arr;
+// }
+// document.querySelector('.b-7').addEventListener('click', () => {
+//     let arr = f7(18); 
+//     document.querySelector('.out-7').innerHTML = arr;
+// });
+// ==========================================================================
 
 
 // TASK 08
