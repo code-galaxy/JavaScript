@@ -169,7 +169,7 @@ document.querySelector('.b-8').addEventListener('click', t8);
 let z9 = 3;
 const s9 = document.querySelector('.s-9');
 function t9() {
-    s9.value = s9[z9 - 1].value;
+    s9.value = z9;
 }
 document.querySelector('.b-9').addEventListener('click', t9);
 
