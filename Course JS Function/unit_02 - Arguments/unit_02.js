@@ -206,8 +206,8 @@ document.querySelector('.b-14').addEventListener('click', function () {
 
 const out15 = document.querySelector('.out-15');
 function t15(num, even, odd) {
-    if (num % 2 == 0) showOne();
-    else showTwo();
+    if (num % 2 == 0) even();
+    else odd();
 }
 function showOne() {
     out15.innerHTML = 'even';
