@@ -187,21 +187,17 @@ document.querySelector('.b-13').addEventListener('click', function () {
 // Напишите функцию, t14, которая выводит в блок block (переданный как аргумент) массив (переданный как аргумент arr) c помощью функции funcArg (переданной как аргумент).
 
 const out14 = document.querySelector('.out-14');
-
 function t14(arr, funcArg, block) {
     funcArg(arr, block);
 }
 function showArrSpace2(arr, block) {
-    // вывод в блок пишите как в предыдущем примере
     block.textContent = arr.join(' ');
 }
-function showArrUnderscore2(arr, block) {
-    // вывод в блок пишите как в предыдущем примере
-    block.textContent = arr.join('_');
-}
+// function showArrUnderscore2(arr, block) {
+//     block.textContent = arr.join('_');
+// }
 document.querySelector('.b-14').addEventListener('click', function () {
     t14([3, 4, 5], showArrSpace2, out14);
-    // попробуйте также вместо showArrSpace2 поставить showArrUnderscore2
 })
 
 
