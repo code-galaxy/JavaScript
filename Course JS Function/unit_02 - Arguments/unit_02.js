@@ -64,15 +64,12 @@ document.querySelector('.b-5').addEventListener('click', function () {
 // Давайте напишем функцию t6, которая выводит переданный ей массив (как аргумент arr) в блок (переданный как аргумент block) через пробел. 
 
 const out6 = document.querySelector('.out-6');
-
 function t6(arr, block) {
     block.textContent = arr.join(' ');
 }
-
 document.querySelector('.b-6').addEventListener('click', function () {
     t6([99, 44, 55, 66], out6);
 })
-
 
 
 // Task 7
