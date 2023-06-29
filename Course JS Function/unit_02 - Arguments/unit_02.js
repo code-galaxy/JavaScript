@@ -142,28 +142,24 @@ document.querySelector('.b-10').addEventListener('click', function () {
 // Напишите функцию, t11, которая выводит в out-11 cумму переданных ей аргументов (число). Используем arguments.
 
 const out11 = document.querySelector('.out-11');
-
 function t11() {
     let sum = 0;
     for (let i = 0; i < arguments.length; i++)
         sum += arguments[i];
-
     out11.textContent = sum;
 }
-
 document.querySelector('.b-11').addEventListener('click', function () {
     t11(33, 22, 44, 11, 55, 66, 11, 66);
 })
+
 
 // Task 12
 // Напишите функцию, t12, которая выводит в out-12 cумму переданных ей аргументов (число). Используем rest.
 
 const out12 = document.querySelector('.out-12');
-
 function t12(...args) {
     out12.textContent = args.reduce((accum, item) => accum += item);
 }
-
 document.querySelector('.b-12').addEventListener('click', function () {
     t12(33, 22, 44, 11, 55, 66, 11, 66);
 })
@@ -173,23 +169,17 @@ document.querySelector('.b-12').addEventListener('click', function () {
 // Напишите функцию, t13, которая выводит в out-13 массив (переданный как аргумент arr) c помощью функции funcArg (переданной как аргумент).
 
 const out13 = document.querySelector('.out-13');
-
 function t13(arr, funcArg) {
     funcArg(arr);
 }
-
-// функции для вывода уже заготовлены
 function showArrSpace(arr) {
     out13.innerHTML = arr.join(' ');
 }
-
 function showArrUnderscore(arr) {
     out13.innerHTML = arr.join('_');
 }
-
 document.querySelector('.b-13').addEventListener('click', function () {
     t13([3, 4, 5], showArrSpace);
-    // попробуйте также вместо showArrSpace поставить showArrUnderscore
 })
 
 
