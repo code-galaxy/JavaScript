@@ -36,18 +36,11 @@ document.querySelector('.b-3').addEventListener('click', function () {
 // Task 4
 // На странице есть radiobutton .r-4. Напишите функцию, которая возвращет value выбранного radiobutton. 
 
-
 function t4() {
     let r4 = document.querySelectorAll('.r-4');
-    let res = '';
     for (let i = 0; i < r4.length; i++) {
-        if (r4[i].checked)
-            res = r4[i].value;
-    }
-    return res;
+        if (r4[i].checked) return r4[i].value;
 }
-
-
 document.querySelector('.b-4').addEventListener('click', function () {
     document.querySelector('.out-4').textContent = t4();
 })
