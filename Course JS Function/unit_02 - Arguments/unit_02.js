@@ -38,12 +38,10 @@ document.querySelector('.b-3').addEventListener('click', function () {
 // Напишите функцию t4, которая делит число a на b и результат выводит в out-4. Если b равно нулю, то в out-4 выводится аргумент c.
 
 const out4 = document.querySelector('.out-4');
-
 function t4(a, b, c) {
     if (b !== 0) out4.innerHTML = a / b;
     else out4.innerHTML = c;
 }
-
 document.querySelector('.b-4').addEventListener('click', function () {
     t4(7, 12, false);
 })
@@ -53,16 +51,13 @@ document.querySelector('.b-4').addEventListener('click', function () {
 // Напишите функцию t5, которая делит число a на b и результат выводит в out-5. Если b равно нулю, то в out-5 выводится аргумент c, который по умолчанию равен нулю.
 
 const out5 = document.querySelector('.out-5');
-
 function t5(a, b, c = 0) {
     if (b !== 0) out5.innerHTML = a / b;
     else out5.innerHTML = c;
 }
-
 document.querySelector('.b-5').addEventListener('click', function () {
     t5(7, 0, false);
 })
-
 
 
 // Task 6
