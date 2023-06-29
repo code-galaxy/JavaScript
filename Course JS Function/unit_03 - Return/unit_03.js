@@ -10,30 +10,25 @@ document.querySelector('.b-1').addEventListener('click', function () {
 
 
 // Task 2.
-
 //Напишите функцию t2, которая принимает 2 аргумента и возвращает больший из них. 
 
 function t2(a, b) {
     if (a > b) return a;
-    return b;
+    else return b;
 }
 document.querySelector('.b-2').addEventListener('click', function () {
     document.querySelector('.out-2').textContent = t2(120, 140);
 })
 
 
-
 // Task 3.
 // На странице есть checkbox .ch-3. Напишите функцию, которая возвращает его value если он выбран и false если не выбран. 
 
 function t3() {
-
     let checkBox = document.querySelector('.ch-3');
     if (checkBox.checked) return checkBox.value;
     return false;
-
 }
-
 document.querySelector('.b-3').addEventListener('click', function () {
     document.querySelector('.out-3').textContent = t3();
 })
