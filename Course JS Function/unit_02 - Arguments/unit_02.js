@@ -1,37 +1,31 @@
 // Task 1
 // Напишите функцию t1, которая принимает два аргумента и выводит в .out-1 случайное целое число от первого аргумента(включительно) до второго(включительно). Функция запускается по кнопке .b-1. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
-const out1 = document.querySelector('.out-1');
 
+const out1 = document.querySelector('.out-1');
 function t1(min, max) {
     out1.innerHTML = Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 document.querySelector('.b-1').addEventListener('click', function () {
     t1(120, 140);
 })
 
 
-
 // Task 2.
-
 //Напишите функцию t2, которая принимает три аргумента (число от, число до и блок, в который нужно вывести данные) и выводит в указанный блок случайное целое число от первого аргумента(включительно) до второго(включительно). Функция запускается по кнопке .b-2. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
 
 function t2(min, max, block) {
     block.innerHTML = Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 document.querySelector('.b-2').addEventListener('click', function () {
     const out2 = document.querySelector('.out-2');
     t2(120, 140, out2); // функция должна вывести случайное целое от 120 до 140 в блок out-2
 })
 
 
-
 // Task 3.
 //Напишите функцию t3, которая принимает два аргумента (число от, число до ) и выводит в блок .out-3 случайное целое число от первого аргумента(включительно) до второго(включительно). Задайте значение по умолчанию для min число 0 для max число 100. Функция запускается по кнопке .b-3. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
 
 const out3 = document.querySelector('.out-3')
-
 function t3(min, max) {
     out3.innerHTML = Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -214,19 +208,14 @@ const out14 = document.querySelector('.out-14');
 function t14(arr, funcArg, block) {
     funcArg(arr, block);
 }
-
-// функции для вывода уже заготовлены
 function showArrSpace2(arr, block) {
     // вывод в блок пишите как в предыдущем примере
     block.textContent = arr.join(' ');
 }
-
 function showArrUnderscore2(arr, block) {
     // вывод в блок пишите как в предыдущем примере
     block.textContent = arr.join('_');
-
 }
-
 document.querySelector('.b-14').addEventListener('click', function () {
     t14([3, 4, 5], showArrSpace2, out14);
     // попробуйте также вместо showArrSpace2 поставить showArrUnderscore2
@@ -237,22 +226,16 @@ document.querySelector('.b-14').addEventListener('click', function () {
 // Напишите функцию, t15, которая в зависимости от четности аргумента num запускает функцию even, или odd.
 
 const out15 = document.querySelector('.out-15');
-
 function t15(num, even, odd) {
     if (num % 2 == 0) showOne();
     else showTwo();
-
 }
-
 function showOne() {
     out15.innerHTML = 'even';
 }
-
 function showTwo() {
     out15.innerHTML = 'odd';
 }
-
-
 document.querySelector('.b-15').addEventListener('click', function () {
     t15(5, showOne, showTwo);
 })
