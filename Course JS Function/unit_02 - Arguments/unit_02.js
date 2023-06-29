@@ -121,23 +121,18 @@ function t9(text = '', block) {
     if (block !== null)
         block.textContent = text.trim().toLowerCase();
 }
-
 document.querySelector('.b-9').addEventListener('click', function () {
     t9(' HelLO wORLd       ', out9);
 })
-
-
 
 
 // Task 10
 // Напишите функцию, t10, которая выводит в out-10 количество переданных ей аргументов (число).
 
 const out10 = document.querySelector('.out-10');
-
 function t10() {
     out10.textContent = arguments.length;
 }
-
 document.querySelector('.b-10').addEventListener('click', function () {
     t10(33, 22, 44, 11, 55, 66, 11, 66);
 })
