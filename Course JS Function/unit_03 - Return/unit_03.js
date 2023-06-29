@@ -2,14 +2,11 @@
 // Напишите функцию t1, которая возвращает сумму переданных ей аргументов a и b.
 
 function t1(a, b) {
-
     return a + b;
 }
-
 document.querySelector('.b-1').addEventListener('click', function () {
     document.querySelector('.out-1').textContent = t1(120, 140);
 })
-
 
 
 // Task 2.
@@ -17,11 +14,9 @@ document.querySelector('.b-1').addEventListener('click', function () {
 //Напишите функцию t2, которая принимает 2 аргумента и возвращает больший из них. 
 
 function t2(a, b) {
-
     if (a > b) return a;
     return b;
 }
-
 document.querySelector('.b-2').addEventListener('click', function () {
     document.querySelector('.out-2').textContent = t2(120, 140);
 })
