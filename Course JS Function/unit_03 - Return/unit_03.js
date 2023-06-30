@@ -263,6 +263,19 @@ function t21(s) {
         if (num % 2 !== 0 && s == 'odd') return num;
     }
 }
+// ================================================================= 
+// OR another variant
+//     function t21(s) {
+//     let num = t13(10, 20);
+//     console.log(num);
+//     
+//     switch (s) {
+//         case 'even': if (num % 2 == 0 && s == 'even') return num;
+//         case 'odd': if (num % 2 != 0 && s == 'odd') return num;
+//     }
+// }
+// ================================================================= 
+
 document.querySelector('.b-21').addEventListener('click', function () {
     document.querySelector('.out-21').textContent = 10 + t21('odd') + 20;
 })
@@ -276,11 +289,9 @@ const ar22 = [3, 4, 5, 6, 7, 8];
 function t22() {
     return ar22.filter(callback22);
 }
-
 function callback22(item) {
     if (item % 2 === 0) return item;
 }
-
 document.querySelector('.b-22').addEventListener('click', function () {
     document.querySelector('.out-22').textContent = t22();
 })
@@ -293,11 +304,9 @@ const ar23 = [3, 4, 5, 6, 7, 8];
 function t23() {
     return ar23.map(callback23);
 }
-
 function callback23(item) {
     return item ** 2;
 }
-
 document.querySelector('.b-23').addEventListener('click', function () {
     document.querySelector('.out-23').textContent = t23();
 })
@@ -316,10 +325,8 @@ function t24() {
     });
     return t;
 }
-
 function callback24(item) {
     return item ** 2;
-
 }
 
 document.querySelector('.b-24').addEventListener('click', function () {
