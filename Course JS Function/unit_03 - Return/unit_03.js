@@ -127,11 +127,9 @@ document.querySelector('.b-9').addEventListener('click', function () {
 // Task 10
 // Напишите функцию, t10, которая возвращает количество переданных ей аргументов (число).
 
-
 function t10() {
     return arguments.length;
 }
-
 document.querySelector('.b-10').addEventListener('click', function () {
     document.querySelector('.out-10').textContent = t10(33, 22, 44, 11, 55, 66, 11, 66);
 })
@@ -147,18 +145,17 @@ function t11() {
     }
     return sum;
 }
-
 document.querySelector('.b-11').addEventListener('click', function () {
     document.querySelector('.out-11').textContent = t11(33, 22, 44, 11, 55, 66, 11, 66);
 })
 
+    
 // Task 12
 // Напишите функцию, t12, которая возвращает cумму переданных ей аргументов (число). Используем rest.
 
 function t12(...args) {
     return args.reduce((accum, item) => accum += item);
 }
-
 document.querySelector('.b-12').addEventListener('click', function () {
     document.querySelector('.out-12').textContent = t12(33, 22, 44, 11, 55, 66, 11, 66);
 })
@@ -181,9 +178,7 @@ document.querySelector('.b-13').addEventListener('click', function () {
 
 function t14() {
     return `rgb(${t13(0, 255)},${t13(0, 255)},${t13(0, 255)})`;
-
 }
-
 document.querySelector('.b-14').addEventListener('click', function () {
     document.querySelector('.out-14').style.background = t14();
 })
