@@ -97,16 +97,12 @@ document.querySelector('.b-7').addEventListener('click', function () {
 // Task 8
 // Напишите функцию, которая принимает число дробь (например 23.34) и параметр 'floor' или 'ceil' и возвращает число с соответствующим округлением ( либо floor либо ceil).
 
-
 function t8(num, method) {
     return Math[method](num);
 }
-
 document.querySelector('.b-8').addEventListener('click', function () {
     document.querySelector('.out-8').textContent = 10 + t8(100.11, 'ceil');
 })
-
-
 
 
 // Task 9
@@ -115,14 +111,10 @@ document.querySelector('.b-8').addEventListener('click', function () {
 function t9(n, p) {
     if ((n ** p) % 2 === 0) return true;
     return false;
-
 }
-
 document.querySelector('.b-9').addEventListener('click', function () {
     document.querySelector('.out-9').textContent = t9(3, 3);
 })
-
-
 
 
 // Task 10
