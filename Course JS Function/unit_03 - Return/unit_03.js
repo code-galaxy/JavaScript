@@ -61,18 +61,15 @@ function t5() {
         case '/': return s51 / s53;
     }
 }
-
 document.querySelector('.b-5').addEventListener('click', function () {
     document.querySelector('.out-5').textContent = t5();
 })
-
 
 
 // Task 6
 // Напишите функцию, которая принимает три аргумента: num1, num2 - числа и sign - строку знак операции. sign может быть равен '+', '-', '/', '*'. В зависимости от знака функция должна возвращать результат выбранной операции над числами. Например передали числа 10 и 5 и знак '/'. Функция должна возвратить 2.
 
 function t6(num1, num2, sign) {
-
     switch (sign) {
         case '-': return num1 - num2;
         case '+': return num1 + num2;
@@ -80,11 +77,9 @@ function t6(num1, num2, sign) {
         case '/': return num1 / num2;
     }
 }
-
 document.querySelector('.b-6').addEventListener('click', function () {
     document.querySelector('.out-6').textContent = t6(100, 2, '*');
 })
-
 
 
 // Task 7
@@ -94,11 +89,9 @@ function t7(arg) {
     if (typeof arg === 'number') return true;
     return false;
 }
-
 document.querySelector('.b-7').addEventListener('click', function () {
     document.querySelector('.out-7').textContent = t7(100);
 })
-
 
 
 // Task 8
