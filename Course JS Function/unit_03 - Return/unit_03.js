@@ -112,6 +112,13 @@ function t9(n, p) {
     if ((n ** p) % 2 === 0) return true;
     return false;
 }
+
+//  OR another variant
+//     function t9(num, exp) {
+//     if (Math.pow(num, exp) % 2 === 0) return true;
+//     else return false;
+// }
+    
 document.querySelector('.b-9').addEventListener('click', function () {
     document.querySelector('.out-9').textContent = t9(3, 3);
 })
