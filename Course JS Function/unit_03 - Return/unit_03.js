@@ -187,23 +187,21 @@ document.querySelector('.b-14').addEventListener('click', function () {
 // Task 15
 // Напишите функцию, которая получает строку как аргумент и возвращает строку очищенную от пробелов ( с начала и конца) или false если строка содержит только пробелы. 
 
-
 function t15(str) {
     if (str.trim() == '') return false;
     return str.trim();
 }
-
 document.querySelector('.b-15').addEventListener('click', function () {
     console.log(t15('           hi              '));
 })
 
+    
 // Task 16
 // Напишите функцию, которая получает строку как аргумент и возвращает строку приведенную к нижнему регистру. 
 
 function t16(str) {
     return str.toLowerCase();
 }
-
 document.querySelector('.b-16').addEventListener('click', function () {
     document.querySelector('.out-16').textContent = t16('HelLO wORLd');
 })
