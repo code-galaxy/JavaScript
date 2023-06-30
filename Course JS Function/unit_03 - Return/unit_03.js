@@ -234,11 +234,11 @@ document.querySelector('.i-18').addEventListener('input', function () {
 function t19() {
     return document.querySelector('.i-19').value;
 }
-
 document.querySelector('.i-19').addEventListener('input', function () {
     document.querySelector('.out-19').style.borderRadius = t19() + 'px';
 })
 
+    
 // Task 20
 // Напишите функцию, которая получает строку и возвращает "развернутую" строку. 
 
@@ -246,7 +246,6 @@ function t20(s) {
     let str = s.split('').reverse();
     return str.join('');
 }
-
 document.querySelector('.b-20').addEventListener('click', function () {
     document.querySelector('.out-20').textContent = t20('hello');
 })
@@ -257,7 +256,6 @@ document.querySelector('.b-20').addEventListener('click', function () {
 // Для генерации случайного числа используйте t13.
 
 function t21(s) {
-
     while (true) {
         let num = t13(10, 20);
 
@@ -265,7 +263,6 @@ function t21(s) {
         if (num % 2 !== 0 && s == 'odd') return num;
     }
 }
-
 document.querySelector('.b-21').addEventListener('click', function () {
     document.querySelector('.out-21').textContent = 10 + t21('odd') + 20;
 })
