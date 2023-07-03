@@ -210,14 +210,12 @@ document.querySelector('.b-14').addEventListener('click', function () {
     console.log(t14('           hi              '));
 })
 
+
 // Task 15
 // Напишите стрелочную функцию, которая проверяет что пользователь ввел в input. Если число - возвращает true, если строку - false. 
 
 const t15 = (num) => {
     return ((!isNaN(+num)) ? true : false);
-
-    /* if (typeof num === 'number') return true;
-    else return false; */
 }
 
 document.querySelector('.b-15').addEventListener('click', function () {
@@ -225,16 +223,13 @@ document.querySelector('.b-15').addEventListener('click', function () {
     document.querySelector('.out-15').textContent = t15(num);
 })
 
+
 // Task 16
 // Напишите стрелочную функцию t16, которая проверяет что в массиве находится четное количество элементов. Возвращает true, false.
 
 const t16 = (arr) => {
     return ((arr.length % 2 === 0) ? true : false);
-
-    /* if (arr.length % 2 === 0) return true;
-    return false; */
 }
-
 document.querySelector('.b-16').addEventListener('click', function () {
     document.querySelector('.out-16').textContent = t16([4, 5, 6]);
 })
