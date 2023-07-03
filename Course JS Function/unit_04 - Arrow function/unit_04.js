@@ -175,10 +175,9 @@ document.querySelector('.b-11').addEventListener('click', function () {
 // напишите стрелочную функцию t12, которая возвращает большее из переданных ей двух чисел. Числа передаются в качестве аргумента.
 
 const t12 = (a, b) => {
-    return ((a > b) ? a : b)
-    /*  if (a > b) return a;
-    return b; */
+    return ((a > b) ? a : b);
 }
+// const t12 = (a, b) => (a > b) ? a : b;
 
 document.querySelector('.b-12').addEventListener('click', function () {
     document.querySelector('.out-12').textContent = t12(9, 22);
