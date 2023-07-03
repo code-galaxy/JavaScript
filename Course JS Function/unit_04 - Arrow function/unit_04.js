@@ -106,8 +106,6 @@ const t8 = (arr) => {
     });
     return arr2;
 }
-
-
 document.querySelector('.b-8').addEventListener('click', function () {
     document.querySelector('.out-8').textContent = t8([3, 4, 5, 6, 7, 8]);
 })
@@ -127,6 +125,10 @@ const t9 = (arr) => {
         return accum += item;
     });
 }
+
+// const t9 = (arr) => {
+//     return arr.reduce((accum, item) => accum += item);
+// }
 
 document.querySelector('.b-9').addEventListener('click', function () {
     document.querySelector('.out-9').textContent = t9([20, 30, 40]);
