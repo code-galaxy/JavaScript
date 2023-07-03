@@ -82,12 +82,9 @@ document.querySelector('.b-6').addEventListener('click', function () {
 // }
 
 const t7 = (arg) => {
-    let arr = arg.map(item => {
-        return item * 2;
-    });
+    let arr = arg.map(item => (item * 2));
     return arr;
 }
-
 document.querySelector('.b-7').addEventListener('click', function () {
     document.querySelector('.out-7').textContent = t7([4, 5, 6]);
 })
