@@ -29,8 +29,6 @@ document.querySelector('.b-2').addEventListener('click', () => {
 const t3 = (a, b) => {
     document.querySelector('.out-3').textContent = a + b;
 }
-
-
 document.querySelector('.b-3').addEventListener('click', function () {
     t3(4, 5);
 });
@@ -38,15 +36,9 @@ document.querySelector('.b-3').addEventListener('click', function () {
 
 // Task 4
 // Напишите функцию стрелочную функцию t4, которая аналогична закомментированной функции.
-
-// function t4(s) {
-//     document.querySelector('.out-4').textContent = s.trim().length;
-// }
-
 const t4 = (s) => {
     document.querySelector('.out-4').textContent = s.trim().length;
 }
-
 document.querySelector('.b-4').addEventListener('click', function () {
     t4('   aha     ');
 })
@@ -55,14 +47,9 @@ document.querySelector('.b-4').addEventListener('click', function () {
 // Task 5
 // Напишите функцию стрелочную функцию t5, которая аналогична закомментированной функции.
 
-// function t5(a, b) {
-//     return Math.pow(a, b);
-// }
-
 const t5 = (a, b) => {
     return Math.pow(a, b);
 }
-
 document.querySelector('.b-5').addEventListener('click', function () {
     document.querySelector('.out-5').textContent = t5(3, 4);
 })
