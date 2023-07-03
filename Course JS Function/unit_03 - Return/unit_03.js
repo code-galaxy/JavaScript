@@ -329,7 +329,6 @@ function t24() {
 function callback24(item) {
     return item ** 2;
 }
-
 document.querySelector('.b-24').addEventListener('click', function () {
     document.querySelector('.out-24').textContent = t24();
 })
@@ -338,35 +337,30 @@ document.querySelector('.b-24').addEventListener('click', function () {
 // Task 25
 // Напишите функцию которая принимает массив как аргумент и проверяет что в нем одни числа. Возвращает true если это так и false в противном.
 
-
 function t25(arr) {
-
     let res = arr.every(item => {
         if (typeof item === 'number') return true;
     })
     return res;
 }
-
-
 document.querySelector('.b-25').addEventListener('click', function () {
     document.querySelector('.out-25').textContent = t25([4, 5, 6]);
 })
+    
 
 // Task 26
 // Напишите функцию которая получает из input.i-26 имя пользователя и если это не пустая строка - то выводит его в out-26 в нижнем регистре. Если строка пустая - то выходит из функции.
 
-
 function t26() {
     let i26 = document.querySelector('.i-26').value;
-
     if (i26.trim() !== '') {
         document.querySelector('.out-26').innerHTML = i26.trim().toLowerCase();
     }
     return;
 }
-
 document.querySelector('.b-26').addEventListener('click', t26);
 
+    
 // Task 27
 // Напишите функцию которая проверяет, что строка из аргумента v находится в объекте  объекте obj27 как значение. Если находит совпадение - возвращает ключ. Если не находит - false.
 
@@ -376,7 +370,6 @@ const obj27 = {
     k: 'z',
     m: 'w'
 }
-
 function t27(v) {
     for (let key in obj27) {
         if (obj27[key] === v)
