@@ -1,20 +1,12 @@
 // Task 1
 // Напишите функцию стрелочную функцию t1, которая аналогична закомментированной функции.
 
-// function t1() {
-//     const x = 77;
-//     const y = 99;
-//     console.log(x + y);
-// }
-
 const t1 = () => {
     const x = 77;
     const y = 99;
     console.log(x + y);
 }
-
 document.querySelector('.b-1').addEventListener('click', t1);
-
 
 
 // Task 2.
@@ -30,7 +22,6 @@ document.querySelector('.b-2').addEventListener('click', () => {
     const x = 99;
     const y = 88;
     document.querySelector('.out-2').textContent = x + y;
-
 });
 
 
