@@ -12,12 +12,6 @@ document.querySelector('.b-1').addEventListener('click', t1);
 // Task 2.
 // Напишите стрелочную функцию, которая является аналогом анонимной функции, которая запускается при клике на b-2.
 
-// document.querySelector('.b-2').addEventListener('click', function () {
-//     const x = 99;
-//     const y = 88;
-//     document.querySelector('.out-2').textContent = x + y;
-// })
-
 document.querySelector('.b-2').addEventListener('click', () => {
     const x = 99;
     const y = 88;
