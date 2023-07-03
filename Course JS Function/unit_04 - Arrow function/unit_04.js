@@ -201,10 +201,8 @@ document.querySelector('.b-13').addEventListener('click', function () {
 
 const t14 = (str) => {
     return ((str.trim() == '') ? false : str.trim());
-
-    /* if (str.trim() == '') return false;
-    else return str.trim(); */
 }
+//  const t14 =(str) => (str != '') ? str.trim() : false;
 
 document.querySelector('.b-14').addEventListener('click', function () {
     console.log(t14('           hi              '));
