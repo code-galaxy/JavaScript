@@ -377,7 +377,6 @@ function t27(v) {
     }
     return false;
 }
-
 document.querySelector('.b-27').addEventListener('click', function () {
     let z = document.querySelector('.i-27').value;
     document.querySelector('.out-27').textContent = t27(z);
@@ -388,15 +387,14 @@ document.querySelector('.b-27').addEventListener('click', function () {
 // Напишите функцию которая принимает два аргумента - строку и подстроку и если подстрока есть в строке - возвращает true, если нет false.
 
 function t28(str, substr) {
-
     if (str.includes(substr)) return true;
     return false;
 }
-
 document.querySelector('.b-28').addEventListener('click', function () {
     document.querySelector('.out-28').textContent = t28('hello my world', 'or');
 })
 
+    
 // Task 29
 // Напишите функцию, которая получает в качестве аргументов строки и возвращает большую строку (прямым сравнением).
 
@@ -404,11 +402,9 @@ function t29(str1, str2) {
     if (str1 > str2) return str1;
     return str2;
 }
-
 document.querySelector('.b-29').addEventListener('click', function () {
     document.querySelector('.out-29').textContent = t29('hello', 'orBait');
 })
-
 
 
 // Task 30
@@ -417,14 +413,9 @@ document.querySelector('.b-29').addEventListener('click', function () {
 function t31() {
     return true;
 }
-//console.log(t31);
-
 function t30() {
     return t31;
 }
-
-
 document.querySelector('.b-30').addEventListener('click', function () {
     document.querySelector('.out-30').textContent = t30();
 })
-
