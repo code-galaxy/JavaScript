@@ -6,9 +6,9 @@ let res1;
 let callBack1 = (item) => {
    return Math.pow(item, 3)
 }
-
 res1 = ar1.map(callBack1);
 console.log(res1);
+
 
 // Task 2
 // Допишите анонимную стрелочную функцию внутри map такую, что принимает элементы массива из map и возвращает их возведенные в 3 степень.
@@ -17,7 +17,6 @@ let res2;
 res2 = ar1.map(item => {
    return Math.pow(item, 3);
 }); // сюда в скобки дописываете стрелочную функцию
-
 console.log(res2);
 
 
