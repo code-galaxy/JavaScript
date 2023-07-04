@@ -16,7 +16,7 @@ console.log(res1);
 let res2;
 res2 = ar1.map(item => {
    return Math.pow(item, 3);
-}); // сюда в скобки дописываете стрелочную функцию
+}); 
 console.log(res2);
 
 
@@ -29,7 +29,6 @@ let callBack3 = (item) => {
    if (typeof item === 'number')
       return true;
 }
-
 res3 = ar3.filter(callBack3);
 console.log(res3);
 
@@ -39,8 +38,7 @@ let res4;
 res4 = ar3.filter(item => {
    if (typeof item === 'number')
       return true;
-}); // сюда в скобки дописываете стрелочную функцию
-
+}); 
 console.log(res4);
 
 // Task 5
@@ -51,7 +49,6 @@ let res5 = [];
 let callBack5 = (item) => {
    res5.push(item.toLowerCase());
 }
-
 ar5.forEach(callBack5);
 console.log(res5);
 
@@ -62,8 +59,7 @@ console.log(res5);
 let res6 = [];
 ar5.forEach(item => {
    res6.push(item.toLowerCase());
-}); // сюда в скобки дописываете стрелочную функцию
-
+}); 
 console.log(res6);
 
 
@@ -76,10 +72,9 @@ let callBack7 = (item) => {
    if (item > 10)
       return true;
 }
-
 res7 = ar7.every(callBack7);
-
 console.log(res7);
+
 
 // Task 8
 // Допишите анонимную стрелочную функцию внутри every такую, что принимает элементы массива ar7 из every и возвращет true если они больше 10.
