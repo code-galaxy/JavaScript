@@ -1,0 +1,129 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+.stopwatch{
+   height: 800px;
+   width: 800px;
+   margin: 0 auto;
+   padding: 0;
+   border: 1px solid black;
+   background-image: url(/image/mobile_picture.png);
+   background-repeat: no-repeat;
+}
+.container {
+   display: grid;
+   grid-template-areas:
+      "header"
+      "time"
+      "button"
+      "out-lap"
+      "footer";
+   width: 315px;
+   height: 660px;
+   border-radius: 50px;
+   margin: 50px 0 50px 316px;
+   background-color: black;
+   
+}
+
+.header {
+   padding: 2px;
+   grid-area: header;
+   height: 70px;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.time {
+   background: black;
+   padding: 10px;
+   grid-area: time;
+   height: 200px;
+   color: white;
+   font-size: 60px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+span{
+   display: block;
+}
+.button {
+   background: black;
+   padding: 2px;
+   height: 70px;
+   grid-area: button;
+   color: white;
+   text-align: center;
+   display: flex;
+   justify-content:space-between;
+}
+
+.out-lap {
+   padding: 2px;
+   grid-area: out-lap;
+   color: white;
+   text-align: center;
+   height: 280px;
+   color: white;
+   overflow: auto;
+}
+
+li {
+   list-style: none;
+   font-size: 18px;
+   padding: 0 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.out-li {
+   margin: 9px 0;
+   border-bottom: 1px solid gray;
+}
+
+.btn {
+   min-width: 65px;
+   height: 65px;
+   border-radius: 100px;
+   font-size: 16px;
+   letter-spacing: 1.2;
+   background-color: darkgray;
+   cursor: pointer;
+   margin: 0 5px;
+   color: white;
+   border: 2px solid black;
+   position: relative;
+}
+
+.btn::before {
+   content: "";
+   display: inline-block;
+   vertical-align: middle;
+   width: 88%;
+   height: 88%;
+   margin-top: 2px;
+   border-radius: 50%;
+   border: 1px solid black;
+   position: absolute;
+   top: 0px;
+   left: 3px;
+}
+
+.js-btn-start {
+   background-color: green;
+   color: rgb(166, 233, 32);
+}
+
+.active {
+   background-color: darkred;
+   color: red;
+}
+
+
