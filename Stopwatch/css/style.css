@@ -1,18 +1,20 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family: sans-serif;
 }
-.stopwatch{
+
+.stopwatch {
    height: 800px;
    width: 800px;
    margin: 0 auto;
    padding: 0;
-   border: 1px solid black;
-   background-image: url(/image/mobile_picture.png);
+   border: 1px solid white;
+   background-image: url(./mobile_picture.png);
    background-repeat: no-repeat;
 }
+
 .container {
    display: grid;
    grid-template-areas:
@@ -26,17 +28,17 @@
    border-radius: 50px;
    margin: 50px 0 50px 316px;
    background-color: black;
-   
+
 }
 
 .header {
    padding: 2px;
    grid-area: header;
-   height: 70px;
+   height: 100px;
    color: white;
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
+   margin-top: 15px;
+   align-self: flex-start;
+   text-align: center;
 }
 
 .time {
@@ -51,9 +53,11 @@
    justify-content: center;
    align-items: flex-end;
 }
-span{
+
+span {
    display: block;
 }
+
 .button {
    background: black;
    padding: 2px;
@@ -62,7 +66,7 @@ span{
    color: white;
    text-align: center;
    display: flex;
-   justify-content:space-between;
+   justify-content: space-between;
 }
 
 .out-lap {
@@ -89,7 +93,7 @@ li {
 }
 
 .btn {
-   min-width: 65px;
+   min-width: 67px;
    height: 65px;
    border-radius: 100px;
    font-size: 16px;
@@ -125,5 +129,12 @@ li {
    background-color: darkred;
    color: red;
 }
-
-
+.time-out{
+   margin: 5px 0;
+   font-size: 14px;
+}
+.name-out{
+   margin-top: 20px;
+   font-size: 25px;
+   color: red;
+}
