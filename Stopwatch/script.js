@@ -6,10 +6,6 @@ const minutesBlock = document.querySelector('.js-minutes'),
    outBlock = document.querySelector('.out'),
    outUl = document.querySelector('.out-ul');
 
-// outUlLapText = document.querySelector('.out-lap-text'),
-// outUlLapTime = document.querySelector('.out-lap-time');
-
-
 
 let interval;
 let minutes = 0;
@@ -110,6 +106,36 @@ const clearLaps = () => {
    outUl.innerHTML = null;
 };
 
+// =========================================================================================
 
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+function addLeadingZero(x) {
+   return (x < 10) ? '0' + x : x;
+}
 
+function getUserTime(t) {
+   let Y = t.getFullYear();
+   let M = addLeadingZero(t.getMonth() + 1);
+   let D = addLeadingZero(t.getDate());
+   let d = days[t.getDay()];
+   
+   console.log(Y, M, D, d);
+   document.querySelector('.date-info').innerHTML = `${Y}.${M}.${D} - ${d}`;
+}
+getUserTime(new Date(new Date()));
+// console.log(getUserTime(new Date()));
+
+// =========================================================================================
+
+window.onload = function () {
+   window.setInterval(() => {
+      let date = new Date();
+      let h = addLeadingZero(date.getHours());
+      let m = addLeadingZero(date.getMinutes());
+      let s = addLeadingZero(date.getSeconds());
+
+      let clock = `${h}:${m}:${s}`;
+      document.querySelector('.clock').innerHTML = clock;
+   })
+}
