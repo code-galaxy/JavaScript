@@ -17,6 +17,7 @@ function getDate(date) {
    result += date.getFullYear();
    // let result = `${date.getDay()}.${date.getMonth()}.${date.getFullYear()}`;
    document.querySelector('.out-date').innerHTML = result;
+
 }
 getDate(date);
 
@@ -37,8 +38,21 @@ function getUserTime(t) {
    let m = addLeadingZero(t.getMinutes());
 
    console.log(Y, M, D, d, h, m);
-
-   return `${Y}.${M}.${D} ${h}:${m}  - ${d}`;
+   document.querySelector('.out-info').innerHTML = `${Y}.${M}.${D} - ${h}:${m}  - ${d}`;
 }
-getUserTime(new Date(1689162118510));
-console.log(getUserTime(new Date(1689162118510)));
+getUserTime(new Date(new Date()));
+// console.log(getUserTime(new Date()));
+
+// =================================================================================================
+
+window.onload = function () {
+   window.setInterval(() => {
+      let date = new Date();
+      let h = addLeadingZero(date.getHours());
+      let m = addLeadingZero(date.getMinutes());
+      let s = addLeadingZero(date.getSeconds());
+
+      let clock = `${h}:${m}:${s}`;
+      document.querySelector('.clock').innerHTML = clock;
+   })
+}

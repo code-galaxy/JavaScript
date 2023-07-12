@@ -1,3 +1,18 @@
-.out-date{
-   background-color: orange;
+body {
+   background-color: black;
+   text-align: center;
+}
+
+.clock {
+   color: white;
+   margin-top: 30vh;
+   font-weight: bold;
+   font-family: sans-serif;
+   font-size: 20vh;
+}
+
+.out-info {
+   color: white;
+   font-size: 5vh;
+   font-family: sans-serif;
 }
