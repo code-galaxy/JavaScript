@@ -31,7 +31,6 @@ document.querySelector('.b-2').addEventListener('click', () => {
 function t3(a, b, c) {
     return (b === 0) ? c : a / b;
 }
-
 document.querySelector('.b-3').addEventListener('click', () => {
     document.querySelector('.out-3').textContent = t3(1, 2, 3);
 })
