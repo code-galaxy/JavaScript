@@ -35,17 +35,17 @@ function t3(a, b, c) {
 document.querySelector('.b-3').addEventListener('click', () => {
     document.querySelector('.out-3').textContent = t3(1, 2, 3);
 })
+
+
 // Task 4
 // Давайте напишем pure функцию t4, которая выводит переданный ей массив (как аргумент arr) в блок (переданный как аргумент block) через пробел. Функция запускается по кнопке .b-4. 
 
 function t4(arr) {
     return arr.join(' ');
 }
-
 document.querySelector('.b-4').addEventListener('click', () => {
     document.querySelector('.out-4').textContent = t4([11, 22, 33]);
 });
-
 
 
 // Task 5
