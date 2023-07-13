@@ -39,12 +39,13 @@ document.querySelector('.b-3').addEventListener('click', () => {
 // Task 4
 // Давайте напишем pure функцию t4, которая выводит переданный ей массив (как аргумент arr) в блок (переданный как аргумент block) через пробел. Функция запускается по кнопке .b-4. 
 
-function t4(arr) {
-    return arr.join(' ');
+function t4(arr, block) {
+    return block.innerHTML = arr.join(' ');
 }
-document.querySelector('.b-4').addEventListener('click', () => {
-    document.querySelector('.out-4').textContent = t4([11, 22, 33]);
-});
+document.querySelector('.b-4').addEventListener('click', ()=>{
+    let out = document.querySelector('.out-4');
+    t4([1,2,3,4,5], out);
+})
 
 
 // Task 5
