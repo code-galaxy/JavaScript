@@ -65,7 +65,7 @@ document.querySelector('.b-5').addEventListener('click', () => {
     document.querySelector('.out-5').textContent = t5('.out-5');
 })
 
-// Or another variants =================================================
+// Or another variant =================================================
 function t5(clas) {
     let block = document.querySelector('.out-5');
 
@@ -84,8 +84,20 @@ function t6(arr) {
 }
 document.querySelector('.b-6').addEventListener('click', () => {
     document.querySelector('.out-6').textContent = t6([11, 22, 33]).join(' ');
-
 })
+
+// Or another variant =================================================
+function t6(arr) {
+    let out = [];
+    for (let i = (arr.length - 1); i >= 0; i--) {
+        out.push(arr[i]);
+    }
+    return out.join(' ');
+}
+document.querySelector('.b-6').addEventListener('click', () => {
+    document.querySelector('.out-6').innerHTML = t6([2, 4, 6, 8]);
+})
+
 
 // Task 7
 // Давайте напишем функцию t7, которая позволяет выводить текст переданный ей в качестве аргумента text в блок block. При этом переданный текст с помощью trim очищается от пробелов до и после и переводится в нижний регистр. Ваша задача модицифировать функцию и запуск так, чтобы она стала pure.
