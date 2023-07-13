@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Validate info user</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="out-user"></div>
+   <!-- Простая форма, которая пошлёт GET запрос -->
+   <form action="">
+      <!-- <label for="GET-name">login</label> -->
+      <input id="GET-name" type="text" name="first name" placeholder="l o g i n">
+
+      <!-- <label for="POST-name">password:</label> -->
+      <input id="POST-name" type="text" name="last name" placeholder="p a s s w o r d">
+
+      <input type="submit" value="Sign in">
+   </form>
+
+
+   <form action="">
+      <label for="GET-name">First name</label>
+      <input id="GET-name" type="text" name="first name" placeholder="first name">
+
+      <label for="POST-name">Last name:</label>
+      <input id="POST-name" type="text" name="last name" placeholder="last name">
+
+      <input type="submit" value="Save">
+   </form>
+
+   
+
+   <!-- Форма с fieldset, legend, и label -->
+   <form action="" method="post">
+      <fieldset class="fieldSet">
+         <legend>Title</legend>
+         <label for="POST-name">text1:</label>
+         <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+
+         <label for="POST-name">text2:</label>
+         <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+
+         <label for="POST-name">text3:</label>
+         <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+      </fieldset>
+
+   </form>
+   <script src="script.js"></script>
+</body>
+
+</html>
