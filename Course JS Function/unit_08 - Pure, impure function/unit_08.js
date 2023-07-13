@@ -102,12 +102,9 @@ document.querySelector('.b-6').addEventListener('click', () => {
 // Task 7
 // Давайте напишем функцию t7, которая позволяет выводить текст переданный ей в качестве аргумента text в блок block. При этом переданный текст с помощью trim очищается от пробелов до и после и переводится в нижний регистр. Ваша задача модицифировать функцию и запуск так, чтобы она стала pure.
 
-const out7 = document.querySelector('.out-7');
-
 function t7(text) {
-    return (text.trim().toLowerCase())
+    return text.trim().toLowerCase();
 }
-
 document.querySelector('.b-7').addEventListener('click', function () {
     let block = document.querySelector('.out-7');
     block.textContent = t7(' HelLO wORLd       ');
