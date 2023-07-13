@@ -8,20 +8,22 @@ function t1(min, max) {
     }
     return sum;
 }
-
 document.querySelector('.b-1').addEventListener('click', function () {
     document.querySelector('.out-1').textContent = t1(2, 4);
 })
 
+
 // Task 2
 // Напишите pure функцию t2, которая принимает два аргумента и выводит в .out-2 больше число. Используйте Math.max. Функция запускается по кнопке .b-2. 
-function t2(num1, num2) {
-    return (num1 > num2) ? num1 : num2;
-}
 
+function t2(num1, num2) {
+    return Math.max(num1,num2);
+    // return (num1 > num2) ? num1 : num2;
+}
 document.querySelector('.b-2').addEventListener('click', () => {
     document.querySelector('.out-2').textContent = t2(2, 4);
 })
+
 
 // Task 3.
 // Напишите pure функцию t3 ( принимает 3 аргумента), которая делит число a на b и результат выводит в out-3. Если b равно нулю, то в out-3 выводится аргумент c. Функция запускается по кнопке .b-3. 
