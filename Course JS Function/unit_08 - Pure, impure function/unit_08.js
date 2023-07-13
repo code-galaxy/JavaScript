@@ -65,6 +65,16 @@ document.querySelector('.b-5').addEventListener('click', () => {
     document.querySelector('.out-5').textContent = t5('.out-5');
 })
 
+// Or another variants =================================================
+function t5(clas) {
+    let block = document.querySelector('.out-5');
+
+    return block.classList.contains(clas);
+}
+document.querySelector('.b-5').addEventListener('click', () => {
+    document.querySelector('.out-5').innerHTML = t5('out-5');
+})
+
 
 // Task 6
 // Давайте напишем pure функцию t6, которая получает массив и возвращает его развернутым на 180 градусов ( чистый аналог reverse ). Функция запускается по кнопке .b-6. Для проверки - выводите результат на страницу, через пробел.
