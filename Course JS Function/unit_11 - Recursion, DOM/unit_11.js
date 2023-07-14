@@ -17,15 +17,12 @@ function t1(elem) {
             r1(item);
         })
     }
-
     return out;
 }
-
 document.querySelector('.b-1').addEventListener('click', () => {
     let z1 = document.querySelector('.z-1');
     document.querySelector('.out-1').textContent = t1(z1);
 });
-
 //console.log(document.querySelector('.z-1').children);
 
 
@@ -51,12 +48,10 @@ function t2(elem) {
     }
     return s;
 }
-
 document.querySelector('.b-2').addEventListener('click', () => {
     let z2 = document.querySelector('.z-2');
     document.querySelector('.out-2').textContent = t2(z2);
 });
-
 
 
 // Task 3
