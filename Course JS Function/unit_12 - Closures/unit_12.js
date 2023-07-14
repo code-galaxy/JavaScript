@@ -170,8 +170,8 @@ function generateDay() {
 }
 
 const day = generateDay();
-// console.log(day(2))
-// console.log(day(3))
+ console.log(day(2))
+ console.log(day(3))
 
 
 // Task 10
@@ -197,8 +197,9 @@ function generateMonth() {
     };
 }
 const month = generateMonth();
-//console.log(month(6));
-//console.log(month(12));
-//console.log(generateMonth(2));
-//console.log(generateMonth(3));
+console.log(month(6));
+console.log(month(12));
+
+//console.log(generateMonth(2)); =======> incorrect entry
+//console.log(generateMonth(3)); =======> incorrect entry
 
