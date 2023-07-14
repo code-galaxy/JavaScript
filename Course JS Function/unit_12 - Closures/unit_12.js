@@ -111,7 +111,6 @@ let password2 = generatePassword2(['b', 'y', 'Y', 'b', 'z'], 5);
 //console.log(password2());
 
 
-
 // Task 7
 // Напишите функцию замыкание generateElement, которая принимает 2 аргумента, первый название тега (elem), второй текст в теге (text). Функция generateElement должна возвращать функцию, которая через createElement создает elem и через innerHTML добавляет в него текст. Созданный тег должен быть возвращен. 
 
@@ -131,6 +130,7 @@ document.querySelector('.out-7').append(divCreator());
 document.querySelector('.out-7').append(spanCreator());
 document.querySelector('.out-7').append(spanCreator());
 
+
 // Task 8
 //  Напишите функцию замыкание generateElement2, которая принимает 1 аргумент -  название тега (elem). Функция generateElement2 должна возвращать функцию, которая через createElement создает elem и через innerHTML добавляет в него текст переданный в данную функцию как аргумент text. Созданный тег должен быть возвращен. 
 
@@ -148,6 +148,7 @@ document.querySelector('.out-8').append(divCreator2('ex1'));
 document.querySelector('.out-8').append(divCreator2('ex2'));
 document.querySelector('.out-8').append(spanCreator2('ex3'));
 document.querySelector('.out-8').append(spanCreator2('ex4'));
+
 
 // Task 9
 // Напишите функцию замыкание generateDay, внутри которой создан массив days с именами дней недели и return анонимной функции, которая получает аргумент n и возвращает days[n-1] день недели. 
@@ -173,7 +174,6 @@ const day = generateDay();
 // console.log(day(3))
 
 
-
 // Task 10
 // Напишите функцию замыкание generateMonth, внутри которой создан массив month с именами дней недели и return анонимной функции, которая получает аргумент n и возвращает month[n-1] день недели. 
 
@@ -195,7 +195,6 @@ function generateMonth() {
     return function (n) {
         return month[n - 1];
     };
-
 }
 const month = generateMonth();
 //console.log(month(6));
