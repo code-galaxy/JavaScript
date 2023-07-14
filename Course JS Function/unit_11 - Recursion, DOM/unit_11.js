@@ -74,10 +74,14 @@ function t3(elem) {
         if (!element.classList.contains('z-3')) {
             element.remove();
         }
+        
+        let innerElemet = element.children;
+        Array.from(innerElemet).forEach(item => {
+            r3(item);
+        });
     }
     return out;
 }
-
 document.querySelector('.b-3').addEventListener('click', () => {
     let z3 = document.querySelector('.z-3');
     document.querySelector('.out-3').textContent = t3(z3);
